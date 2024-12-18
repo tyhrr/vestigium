@@ -1,0 +1,504 @@
+/* Variables de color y tipografía */
+:root {
+    /* Paleta de colores principal */
+    --color-primary: rgba(50, 145, 50, 0.9);
+    --color-primary-dark: rgb(40, 120, 40);
+    --color-secondary: rgba(255, 255, 255, 0.645);
+    --color-text: #2a2929;
+    --color-text-enfasis: #88c05b;
+    --color-text-dark: #383737;
+    --color-text-light:rgba(255, 255, 255, 0.645);
+    
+    /* Fondos y transparencias */
+    --bg-transparent: rgba(0, 0, 0, 0.5);
+    --bg-container: rgba(255, 255, 255, 0.95);
+    
+    /* Tipografía */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: Arial, sans-serif;
+    
+    /* Tamaños de fuente */
+    --font-size-h1: 1.5rem;
+    --font-size-h2: 1.7rem;
+    --font-size-h3: 1.2rem;
+    --font-size-p: 1.3rem;
+    --font-size-p2: 2rem;
+    
+    /* Nuevas variables */
+    --section-padding: 4rem 0;
+    --border-radius-large: 0px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: #f4f4f4;
+}
+
+/* Estilos del navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--color-secondary);
+    backdrop-filter: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo de la navbar */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 0.1rem;
+    margin-left: 35px;
+    text-decoration: none;
+    color: #2a2929;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    transform: rotate(30deg);
+    opacity: 60%;
+    margin: 0.1rem;
+}
+
+/* Estilos de los enlaces del navbar */
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 15px 25px;
+    color: var(--color-text);
+    background-color: transparent;
+    border-radius: 0;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.navbar-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--color-primary);
+}
+
+/* Estilo del icono de la bandera */
+.navbar-flag img {
+    width: 30px;
+    height: 30px;
+}
+
+header {
+    background-image: url('./img/projects-header.jpg'); /* Reemplaza con la ruta de tu imagen */
+    height: 700px;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el área del header */
+    background-position: top; /* Centra la imagen en el header */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 50px; /* Espacio alrededor del contenido, ajusta según necesites */
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(71, 71, 71, 0.7);
+}
+
+
+
+
+
+.h1-main {
+    margin-top: 8rem;
+    text-align: left;
+    font-size: var(--font-size-h1);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.h1-main2 {
+    text-align: left;
+    font-size: var(--font-size-h1);
+    color: var(--color-text-enfasis);
+    font-family: var(--font-primary);
+    font-size: 7rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),  /* sombra principal */
+    0 0 10px rgba(50, 145, 50, 0.5);  /* resplandor verde suave */
+-webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);  /* contorno sutil */
+}
+
+p {
+    text-align: start;
+    font-size: var(--font-size-p);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    text-align:center;
+    margin: 2rem;
+}
+
+
+
+
+
+h2.sub-header {
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    font-size: var(--font-size-p2);
+    color: var(--color-text-light);
+    font-family: var(--font-secondary);
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 3rem 2rem;
+}
+
+
+
+.product-gallery {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+div.gallery-item {
+    background-color: var(--bg-container);
+    border-radius: var(--border-radius-large);
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 4rem auto;
+    padding: 3rem;
+    max-width: 1200px;
+    border-radius: 20px;
+}
+
+/* Primer y tercer div alineados a la izquierda */
+div.gallery-item:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+/* Segundo div alineado a la derecha */
+div.gallery-item:nth-child(even) {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+
+.gallery-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    flex: 0 0 300px;
+}
+
+.circle-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 5px solid rgba(69, 70, 69, 0.3);
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description h3 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+/* Para cuando la imagen está a la derecha */
+.gallery-item.reverse .description {
+    padding-right: 3rem;
+    padding-left: 2rem;
+}
+
+/* Para cuando la imagen está a la izquierda */
+.gallery-item:not(.reverse) .description {
+    padding-left: 2rem;
+    padding-right: 3rem;
+}
+
+/* Estilos del Footer */
+.footer {
+    background-color: #f8f8f8;
+    backdrop-filter: none;
+    border-radius: 0;
+    color: var(--color-text);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+.footer a {
+    text-decoration: none;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.footer-info {
+    color: #ffffff;
+    flex: 1;
+    min-width: 300px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-icon {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
+.social-icon i {
+    color: var(--color-primary);
+    font-size: 20px;
+}
+
+.social-icon:hover i {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+p.p-footer {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #393939;
+    text-align: center;
+    margin: 2rem;
+}
+
+/*Estilos del boton de idioma*/
+
+.language-selector {
+    position: relative;
+    display: block;
+}
+
+.language-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    height: 10px;
+    outline: none;
+}
+
+.flag-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: none;
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+
+}
+
+.language-option:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Mostrar el menú cuando el botón está activo */
+.language-selector:hover .language-dropdown {
+    display: block;
+}
+
+div.worskhop-item {
+    background-color: rgba(81, 187, 81, 0.5);
+    border-radius: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 8rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.description {
+    flex: 1;
+    padding: 0 2rem;
+    max-width: 70%;
+    margin-top: 1rem;
+}
+
+.description p {
+    margin: 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.circle-image {
+    min-width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta-section {
+    background-color: #f8f8f8;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #4CAF50; /* O el color principal de tu marca */
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50; /* O el color principal de tu marca */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+
