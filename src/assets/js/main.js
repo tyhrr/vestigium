@@ -1165,6 +1165,32 @@ function initVestigium() {
       const languageSwitcher = new LanguageSwitcher();
       languageSwitcher.init();
       window.vestigiumLanguageSwitcher = languageSwitcher;
+
+      // Sync Google Calendar iframe language with current locale
+      try {
+        const setCalendarLang = (langCode) => {
+          const iframe = document.querySelector('#calendar iframe');
+          if (!iframe || !iframe.src) return;
+          const url = new URL(iframe.src, window.location.href);
+          // Map app language to Google Calendar hl param
+          const hl = (langCode === 'hr') ? 'hr' : 'en';
+          url.searchParams.set('hl', hl);
+          // Reassigning src reloads the iframe without page refresh
+          iframe.src = url.toString();
+        };
+
+        // Initial sync on load
+        const initialLang = (document.documentElement.lang || 'en').startsWith('hr') ? 'hr' : 'en';
+        setCalendarLang(initialLang);
+
+        // Update on language change events from LanguageSwitcher
+        document.addEventListener('languageChanged', (e) => {
+          const lang = (e && e.detail && e.detail.language) ? e.detail.language : initialLang;
+          setCalendarLang(lang);
+        });
+      } catch (err) {
+        console.warn('Calendar language sync skipped:', err);
+      }
     }
     
     // Inicializar gestión de navegación principal (hamburguesa)
