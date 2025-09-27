@@ -32,6 +32,8 @@
     <link rel="preload" href="./src/assets/css/main.css" as="style">
     <link rel="preload" href="./src/assets/js/main.js" as="script">
     <link rel="preload" href="./src/assets/js/visitor-counter.js" as="script">
+      <!-- FullCalendar CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/main.min.css">
       <!-- Stylesheets -->
     <link rel="stylesheet" href="./src/assets/css/main.css">
     <link rel="stylesheet" href="./src/assets/css/navigation-advanced.css">
@@ -260,7 +262,7 @@
                                     <polyline points="15,18 9,12 15,6"></polyline>
                                 </svg>
                             </button>
-                            
+                        
                             <div class="carousel__wrapper">
                                 <div class="carousel__track" id="carousel-track">
                                     <!-- Images will be loaded dynamically by JavaScript -->
@@ -293,6 +295,19 @@
                 <a href="#involucrate" class="button button--primary" data-i18n="cta.btn">Get Involved</a>
             </div>
         </aside>
+
+        <!-- Calendar section (styled to match site sections) -->
+        <section id="calendar" class="calendar" aria-labelledby="calendar-heading" role="region">
+          <div class="calendar__container">
+            <h2 id="calendar-heading" class="calendar__title" data-i18n="nav.calendar">Calendar</h2>
+            <!-- Optional short description for the section; keep commented if not needed -->
+            <!-- <p class="calendar__description" data-i18n="calendar.subtitle">Upcoming activities and events.</p> -->
+            <div class="calendar__wrap">
+              <div id="fc-calendar" class="calendar__fc" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
     </main>    <footer role="contentinfo" class="footer" itemscope itemtype="https://schema.org/Organization">
         <div class="footer__container">
             <div class="footer__content">
@@ -462,12 +477,17 @@
     <!-- ========================================== 
          FIN SCRIPT ANTI-CACHÉ DE DESARROLLO
          ========================================== -->
+    <!-- FullCalendar JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.15/index.global.min.js"></script>
 
     <!-- Scripts al final del body -->
     <script src="./src/assets/js/language-switcher.js"></script>
     <script src="./src/assets/js/visitor-counter.js"></script>
     <script src="./src/assets/js/about-carousel.js"></script>
     <script src="./src/assets/js/main.js"></script>
+    <!-- Calendar initialization -->
+    <script src="./src/assets/js/calendar.js"></script>
     
     <!-- Script de monitoreo del Language Switcher (solo para desarrollo) -->
     <script>

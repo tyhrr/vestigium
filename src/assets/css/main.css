@@ -1186,3 +1186,122 @@ p {
     justify-content: center;
   }
 }
+
+/* Calendar embed wrapper */
+.calendar-wrap { width: 100%; max-width: 1100px; margin: 0 auto; }
+@media (max-width: 600px) { #calendar iframe { height: 550px; } }
+
+/* Calendar (FullCalendar) */
+.calendar-wrap { width:100%; max-width:1100px; margin:0 auto; }
+#fc-calendar { padding: 8px 0; }
+
+/* ============================
+   Calendar section – unified styling with other sections
+   ============================ */
+.calendar {
+  /* Match vertical rhythm used by other sections */
+  padding-block: clamp(56px, 6vw, 96px);
+  /* Ensure anchor link scroll positions account for fixed header */
+  scroll-margin-top: var(--header-height, 80px);
+  background: var(--section-bg, transparent);
+}
+
+.calendar__container {
+  max-width: var(--container-max, 1200px);
+  margin-inline: auto;
+  padding-inline: var(--container-padding, 16px);
+}
+
+.calendar__title {
+  /* Mirror .services__title / .about__title styles */
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 clamp(16px, 1.8vw, 24px);
+  color: var(--primary-green);
+}
+
+.calendar__description {
+  margin: 0 0 clamp(20px, 2vw, 28px);
+  color: var(--text-muted, #475569);
+  max-width: 65ch;
+}
+
+.calendar__wrap {
+  /* Card-like container to match the site's surface components */
+  background: var(--surface, #fff);
+  border: 1px solid var(--border-subtle, #e5e7eb);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.calendar__fc {
+  /* Reasonable minimum height while allowing auto height on larger screens */
+  min-height: 560px;
+}
+
+/* ===== FullCalendar theme overrides (brand and typography) ===== */
+.fc {
+  --fc-border-color: var(--border-subtle, #e5e7eb);
+  --fc-page-bg-color: var(--surface, #fff);
+  --fc-neutral-bg-color: #f8fafc; /* header / "other month" background */
+  --fc-today-bg-color: rgba(46, 125, 50, 0.08);
+  --fc-event-bg-color: #2E7D32;   /* brand color */
+  --fc-event-border-color: #2E7D32;
+  --fc-event-text-color: #fff;
+}
+
+/* Toolbar spacing and appearance similar to card headers */
+.fc .fc-toolbar {
+  padding: 12px 16px;
+  background: var(--surface-2, #f9fafb);
+  border-bottom: 1px solid var(--border-subtle, #e5e7eb);
+}
+
+.fc .fc-toolbar-title {
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 700;
+  color: var(--text-strong, #0f172a);
+}
+
+/* Brand buttons with accessible focus */
+.fc .fc-button-primary {
+  background: #2E7D32;
+  border-color: #2E7D32;
+  box-shadow: none;
+}
+
+.fc .fc-button-primary:not(:disabled):hover,
+.fc .fc-button-primary:not(:disabled):focus {
+  filter: brightness(0.95);
+}
+
+.fc .fc-button:focus-visible {
+  outline: 3px solid #14532d; /* darker green for a11y */
+  outline-offset: 2px;
+}
+
+/* Day cells and headings */
+.fc .fc-col-header-cell-cushion,
+.fc .fc-daygrid-day-number {
+  font-weight: 600;
+  color: var(--text-strong, #0f172a);
+}
+
+.fc .fc-daygrid-day {
+  padding: 6px;
+}
+
+.fc .fc-daygrid-event {
+  border-radius: 8px;
+  padding: 2px 6px;
+  font-weight: 600;
+}
+
+/* Compact adjustments for small screens */
+@media (max-width: 640px) {
+  .calendar__fc { min-height: 460px; }
+  .fc .fc-toolbar { padding: 8px 10px; }
+  .fc .fc-toolbar-title { font-size: 1rem; }
+}
