@@ -2,7 +2,7 @@
 
 A small multilingual website (English/Croatian) for **Vestigium**, a community-focused association. Built with plain HTML, CSS and vanilla JavaScript — no frameworks, no build step. You can open `index.html` in a browser and it just works.
 
-Live site: https://tyhrr.github.io/Vestigium-2.0 (GitHub Pages)
+Live site: https://tyhrr.github.io/vestigium (GitHub Pages)
 
 ## What's in it
 
@@ -19,8 +19,8 @@ The palette is green/white/gray and the layout is mobile-first.
 No install needed.
 
 ```bash
-git clone https://github.com/tyhrr/Vestigium-2.0.git
-cd Vestigium-2.0
+git clone https://github.com/tyhrr/vestigium.git
+cd vestigium
 # open index.html in your browser
 ```
 
@@ -29,7 +29,7 @@ For development, the test pages live in `tests/language-switcher/` and there's a
 ## Project layout
 
 ```
-Vestigium-2.0/
+vestigium/
 ├── index.html
 ├── manifest.json, robots.txt, sitemap.xml
 ├── src/
