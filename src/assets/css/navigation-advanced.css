@@ -1189,3 +1189,23 @@
     border-radius: 0 !important;
   }
 }
+
+/* Language toggle: a square, flag-only button centred like the hamburger.
+   The fixed 40px/36px width above cannot hold flag + name + caret, which
+   overflowed onto the hamburger (desktop) and pushed the flag off-centre
+   (mobile). The language name stays in the button's aria-label. */
+.language-selector__toggle {
+  padding: 0;
+  gap: 0;
+}
+
+.language-selector__toggle .language-selector__current,
+.language-selector__toggle .language-selector__icon {
+  display: none;
+}
+
+.language-selector__toggle .language-selector__flag {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1;
+}
