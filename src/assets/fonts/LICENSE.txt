@@ -1,0 +1,4 @@
+Fraunces and Figtree are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org).
+Fraunces: Copyright 2018 The Fraunces Project Authors (https://github.com/undercasetype/Fraunces).
+Figtree: Copyright 2022 The Figtree Project Authors (https://github.com/erikdkennedy/figtree).
+Files from the @fontsource-variable packages (Latin and Latin Extended subsets).

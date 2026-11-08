@@ -16,32 +16,32 @@ colors:
   hero-panel: "#fefdfdbb"
 typography:
   display:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif"
+    fontFamily: "Fraunces, Georgia, serif"
     fontSize: "2.25rem"
     fontWeight: 700
     lineHeight: 1.25
   headline:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif"
+    fontFamily: "Fraunces, Georgia, serif"
     fontSize: "1.875rem"
     fontWeight: 700
     lineHeight: 1.25
   title:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif"
+    fontFamily: "Fraunces, Georgia, serif"
     fontSize: "1.25rem"
     fontWeight: 600
     lineHeight: 1.25
   body:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif"
+    fontFamily: "Figtree, -apple-system, Segoe UI, Roboto, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.5
   body-lead:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif"
+    fontFamily: "Figtree, -apple-system, Segoe UI, Roboto, sans-serif"
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.75
   label:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif"
+    fontFamily: "Figtree, -apple-system, Segoe UI, Roboto, sans-serif"
     fontSize: "0.875rem"
     fontWeight: 500
     lineHeight: 1.5
@@ -115,7 +115,7 @@ Sections alternate white (`services`) and mist-gray (`about`) bands, closing on 
 
 **Key Characteristics:**
 - One accent colour family (greens) on neutral ground.
-- System font stack, no web fonts: fast, legible, nothing to load.
+- Fraunces + Figtree, self-hosted (~100 KB total): warm titles, legible text.
 - Real photos of the community space carry the identity.
 - Mobile-first, centred content, 1200px max container.
 - Every string bilingual (EN/HR) through `data-i18n`.
@@ -146,15 +146,16 @@ A one-family palette: forest greens for identity and action, warm-free neutrals 
 
 ## Typography
 
-**Display / Body Font:** system UI stack (`-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, …, sans-serif`)
+**Display Font:** Fraunces (variable, self-hosted; fallback Georgia, serif)
+**Body Font:** Figtree (variable, self-hosted; fallback system sans)
 **Mono:** `'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace` (debug/technical only)
 
-**Character:** neutral and native to each device; the voice comes from the copy and photos, not the typeface.
+**Character:** a soft, slightly crafted serif for titles, the wordmark and date numerals, paired with a clear, friendly sans for everything people read. Warm and handmade without losing legibility. Both cover Latin Extended (č ć š ž đ); files and OFL licence in `src/assets/fonts/`.
 
 ### Hierarchy
-- **Display** (700, 2.25rem, 1.25): hero title and `h1`, Forest Green.
-- **Headline** (700, 1.875rem, 1.25): section titles (`h2`), Forest Green, centred in `services`, left-aligned in `about`.
-- **Title** (600, 1.25rem): card titles (`h3`), Ink.
+- **Display** (Fraunces 600, 2.25rem, 1.25): hero title and `h1`, Forest Green.
+- **Headline** (Fraunces 600, 1.875rem, 1.25): section titles (`h2`), Forest Green, centred in `services`, left-aligned in `about`.
+- **Title** (Fraunces 600, 1.25rem): card titles (`h3`), Ink.
 - **Body lead** (400, 1.125rem, 1.75): hero subtitle, CTA text; max ~600px wide.
 - **Body** (400, 1rem, 1.5): running text; card descriptions use 1.75 line-height in Ink Muted.
 - **Label** (500, 0.875rem): navigation and small UI text.
@@ -211,6 +212,6 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 
 **Don't**
 - Don't use Leaf Green or Stone Gray for text on white (insufficient contrast).
-- Don't introduce a second hue or web fonts without updating this file.
+- Don't introduce a second hue or another typeface without updating this file.
 - Don't add hard-coded colours; promote them to tokens in `main.css` and here.
 - Don't add shadows to elements at rest.
