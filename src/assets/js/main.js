@@ -847,12 +847,7 @@ const AdvancedNavigation = {
     menuItems.forEach((item, index) => {
       const submenu = item.nextElementSibling;
       const parentLi = item.closest('.navigation__item');
-      
-        link: item.textContent.trim(),
-        hasSubmenu: !!submenu,
-        hasParentLi: !!parentLi
-      });
-      
+
       if (!submenu || !parentLi) return;
 
       // Hover events para desktop
