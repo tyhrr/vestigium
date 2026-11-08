@@ -888,20 +888,9 @@
   flex: 1 1 auto;
 }
 
+/* Logo lockup sizing lives in main.css ("LOGO LOCKUP"); keep it on one line */
 .header__brand .header__logo {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  font-size: clamp(1.1rem, 3.5vw, 1.75rem);
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.header__brand .header__logo img {
-  width: clamp(28px, 6vw, 40px);
-  height: auto;
-  flex: 0 0 auto;
 }
 
 .header__top-row {

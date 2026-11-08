@@ -1997,3 +1997,45 @@ p {
     transform: none;
   }
 }
+
+/* =============================================================================
+   LOGO LOCKUP: footprint mark + wordmark, one link to the homepage
+   logo-mark.png is the footprint trimmed of its transparent padding, so no
+   negative margins or rotation are needed. Selectors carry .header__brand to
+   outrank the older header rules in navigation-advanced.css.
+   ============================================================================= */
+.header__brand .header__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0;
+  overflow: visible;
+  color: var(--text-primary);
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.header__brand .header__logo .header__logo-mark {
+  display: block;
+  width: auto;
+  height: 1.5em;
+  margin: 0;
+  transform: none;
+}
+
+.header__brand .header__logo-text {
+  color: inherit;
+}
+
+.header__brand .header__logo:hover .header__logo-text {
+  color: var(--primary-green);
+}
+
+.header__brand .header__logo:focus-visible {
+  outline: 2px solid var(--primary-green);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}

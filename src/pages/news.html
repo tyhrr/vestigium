@@ -428,112 +428,117 @@
     <!-- Header -->    <header role="banner" class="header">
         <div class="header__container">
             <!-- Primera fila para tablet (770px-1024px) -->
-            <div class="header__top-row">
-                <div class="header__brand" itemscope itemtype="https://schema.org/Organization">
-                    <div class="header__logo" itemprop="name">
-                        <a href="../../index.html" aria-label="Vestigium - Ecological-Creative Association - Home">Vestigium</a>
-                        <img src="../assets/images/logo/logo-png.png" alt="Vestigium logo">
-                    </div>
+            <div class="header__top-row" onclick="event.stopPropagation()">
+                <div class="header__brand" itemscope itemtype="https://schema.org/Organization" onclick="event.stopPropagation()">
+                    <a class="header__logo" href="../../index.html" itemprop="url" aria-label="Vestigium – home">
+                        <img class="header__logo-mark" src="../assets/images/logo/logo-mark.png" alt="" width="116" height="192">
+                        <span class="header__logo-text" itemprop="name">Vestigium</span>
+                    </a>
                 </div>
                 
                 <!-- Language Selector - will be inserted here by JavaScript -->
-            </div>
-            
-            <!-- Navigation -->
-            <nav role="navigation" class="navigation" aria-label="Main navigation">
-                <button type="button" class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false">
+
+                <nav class="navigation__quick" aria-label="Quick links">
+                    <a href="gallery.html" class="navigation__link" data-i18n="nav.gallery">Gallery</a>
+                    <a href="../../index.html#projects" class="navigation__link" data-i18n="nav.projects">Projects</a>
+                </nav>
+
+                <button type="button" class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false" onclick="(function(b){var m=document.querySelector('.navigation__menu');var o=m.getAttribute('aria-expanded')==='true';m.setAttribute('aria-expanded',o?'false':'true');b.setAttribute('aria-expanded',o?'false':'true');})(this)">
                     <span class="navigation__hamburger"></span>
                 </button>
-                
+
                 <ul class="navigation__menu" role="menubar">
+                    <!-- Calendar -->
+                    <li class="navigation__item" role="none">
+                        <a href="../../index.html#calendar" class="navigation__link" role="menuitem" data-i18n="nav.calendar">Calendar</a>
+                    </li>
+                    
                     <!-- Community Center with Dropdown -->
-                    <li class="navigation__item" role="none">                        <a href="#community-center" 
+                    <li class="navigation__item" role="none">                        <a href="../../index.html#community-center" 
                            class="navigation__link navigation__link--has-submenu" 
                            role="menuitem" 
                            aria-expanded="false"
                            data-i18n="nav.community-center">Community Center</a>
                         <ul class="navigation__submenu" role="menu">
                             <li class="navigation__item" role="none">
-                                <a href="#who-are-we" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
+                                <a href="../../index.html#nosotros" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#what-we-have-done" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
+                                <a href="../../index.html#projects" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#join-us" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
+                                <a href="../../index.html#get-engaged" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
                             </li>                            <li class="navigation__item" role="none">
-                                <a href="news.html" class="navigation__link" role="menuitem" data-i18n="nav.news">News</a>
+                                <a href="news.html" aria-current="page" class="navigation__link" role="menuitem" data-i18n="nav.news">News</a>
                             </li>
                         </ul>
                     </li>
                     
-                    <!-- Calendar -->
-                    <li class="navigation__item" role="none">
-                        <a href="#calendar" class="navigation__link" role="menuitem" data-i18n="nav.calendar">Calendar</a>
-                    </li>
+                    <!-- Calendar duplicate removed -->
                     
                     <!-- Zadruga Zelenica -->
                     <li class="navigation__item" role="none">
-                        <a href="#zadruga-zelenica" class="navigation__link" role="menuitem" data-i18n="nav.zadruga-zelenica">Zadruga Zelenica</a>
+                        <a href="../../index.html#zadruga-zelenica" class="navigation__link" role="menuitem" data-i18n="nav.zadruga-zelenica">Zadruga Zelenica</a>
                     </li>
-                    
                     
                     <!-- Get engaged with Dropdown -->
                     <li class="navigation__item" role="none">
-                        <a href="#get-engaged" 
+                        <a href="../../index.html#get-engaged" 
                            class="navigation__link navigation__link--has-submenu" 
                            role="menuitem" 
                            aria-expanded="false"
                            data-i18n="nav.get-engaged">Get engaged</a>
                         <ul class="navigation__submenu" role="menu">
                             <li class="navigation__item" role="none">
-                                <a href="#be-volunteer" class="navigation__link" role="menuitem" data-i18n="nav.be-volunteer">Be a Volunteer</a>
+                                <a href="../../index.html#be-volunteer" class="navigation__link" role="menuitem" data-i18n="nav.be-volunteer">Be a Volunteer</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#esc" class="navigation__link" role="menuitem" data-i18n="nav.esc">ESC (European Solidarity Corp)</a>
+                                <a href="../../index.html#esc" class="navigation__link" role="menuitem" data-i18n="nav.esc">ESC (European Solidarity Corp)</a>
                             </li>
                         </ul>
                     </li>
                     
                     <!-- Gallery -->
-                    <li class="navigation__item" role="none">
+                    <li class="navigation__item navigation__item--core" role="none">
                         <a href="gallery.html" class="navigation__link" role="menuitem" data-i18n="nav.gallery">Gallery</a>
                     </li>
                     
                     <!-- Projects with Complex Dropdown -->
-                    <li class="navigation__item" role="none">
-                        <a href="#projects" 
+                    <li class="navigation__item navigation__item--core" role="none">
+                        <a href="../../index.html#projects" 
                            class="navigation__link navigation__link--has-submenu" 
                            role="menuitem" 
                            aria-expanded="false"
                            data-i18n="nav.projects">Projects</a>
-                        <ul class="navigation__submenu" role="menu">                            <li class="navigation__item" role="none">
-                                <a href="#erasmus" class="navigation__link" role="menuitem" data-i18n="nav.erasmus">Erasmus</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#erasmus" class="navigation__link" role="menuitem" data-i18n="nav.erasmus">Erasmus</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#previous-projects" class="navigation__link" role="menuitem" data-i18n="nav.previous-projects">Previous projects</a>
+                                <a href="../../index.html#previous-projects" class="navigation__link" role="menuitem" data-i18n="nav.previous-projects">Previous projects</a>
                             </li>
                         </ul>
                     </li>
                     
                     <!-- Activities with Dropdown -->
                     <li class="navigation__item" role="none">
-                        <a href="#activities" 
+                        <a href="../../index.html#actividades" 
                            class="navigation__link navigation__link--has-submenu" 
                            role="menuitem" 
                            aria-expanded="false"
                            data-i18n="nav.activities">Activities</a>
                         <ul class="navigation__submenu" role="menu">
                             <li class="navigation__item" role="none">
-                                <a href="#frequent-activities" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
+                                <a href="../../index.html#actividades" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#see-more" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
+                                <a href="../../index.html#calendar" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </nav>
+            </div>
+
         </div>
     </header>
     
