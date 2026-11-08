@@ -189,6 +189,7 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 
 ## Components
 
+- **Logo**: footprint with a leaf (`src/assets/images/logo/logo-mark.png`, trimmed; `logo-png.png` square master). Foot in Deep Forest `#1B5E20`, leaf in Leaf Green `#4CAF50`. In the header it sits left of the Fraunces wordmark at 1.5em, the pair being one link to the homepage. Favicons are generated from the same mark.
 - **Buttons** (`.button`, `--primary`, `--secondary`): 44px min height for touch, 2px border, medium weight. Primary is solid Forest Green → Deep Forest on hover; secondary is a green outline that fills on hover. On the green CTA band the primary inverts to white with green text. Transition 0.3s ease-in-out.
 - **Service card** (`.service-card`): white, hairline border, 8px radius, 48px padding, centred; 64px green SVG icon from an inline sprite (`<use href="#icon-…">`), Ink title, Ink Muted description. Hover lifts 4px, shadow-lg, green border.
 - **Hero** (`.hero`): full-width storefront photo with a translucent white panel (`#fefdfdbb`, 16px radius) holding the green display title and lead text. Below the lead text, `.hero__next` names the recurring next activity (EKO PLAC, Saturday 9–11, Rudeška 142) and `.hero__actions` holds a primary "See what's on" (→ calendar) and a secondary "Get involved".
