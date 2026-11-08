@@ -14,6 +14,10 @@ colors:
   hairline: "#E0E0E0"
   footer-accent: "#A5D6A7"
   hero-panel: "#fefdfdbb"
+  terracotta: "#B44A2B"
+  ochre: "#E7A93A"
+  beetroot: "#8A3A5C"
+  pine: "#1E6B64"
 typography:
   display:
     fontFamily: "Fraunces, Georgia, serif"
@@ -114,7 +118,7 @@ A single, confident forest green growing over clean white and pale-gray ground. 
 Sections alternate white (`services`) and mist-gray (`about`) bands, closing on a solid green call-to-action band and a charcoal footer. Density is low; each section breathes with 96px vertical padding.
 
 **Key Characteristics:**
-- One accent colour family (greens) on neutral ground.
+- Greens lead on neutral ground; four earthy accents (terracotta, ochre, beetroot, pine) colour content surfaces.
 - Fraunces + Figtree, self-hosted (~100 KB total): warm titles, legible text.
 - Real photos of the community space carry the identity.
 - Mobile-first, centred content, 1200px max container.
@@ -141,7 +145,14 @@ A one-family palette: forest greens for identity and action, warm-free neutrals 
 - **Hero Panel** (#fefdfdbb): translucent white panel over the hero photo.
 
 ### Named Rules
-**The One Family Rule.** Greens are the only hue. A new colour needs a reason in PRODUCT.md, not taste.
+### Brand accents
+Taken from Vestigium's own world (the storefront mural's orange-red branches, sunflowers at the door, beetroot and textiles at the market). They give projects and categories their own identity next to the greens.
+- **Terracotta** (#B44A2B): white text 5.3:1.
+- **Ochre** (#E7A93A): always with Ink text (7.8:1); white text fails (2.1:1).
+- **Beetroot** (#8A3A5C): white text 7.4:1.
+- **Pine** (#1E6B64): white text 6.3:1.
+
+**The Greens Lead Rule.** Greens stay the brand and the only colour for actions (buttons, links, focus). Accents fill surfaces that label content (project tiles, categories); they never replace a green call to action, and at most one accent surface dominates a viewport.
 **The Green Is Earned Rule.** Forest Green marks titles and actions; body copy stays Ink.
 
 ## Typography
@@ -191,6 +202,7 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 
 - **Logo**: footprint with a leaf (`src/assets/images/logo/logo-mark.png`, trimmed; `logo-png.png` square master). Foot in Deep Forest `#1B5E20`, leaf in Leaf Green `#4CAF50`. In the header it sits left of the Fraunces wordmark at 1.5em, the pair being one link to the homepage. Favicons are generated from the same mark.
 - **Get involved** (`.involve`): one section with two groups divided by a hairline, "Here in the neighbourhood" and "From abroad: European programmes" (with the Erasmus+ logo). Each group has a title column and cards with title (Fraunces), a green "who it's for" line, description and a "Write to us" mailto link.
+- **Project bento** (`.project-bento`): 4-column grid on desktop (two 2×2 feature tiles, four single tiles), 2 columns on tablet, 1 on phones. Each tile is a solid brand colour with faint footprint contour lines, a white circular Lucide icon badge, Fraunces title (light 400 at 2.25rem on feature tiles), description and a darkened category chip. Ochre tiles use Ink text.
 - **Buttons** (`.button`, `--primary`, `--secondary`): 44px min height for touch, 2px border, medium weight. Primary is solid Forest Green → Deep Forest on hover; secondary is a green outline that fills on hover. On the green CTA band the primary inverts to white with green text. Transition 0.3s ease-in-out.
 - **Service card** (`.service-card`): white, hairline border, 8px radius, 48px padding, centred; 64px green SVG icon from an inline sprite (`<use href="#icon-…">`), Ink title, Ink Muted description. Hover lifts 4px, shadow-lg, green border.
 - **Hero** (`.hero`): full-width storefront photo with a translucent white panel (`#fefdfdbb`, 16px radius) holding the green display title and lead text. Below the lead text, `.hero__next` names the recurring next activity (EKO PLAC, Saturday 9–11, Rudeška 142) and `.hero__actions` holds a primary "See what's on" (→ calendar) and a secondary "Get involved".
@@ -214,6 +226,6 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 
 **Don't**
 - Don't use Leaf Green or Stone Gray for text on white (insufficient contrast).
-- Don't introduce a second hue or another typeface without updating this file.
+- Don't introduce a hue beyond the greens and the four accents, or another typeface, without updating this file.
 - Don't add hard-coded colours; promote them to tokens in `main.css` and here.
 - Don't add shadows to elements at rest.

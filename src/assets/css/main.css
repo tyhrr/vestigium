@@ -59,6 +59,12 @@
   --border-color: #E0E0E0;       /* Color de bordes */
   --footer-accent: #A5D6A7;      /* Verde sobre fondo oscuro (6.1:1 sobre --dark-gray) */
   --hero-panel: #fefdfdbb;       /* Panel translúcido del hero */
+
+  /* === BRAND ACCENTS (taken from Vestigium's own world: mural, market, textiles) === */
+  --terracotta: #B44A2B;         /* Ramas del mural, calabazas (texto blanco 5.3:1) */
+  --ochre: #E7A93A;              /* Girasoles (usar texto Ink: 7.8:1) */
+  --beetroot: #8A3A5C;           /* Remolacha, textiles (texto blanco 7.4:1) */
+  --pine: #1E6B64;               /* Verde azulado (texto blanco 6.3:1) */
   
   /* === TIPOGRAFÍA === */
   --font-family-primary: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -2253,4 +2259,183 @@ h3 {
 .involve-group:target .involve-group__title,
 .involve-card:target {
   border-color: var(--primary-green);
+}
+
+/* =============================================================================
+   PROJECTS: bento grid of colour tiles
+   Contour lines in each tile echo a footprint (Vestigium = "footprint").
+   ============================================================================= */
+.project-bento {
+  list-style: none;
+  margin: var(--space-xl) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  text-align: left;
+}
+
+@media (min-width: 700px) {
+  .project-bento {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a b"
+      "c c"
+      "d d"
+      "e f";
+  }
+}
+
+@media (min-width: 1100px) {
+  .project-bento {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(14rem, auto);
+    grid-template-areas:
+      "a b c c"
+      "d d c c"
+      "d d e f";
+  }
+}
+
+@media (min-width: 700px) {
+  .project-tile--area-a { grid-area: a; }
+  .project-tile--area-b { grid-area: b; }
+  .project-tile--area-c { grid-area: c; }
+  .project-tile--area-d { grid-area: d; }
+  .project-tile--area-e { grid-area: e; }
+  .project-tile--area-f { grid-area: f; }
+}
+
+.project-tile {
+  --tile: var(--primary-green);
+  --tile-ink: var(--white);
+  --tile-lines: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none' stroke='%23fff' stroke-opacity='.14' stroke-width='3'%3E%3Cg transform='rotate(-24 330 330)'%3E%3Cellipse cx='330' cy='330' rx='40' ry='58'/%3E%3Cellipse cx='330' cy='330' rx='76' ry='106'/%3E%3Cellipse cx='330' cy='330' rx='112' ry='154'/%3E%3Cellipse cx='330' cy='330' rx='148' ry='202'/%3E%3Cellipse cx='330' cy='330' rx='184' ry='250'/%3E%3Cellipse cx='330' cy='330' rx='220' ry='298'/%3E%3Cellipse cx='330' cy='330' rx='256' ry='346'/%3E%3C/g%3E%3C/svg%3E");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  min-height: 14rem;
+  padding: var(--space-lg);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  color: var(--tile-ink);
+  background-color: var(--tile);
+  background-image: var(--tile-lines);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 22rem auto;
+  transition: transform var(--transition-normal);
+}
+
+.project-tile:hover {
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-tile {
+    transition: none;
+  }
+
+  .project-tile:hover {
+    transform: none;
+  }
+}
+
+.project-tile--forest { --tile: var(--primary-green); }
+.project-tile--deep { --tile: var(--dark-green); }
+.project-tile--terracotta { --tile: var(--terracotta); }
+.project-tile--beetroot { --tile: var(--beetroot); }
+.project-tile--pine { --tile: var(--pine); }
+
+.project-tile--ochre {
+  --tile: var(--ochre);
+  --tile-ink: var(--text-primary);
+  --tile-lines: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none' stroke='%23000' stroke-opacity='.08' stroke-width='3'%3E%3Cg transform='rotate(-24 330 330)'%3E%3Cellipse cx='330' cy='330' rx='40' ry='58'/%3E%3Cellipse cx='330' cy='330' rx='76' ry='106'/%3E%3Cellipse cx='330' cy='330' rx='112' ry='154'/%3E%3Cellipse cx='330' cy='330' rx='148' ry='202'/%3E%3Cellipse cx='330' cy='330' rx='184' ry='250'/%3E%3Cellipse cx='330' cy='330' rx='220' ry='298'/%3E%3Cellipse cx='330' cy='330' rx='256' ry='346'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.project-tile__icon {
+  align-self: flex-end;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--tile);
+}
+
+.project-tile--ochre .project-tile__icon {
+  color: var(--text-primary);
+}
+
+.project-tile__icon-svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.project-tile__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.project-tile__title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: inherit;
+}
+
+.project-tile__desc {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  color: inherit;
+}
+
+.project-tile__tag {
+  align-self: flex-start;
+  margin: var(--space-xs) 0 0;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+  background-color: rgba(0, 0, 0, 0.22);
+  color: inherit;
+}
+
+.project-tile--ochre .project-tile__tag {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Large tiles: editorial headline, roomier copy */
+@media (min-width: 700px) {
+  .project-tile--large {
+    padding: var(--space-xl);
+    background-size: 34rem auto;
+  }
+
+  .project-tile--large .project-tile__icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .project-tile--large .project-tile__icon-svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .project-tile--large .project-tile__title {
+    font-size: var(--font-size-4xl);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+  }
+
+  .project-tile--large .project-tile__desc {
+    max-width: 36ch;
+    font-size: var(--font-size-lg);
+  }
 }

@@ -169,12 +169,12 @@ const TRANSLATIONS = {
     projects: {
       title: 'Projects',
       subtitle: 'Our current and recent projects supported by the City of Zagreb, EU and foundations.',
-      sustainable: { title: 'Sustainable Future - Path to Healthy Food', desc: 'Regenerative agriculture, short supply chains and school gardens. Education on healthy soil and biodiversity.' },
-      culture: { title: 'Culture in Brezovica', desc: 'Performances, concerts, creative workshops and cultural evenings connecting residents, artists and schools.' },
-      kreaktivno: { title: 'KreAktivno 2026', desc: 'Erasmus+ adult mobility for capacity building at ufaFabrik (Berlin) and Center Rog (Ljubljana).' },
-      livinglab: { title: 'Living Lab - Just and Regenerative Community', desc: 'Community activities, gardening club, clothing swaps and textile upcycling in Vrbani and Brezovica.' },
-      institutional: { title: 'Institutional Support for Civil Society', desc: 'Capacity building, program development and digitalization supported by the National Foundation.' },
-      regenerative: { title: 'Regenerative Communities Fund', desc: 'Community-led regeneration supported by ECOLISE and Funding Fairer Futures.' }
+      sustainable: { title: 'Sustainable Future - Path to Healthy Food', desc: 'Regenerative agriculture, short supply chains and school gardens. Education on healthy soil and biodiversity.', tag: 'Food & soil' },
+      culture: { title: 'Culture in Brezovica', desc: 'Performances, concerts, creative workshops and cultural evenings connecting residents, artists and schools.', tag: 'Culture' },
+      kreaktivno: { title: 'KreAktivno 2026', desc: 'Erasmus+ adult mobility for capacity building at ufaFabrik (Berlin) and Center Rog (Ljubljana).', tag: 'Erasmus+ · Berlin & Ljubljana' },
+      livinglab: { title: 'Living Lab - Just and Regenerative Community', desc: 'Community activities, gardening club, clothing swaps and textile upcycling in Vrbani and Brezovica.', tag: 'Community · Vrbani & Brezovica' },
+      institutional: { title: 'Institutional Support for Civil Society', desc: 'Capacity building, program development and digitalization supported by the National Foundation.', tag: 'Organisation' },
+      regenerative: { title: 'Regenerative Communities Fund', desc: 'Community-led regeneration supported by ECOLISE and Funding Fairer Futures.', tag: 'Regeneration' }
     },
     national: {
       title: 'National',
@@ -404,12 +404,12 @@ const TRANSLATIONS = {
     projects: {
       title: 'Projekti',
       subtitle: 'Naši aktualni i nedavni projekti uz podršku Grada Zagreba, EU i zaklada.',
-      sustainable: { title: 'Održiva budućnost - put do zdrave hrane', desc: 'Regenerativna poljoprivreda, kratki lanci opskrbe i školski vrtovi. Edukacija o zdravom tlu i bioraznolikosti.' },
-      culture: { title: 'Kultura u Brezovici', desc: 'Predstave, koncerti, kreativne radionice i kulturne večeri koje povezuju stanovnike, umjetnike i škole.' },
-      kreaktivno: { title: 'KreAktivno 2026', desc: 'Erasmus+ mobilnost za odrasle za jačanje kapaciteta u ufaFabrik (Berlin) i Center Rog (Ljubljana).' },
-      livinglab: { title: 'Living Lab - pravedna i regenerativna zajednica', desc: 'Aktivnosti zajednice, vrtlarski klub, razmjena odjeće i upcycling tekstila u Vrbanima i Brezovici.' },
-      institutional: { title: 'Institucionalna podrška civilnom društvu', desc: 'Jačanje kapaciteta, razvoj programa i digitalizacija uz podršku Nacionalne zaklade.' },
-      regenerative: { title: 'Fond regenerativnih zajednica', desc: 'Regeneracija vođena zajednicom uz podršku ECOLISE i Funding Fairer Futures.' }
+      sustainable: { title: 'Održiva budućnost - put do zdrave hrane', desc: 'Regenerativna poljoprivreda, kratki lanci opskrbe i školski vrtovi. Edukacija o zdravom tlu i bioraznolikosti.', tag: 'Hrana i tlo' },
+      culture: { title: 'Kultura u Brezovici', desc: 'Predstave, koncerti, kreativne radionice i kulturne večeri koje povezuju stanovnike, umjetnike i škole.', tag: 'Kultura' },
+      kreaktivno: { title: 'KreAktivno 2026', desc: 'Erasmus+ mobilnost za odrasle za jačanje kapaciteta u ufaFabrik (Berlin) i Center Rog (Ljubljana).', tag: 'Erasmus+ · Berlin i Ljubljana' },
+      livinglab: { title: 'Living Lab - pravedna i regenerativna zajednica', desc: 'Aktivnosti zajednice, vrtlarski klub, razmjena odjeće i upcycling tekstila u Vrbanima i Brezovici.', tag: 'Zajednica · Vrbani i Brezovica' },
+      institutional: { title: 'Institucionalna podrška civilnom društvu', desc: 'Jačanje kapaciteta, razvoj programa i digitalizacija uz podršku Nacionalne zaklade.', tag: 'Organizacija' },
+      regenerative: { title: 'Fond regenerativnih zajednica', desc: 'Regeneracija vođena zajednicom uz podršku ECOLISE i Funding Fairer Futures.', tag: 'Regeneracija' }
     },
     national: {
       title: 'Nacionalno',
