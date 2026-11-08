@@ -1,3 +1,7 @@
 archive/
 node_modules/
 .DS_Store
+# Impeccable runtime (keep config.json, design.json committed)
+.impeccable/live/*
+!.impeccable/live/config.json
+.impeccable/config.local.json

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T14:00:00Z",
+  "title": "Design System: Vestigium",
+  "extensions": {
+    "colorMeta": {
+      "forest-green": { "role": "primary", "displayName": "Forest Green", "canonical": "#2E7D32", "tonalRamp": ["#1B5E20", "#2E7D32", "#4CAF50"] },
+      "mist-gray": { "role": "neutral", "displayName": "Mist Gray", "canonical": "#F5F5F5" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#212121" },
+      "charcoal": { "role": "neutral", "displayName": "Charcoal", "canonical": "#424242" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero title and h1, Forest Green." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles (h2), Forest Green." },
+      "body-lead": { "displayName": "Body lead", "purpose": "Hero subtitle and CTA text, max ~600px." }
+    },
+    "shadows": [
+      { "name": "sm", "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)", "purpose": "Subtle separation." },
+      { "name": "md", "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)", "purpose": "Button hover." },
+      { "name": "lg", "value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)", "purpose": "Card hover." }
+    ],
+    "motion": [
+      { "name": "fast", "value": "0.15s ease-in-out", "purpose": "Micro state changes." },
+      { "name": "normal", "value": "0.3s ease-in-out", "purpose": "Buttons, cards, hover lifts." },
+      { "name": "slow", "value": "0.5s ease-in-out", "purpose": "Larger reveals." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" }, { "name": "md", "value": "768px" }, { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }, { "name": "2xl", "value": "1536px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button", "kind": "button", "refersTo": "button-primary",
+      "description": "Main action; solid forest green, deep forest on hover.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Discover Activities</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:44px;padding:8px 24px;border:2px solid #2E7D32;border-radius:6px;background:#2E7D32;color:#fff;font:500 1rem system-ui,sans-serif;text-decoration:none;transition:all .3s ease-in-out}.ds-btn:hover{background:#1B5E20;border-color:#1B5E20;transform:translateY(-1px);box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)}"
+    },
+    {
+      "name": "Service Card", "kind": "card", "refersTo": "service-card",
+      "description": "Activity area card with green icon; lifts on hover.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-ic\">●</div><h3>Education &amp; Workshops</h3><p>Urban gardening, composting, cooking and more.</p></article>",
+      "css": ".ds-card{background:#fff;border:1px solid #E0E0E0;border-radius:8px;padding:48px;text-align:center;font-family:system-ui,sans-serif;transition:all .3s ease-in-out}.ds-card:hover{transform:translateY(-4px);box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);border-color:#2E7D32}.ds-card h3{color:#212121}.ds-card p{color:#595959;line-height:1.75}.ds-ic{color:#2E7D32;font-size:40px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Neighbourhood Garden (provisional)",
+    "rules": ["The One Family Rule", "The Green Is Earned Rule", "The Flat-By-Default Rule"]
+  }
+}
