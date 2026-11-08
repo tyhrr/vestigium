@@ -964,7 +964,7 @@ const AdvancedNavigation = {
   /**
    * Manejar click fuera del menú
    */  handleOutsideClick(e) {
-    const navigation = Utils.$('.navigation');
+    const navigation = Utils.$('.navigation__menu');
     if (!navigation || navigation.contains(e.target)) return;
     
     // Cerrar todos los submenús

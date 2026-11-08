@@ -14,7 +14,7 @@ Three audiences of equal weight; no single one dominates the site (confirmed by 
 - **International young people**: volunteers in the European Solidarity Corps (ESC) and Erasmus+ participants looking for a project in Croatia.
 - **Partners and funders**: foundations, NGOs and public bodies assessing the association's track record.
 
-Because the audiences are balanced, every page must let each of them find their path quickly without one audience's content burying the others.
+The site is purely informational: no accounts, logins or user areas, and no separate entry points per audience. One page tells everyone what Vestigium is, what happens when, and where.
 
 ## Product Purpose
 
@@ -35,7 +35,7 @@ A grassroots, neighbour-founded community space that is also part of the Global 
 
 ## Capabilities and Constraints
 
-- Static site: plain HTML, CSS and vanilla JavaScript, no framework and no build step; hosted on GitHub Pages (`tyhrr.github.io/vestigium`). Must keep working by opening `index.html` directly.
+- Static site: plain HTML, CSS and vanilla JavaScript, no framework and no build step; hosted on GitHub Pages; the canonical domain is `https://tyhrr.github.io/vestigium/` (owner decision: no custom domain for now). Must keep working by opening `index.html` directly.
 - Existing features: EN/HR language switcher (`data-i18n` keys), About carousel, multi-level responsive navigation with hamburger menu, footer visitor counter (localStorage), PWA manifest, robots.txt, sitemap.xml.
 - Any new copy must be added in both languages.
 - Two locations (confirmed on the association's previous site): **Community Center Vrbani**, Rudeška 142, Zagreb, and **Cooperative Community Center Zelenica**, Grančarska 2a, Brezovica (opened 2022). The office is at Grančarska 2a. Vrbani is where the association was founded.
@@ -61,7 +61,7 @@ The figures below are self-reported by the association on its previous site (udr
 
 Recurring programme (previous site): EKO PLAC local farmers market every **Saturday 9–11**; green-basket delivery Mondays (Vrbani) and Tuesdays (Brezovica); clothes swap usually the last Saturday of the month 10–12; evening yoga, fitness or dance; free library.
 
-Contact (previous site): +385 95 856 12 70, info@vestigium.hr; the current site footer uses udruga.vestigium@gmail.com. **Open decision:** which email is current.
+Contact: +385 95 856 12 70, **udruga.vestigium@gmail.com** (confirmed by the owner; the old info@vestigium.hr is not used).
 
 Real assets: activity photos in `src/assets/images/activities/` (9 images), Erasmus imagery in `src/assets/images/erasmus/`, hero banner `src/assets/images/index/banner-hero.jpg`.
 
@@ -70,7 +70,7 @@ Absent: testimonials, partner logos. Do not fabricate them.
 ## Product Principles
 
 1. **What's on next comes first.** Upcoming activities and how to attend are the shortest path on the site.
-2. **Three doors, equal weight.** Neighbours, international youth and partners each get a clear, findable route.
+2. **One informational page, no repetition.** Each topic appears once; no per-audience paths or user areas.
 3. **Bilingual by default.** No feature or string ships in only one language.
 4. **Real over claimed.** Show actual photos and verified facts; unverified numbers stay out of prominent placements.
 5. **Simple to maintain.** Keep the no-build, static nature so a single developer can sustain it.

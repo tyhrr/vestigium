@@ -5,7 +5,7 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <!-- Página principal -->
   <url>
-    <loc>https://vestigium.hr/</loc>
+    <loc>https://tyhrr.github.io/vestigium/</loc>
     <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
 
   <!-- Sección Actividades -->
   <url>
-    <loc>https://vestigium.hr/#actividades</loc>
+    <loc>https://tyhrr.github.io/vestigium/#actividades</loc>
     <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -21,7 +21,7 @@
 
   <!-- Sección Nosotros -->
   <url>
-    <loc>https://vestigium.hr/#nosotros</loc>
+    <loc>https://tyhrr.github.io/vestigium/#nosotros</loc>
     <lastmod>2025-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
 
   <!-- Sección Involúcrate -->
   <url>
-    <loc>https://vestigium.hr/#involucrate</loc>
+    <loc>https://tyhrr.github.io/vestigium/#get-engaged</loc>
     <lastmod>2025-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -37,7 +37,7 @@
 
   <!-- Sección Contacto -->
   <url>
-    <loc>https://vestigium.hr/#contacto</loc>
+    <loc>https://tyhrr.github.io/vestigium/#contacto</loc>
     <lastmod>2025-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -45,26 +45,11 @@
 
   <!-- Páginas adicionales (cuando se implementen) -->
   <!--
-  <url>
-    <loc>https://vestigium2.com/src/pages/about.html</loc>
-    <lastmod>2025-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://vestigium2.com/src/pages/services.html</loc>
-    <lastmod>2025-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://vestigium2.com/src/pages/contact.html</loc>
-    <lastmod>2025-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
   -->
 
+  <url>
+    <loc>https://tyhrr.github.io/vestigium/src/pages/news.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -21,4 +21,4 @@ Allow: /sitemap.xml
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://vestigium.hr/sitemap.xml
+Sitemap: https://tyhrr.github.io/vestigium/sitemap.xml

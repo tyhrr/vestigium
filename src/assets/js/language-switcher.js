@@ -119,12 +119,6 @@ const TRANSLATIONS = {
       text2: 'As part of the <strong>Global Transition Movement for Sustainable Communities</strong>, we work to solve problems such as the growing distance between people, the lack of meeting and socializing places, and the exclusion of families and elderly residents.',
       text3: 'Since 2017 we are beneficiaries of institutional support from the National Foundation for Civil Society Development. In 2017 we were presented as an inspiring example "Changemakers" from Croatia, and in 2018 nominated among the top 30 projects for the "Social Marie Award" among 250 European socially innovative projects.'
     },    
-      detail: {
-        title: 'About Vestigium',
-        text1: 'Vestigium Association (lat. footprint) is an ecological-creative association for improving the quality of our community by approaching and promoting a healthy and sustainable way for our future. The idea of founding the association arose in 2011 by six women listening to the needs of their neighbours in creating a multifunctional space where initiatives could take place and develop.',
-        text2: 'The Vrbana area is a typical young district of Zagreb with many residents being families. Services such as a market, a library, a health center and a community center have long been missing. Vestigium provides some of these by holding a farmers market, creating a free library, having poetry evenings, arranging storytelling sessions for the youngest and by organizing lectures and workshops on living a healthy lifestyle, cooking, sewing, relaxing as well as on educational, ecological and eco-creative content.',
-        text3: 'Every year the association conducts over 1000 activities to educate children and youth in their participation in society, supporting the empowerment of women, preventing and fighting against all forms of addictions, helping social services and health care, maintaining international development cooperation, supporting social entrepreneurship developing and promoting of science, education, lifelong learning, culture, arts and succeeding as a community.'
-      },
     // Community & Projects (added)
     community: {
       title: 'Community Center',
