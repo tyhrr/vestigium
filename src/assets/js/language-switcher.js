@@ -140,8 +140,25 @@ const TRANSLATIONS = {
       esc: { title: 'ESC (European Solidarity Corps)', desc: 'International volunteering and solidarity projects for young people. Gain experience and contribute to community development.' }
     },
     gallery: {
+      metaTitle: 'Gallery - Vestigium',
       title: 'Gallery',
-      text: 'Moments from our community activities, workshops and events.'
+      text: 'Moments from our community activities, workshops and events.',
+      lead: 'Life at Vestigium in pictures: the Saturday market, workshops, swaps, evenings in the library and days in the Zelenica garden. Everything here is made by neighbours, for neighbours.',
+      stories: {
+        title: 'What happens at Vestigium',
+        see: 'See photos',
+        market: { title: 'EKO PLAC', meta: 'Every Saturday 9–11 · Rudeška 142', text: 'Small local and organic farmers sell directly to the neighbourhood: bread, cheese, honey, seasonal vegetables and flowers.' },
+        workshops: { title: 'Workshops', meta: 'Sewing, weaving, cooking, art', text: 'Neighbours teach neighbours: from the little sewing school and textile upcycling to healthy cooking and painting.' },
+        community: { title: 'Community life', meta: 'Free library · swaps · game nights', text: 'A living room for the neighbourhood: book exchange, monthly clothes swaps, board games, concerts and talks.' },
+        outdoors: { title: 'Zelenica & outdoors', meta: 'Brezovica · gardens · walks', text: 'The cooperative garden in Brezovica, evenings by the fire, flower beds, murals and walks in nature.' }
+      },
+      photos: { title: 'Photos', count: 'photos', more: 'Show more photos' },
+      filter: { all: 'All', market: 'Market', workshops: 'Workshops', community: 'Community', outdoors: 'Outdoors', people: 'Workshop leaders' },
+      facebook: {
+        title: 'Latest on Facebook',
+        text: 'Our newest posts, with likes, comments and shares, straight from the Udruga Vestigium page. Follow us to hear about workshops and events first.',
+        follow: 'Follow us on Facebook'
+      }
     },
     projects: {
       title: 'Projects',
@@ -360,8 +377,25 @@ const TRANSLATIONS = {
       esc: { title: 'ESC (Europske snage solidarnosti)', desc: 'Međunarodni volonterski i solidarnosni projekti za mlade. Stjecanje iskustva i doprinos razvoju zajednice.' }
     },
     gallery: {
+      metaTitle: 'Galerija - Vestigium',
       title: 'Galerija',
-      text: 'Trenuci iz naših aktivnosti, radionica i događanja.'
+      text: 'Trenuci iz naših aktivnosti, radionica i događanja.',
+      lead: 'Život Vestigiuma u slikama: subotnji plac, radionice, razmjene, večeri u knjižnici i dani u vrtu Zelenice. Sve ovo stvaraju susjedi za susjede.',
+      stories: {
+        title: 'Što se događa u Vestigiumu',
+        see: 'Pogledaj fotografije',
+        market: { title: 'EKO PLAC', meta: 'Svake subote 9–11 h · Rudeška 142', text: 'Mali lokalni i ekološki proizvođači prodaju izravno kvartu: kruh, sir, med, sezonsko povrće i cvijeće.' },
+        workshops: { title: 'Radionice', meta: 'Šivanje, pletenje, kuhanje, umjetnost', text: 'Susjedi uče susjede: od male škole šivanja i prenamjene tekstila do zdravog kuhanja i slikanja.' },
+        community: { title: 'Život zajednice', meta: 'Slobodna knjižnica · razmjene · večeri igara', text: 'Dnevni boravak kvarta: razmjena knjiga, mjesečne razmjene odjeće, društvene igre, koncerti i razgovori.' },
+        outdoors: { title: 'Zelenica i priroda', meta: 'Brezovica · vrtovi · šetnje', text: 'Zadružni vrt u Brezovici, večeri uz vatru, cvjetnjaci, murali i šetnje prirodom.' }
+      },
+      photos: { title: 'Fotografije', count: 'fotografija', more: 'Prikaži još fotografija' },
+      filter: { all: 'Sve', market: 'Plac', workshops: 'Radionice', community: 'Zajednica', outdoors: 'Priroda', people: 'Voditelji radionica' },
+      facebook: {
+        title: 'Najnovije na Facebooku',
+        text: 'Naše najnovije objave, s reakcijama, komentarima i dijeljenjima, izravno sa stranice Udruge Vestigium. Pratite nas i prvi saznajte za radionice i događanja.',
+        follow: 'Pratite nas na Facebooku'
+      }
     },
     projects: {
       title: 'Projekti',

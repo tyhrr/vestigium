@@ -1,0 +1,1897 @@
+{
+ "source": "Google Drive: WEB VESTIGIUM (Udruga Vestigium / Zadruga Zelenica)",
+ "photos": [
+  {
+   "src": "001-community.webp",
+   "thumb": "001-community-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "community",
+   "alt": {
+    "en": "Long table of neighbours at a game night",
+    "hr": "Susjedi za dugim stolom na večeri društvenih igara"
+   }
+  },
+  {
+   "src": "002-community.webp",
+   "thumb": "002-community-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "community",
+   "alt": {
+    "en": "Relaxed evening with food and conversation",
+    "hr": "Opuštena večer uz hranu i razgovor"
+   }
+  },
+  {
+   "src": "003-community.webp",
+   "thumb": "003-community-thumb.webp",
+   "w": 640,
+   "h": 479,
+   "category": "community",
+   "alt": {
+    "en": "Evening gathering among the bookshelves",
+    "hr": "Večernje druženje među policama s knjigama"
+   }
+  },
+  {
+   "src": "004-community.webp",
+   "thumb": "004-community-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Shared meal at the community table",
+    "hr": "Zajednički obrok za stolom centra"
+   }
+  },
+  {
+   "src": "005-workshops.webp",
+   "thumb": "005-workshops-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "workshops",
+   "alt": {
+    "en": "Preparing food together at a cooking workshop",
+    "hr": "Zajednička priprema hrane na kuharskoj radionici"
+   }
+  },
+  {
+   "src": "006-community.webp",
+   "thumb": "006-community-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "community",
+   "alt": {
+    "en": "Busy evening in the community centre",
+    "hr": "Živa večer u društvenom centru"
+   }
+  },
+  {
+   "src": "007-community.webp",
+   "thumb": "007-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Neighbours talking in the community kitchen",
+    "hr": "Susjedi u razgovoru u kuhinji centra"
+   }
+  },
+  {
+   "src": "008-community.webp",
+   "thumb": "008-community-thumb.webp",
+   "w": 512,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Young people playing a board game",
+    "hr": "Mladi igraju društvenu igru"
+   }
+  },
+  {
+   "src": "009-community.webp",
+   "thumb": "009-community-thumb.webp",
+   "w": 640,
+   "h": 482,
+   "category": "community",
+   "alt": {
+    "en": "Board games around the big table",
+    "hr": "Društvene igre za velikim stolom"
+   }
+  },
+  {
+   "src": "010-community.webp",
+   "thumb": "010-community-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "community",
+   "alt": {
+    "en": "Group lying in a circle during a relaxation session",
+    "hr": "Grupa leži u krugu na opuštanju"
+   }
+  },
+  {
+   "src": "011-outdoors.webp",
+   "thumb": "011-outdoors-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "outdoors",
+   "alt": {
+    "en": "Group in a field with a wheelbarrow of plants",
+    "hr": "Grupa na polju s tačkama punim biljaka"
+   }
+  },
+  {
+   "src": "012-market.webp",
+   "thumb": "012-market-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "market",
+   "alt": {
+    "en": "Market stalls along the centre's mural",
+    "hr": "Štandovi uz mural centra"
+   }
+  },
+  {
+   "src": "013-community.webp",
+   "thumb": "013-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Evening programme in the blue hall",
+    "hr": "Večernji program u plavoj dvorani"
+   }
+  },
+  {
+   "src": "014-community.webp",
+   "thumb": "014-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Conversation circle in the library corner",
+    "hr": "Krug razgovora u kutku knjižnice"
+   }
+  },
+  {
+   "src": "015-community.webp",
+   "thumb": "015-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Evening talk in the blue hall",
+    "hr": "Večernji razgovor u plavoj dvorani"
+   }
+  },
+  {
+   "src": "016-workshops.webp",
+   "thumb": "016-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Craft afternoon in the library",
+    "hr": "Kreativno popodne u knjižnici"
+   }
+  },
+  {
+   "src": "017-community.webp",
+   "thumb": "017-community-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "community",
+   "alt": {
+    "en": "Dinner with friends at the centre",
+    "hr": "Večera s prijateljima u centru"
+   }
+  },
+  {
+   "src": "018-workshops.webp",
+   "thumb": "018-workshops-thumb.webp",
+   "w": 640,
+   "h": 481,
+   "category": "workshops",
+   "alt": {
+    "en": "Movement session on rugs in the hall",
+    "hr": "Radionica pokreta na tepisima"
+   }
+  },
+  {
+   "src": "019-workshops.webp",
+   "thumb": "019-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Hands weaving a small basket",
+    "hr": "Ruke pletu malu košaru"
+   }
+  },
+  {
+   "src": "020-community.webp",
+   "thumb": "020-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Smiling visitors at a clothing swap",
+    "hr": "Nasmijane posjetiteljice na razmjeni odjeće"
+   }
+  },
+  {
+   "src": "021-community.webp",
+   "thumb": "021-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Neighbours chatting among the bookshelves",
+    "hr": "Susjedi razgovaraju među policama"
+   }
+  },
+  {
+   "src": "022-workshops.webp",
+   "thumb": "022-workshops-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Long table of people crafting",
+    "hr": "Dugi stol ljudi koji stvaraju"
+   }
+  },
+  {
+   "src": "023-workshops.webp",
+   "thumb": "023-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Evening workshop under warm lamps",
+    "hr": "Večernja radionica pod toplim svjetlom"
+   }
+  },
+  {
+   "src": "024-workshops.webp",
+   "thumb": "024-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Workshop participants around tables",
+    "hr": "Sudionici radionice za stolovima"
+   }
+  },
+  {
+   "src": "025-community.webp",
+   "thumb": "025-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Children reading picture books on the floor",
+    "hr": "Djeca čitaju slikovnice na podu"
+   }
+  },
+  {
+   "src": "026-community.webp",
+   "thumb": "026-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Sign of the little free library",
+    "hr": "Natpis male slobodne knjižnice"
+   }
+  },
+  {
+   "src": "027-community.webp",
+   "thumb": "027-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Families on cushions at a children's event",
+    "hr": "Obitelji na jastucima na dječjem programu"
+   }
+  },
+  {
+   "src": "028-market.webp",
+   "thumb": "028-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Flowers and shoppers at EKO PLAC",
+    "hr": "Cvijeće i kupci na EKO PLACU"
+   }
+  },
+  {
+   "src": "029-market.webp",
+   "thumb": "029-market-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Flower stall at the market",
+    "hr": "Štand s cvijećem na placu"
+   }
+  },
+  {
+   "src": "030-market.webp",
+   "thumb": "030-market-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Bouquet of garden flowers at the market",
+    "hr": "Buket vrtnog cvijeća na placu"
+   }
+  },
+  {
+   "src": "031-workshops.webp",
+   "thumb": "031-workshops-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "workshops",
+   "alt": {
+    "en": "Hands-on workshop with a big yellow sheet",
+    "hr": "Praktična radionica sa žutim platnom"
+   }
+  },
+  {
+   "src": "032-workshops.webp",
+   "thumb": "032-workshops-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "workshops",
+   "alt": {
+    "en": "Team in the colourful community kitchen",
+    "hr": "Ekipa u šarenoj kuhinji centra"
+   }
+  },
+  {
+   "src": "033-outdoors.webp",
+   "thumb": "033-outdoors-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "outdoors",
+   "alt": {
+    "en": "Pink cosmos flower in the garden",
+    "hr": "Ružičasta kozmeja u vrtu"
+   }
+  },
+  {
+   "src": "034-market.webp",
+   "thumb": "034-market-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Buying fresh vegetables from a producer",
+    "hr": "Kupnja svježeg povrća od proizvođača"
+   }
+  },
+  {
+   "src": "035-market.webp",
+   "thumb": "035-market-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Producer serving a customer at his stall",
+    "hr": "Proizvođač poslužuje kupca"
+   }
+  },
+  {
+   "src": "036-market.webp",
+   "thumb": "036-market-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Local producer presenting jars of preserves",
+    "hr": "Lokalni proizvođač predstavlja zimnicu"
+   }
+  },
+  {
+   "src": "037-workshops.webp",
+   "thumb": "037-workshops-thumb.webp",
+   "w": 640,
+   "h": 426,
+   "category": "workshops",
+   "alt": {
+    "en": "Learning to use a sewing machine",
+    "hr": "Učenje rada na šivaćem stroju"
+   }
+  },
+  {
+   "src": "038-workshops.webp",
+   "thumb": "038-workshops-thumb.webp",
+   "w": 640,
+   "h": 426,
+   "category": "workshops",
+   "alt": {
+    "en": "Young woman sewing at a machine",
+    "hr": "Mlada žena šiva na stroju"
+   }
+  },
+  {
+   "src": "039-workshops.webp",
+   "thumb": "039-workshops-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Art supplies laid out for a creative workshop",
+    "hr": "Pribor za kreativnu radionicu"
+   }
+  },
+  {
+   "src": "040-outdoors.webp",
+   "thumb": "040-outdoors-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "outdoors",
+   "alt": {
+    "en": "Children with a giant paper fish outdoors",
+    "hr": "Djeca s velikom papirnatom ribom na otvorenom"
+   }
+  },
+  {
+   "src": "041-workshops.webp",
+   "thumb": "041-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Children crafting in the library",
+    "hr": "Djeca stvaraju u knjižnici"
+   }
+  },
+  {
+   "src": "042-community.webp",
+   "thumb": "042-community-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Children sitting at the open door of the centre",
+    "hr": "Djeca sjede na otvorenim vratima centra"
+   }
+  },
+  {
+   "src": "043-community.webp",
+   "thumb": "043-community-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Sunflowers at the centre's green door",
+    "hr": "Suncokreti na zelenim vratima centra"
+   }
+  },
+  {
+   "src": "044-market.webp",
+   "thumb": "044-market-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Producers with their honey and preserves stall",
+    "hr": "Proizvođači sa štandom meda i zimnice"
+   }
+  },
+  {
+   "src": "045-workshops.webp",
+   "thumb": "045-workshops-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Kids drawing at an outdoor table",
+    "hr": "Djeca crtaju za stolom na otvorenom"
+   }
+  },
+  {
+   "src": "046-outdoors.webp",
+   "thumb": "046-outdoors-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "outdoors",
+   "alt": {
+    "en": "Outdoor craft table in the neighbourhood",
+    "hr": "Kreativni stol na otvorenom u kvartu"
+   }
+  },
+  {
+   "src": "047-outdoors.webp",
+   "thumb": "047-outdoors-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "outdoors",
+   "alt": {
+    "en": "Outdoor activities between the buildings",
+    "hr": "Aktivnosti na otvorenom među zgradama"
+   }
+  },
+  {
+   "src": "048-workshops.webp",
+   "thumb": "048-workshops-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Basket of yarn and knitting needles",
+    "hr": "Košara s vunom i iglama za pletenje"
+   }
+  },
+  {
+   "src": "049-outdoors.webp",
+   "thumb": "049-outdoors-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "outdoors",
+   "alt": {
+    "en": "Paintings on easels in the park",
+    "hr": "Slike na štafelajima u parku"
+   }
+  },
+  {
+   "src": "050-workshops.webp",
+   "thumb": "050-workshops-thumb.webp",
+   "w": 640,
+   "h": 426,
+   "category": "workshops",
+   "alt": {
+    "en": "Friends crafting at an outdoor workshop",
+    "hr": "Prijatelji stvaraju na radionici vani"
+   }
+  },
+  {
+   "src": "051-outdoors.webp",
+   "thumb": "051-outdoors-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "outdoors",
+   "alt": {
+    "en": "Picnic and storytelling in the forest",
+    "hr": "Piknik i pričanje priča u šumi"
+   }
+  },
+  {
+   "src": "052-community.webp",
+   "thumb": "052-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Bookshelves, plants and a guitar in the centre",
+    "hr": "Police, biljke i gitara u centru"
+   }
+  },
+  {
+   "src": "053-community.webp",
+   "thumb": "053-community-thumb.webp",
+   "w": 639,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Painted little free library box in the park",
+    "hr": "Oslikana kućica slobodne knjižnice u parku"
+   }
+  },
+  {
+   "src": "054-community.webp",
+   "thumb": "054-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Seated circle in the blue hall",
+    "hr": "Krug sjedenja u plavoj dvorani"
+   }
+  },
+  {
+   "src": "055-community.webp",
+   "thumb": "055-community-thumb.webp",
+   "w": 512,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Racks of clothes at a swap",
+    "hr": "Stalci s odjećom na razmjeni"
+   }
+  },
+  {
+   "src": "056-workshops.webp",
+   "thumb": "056-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Children cooking with a workshop leader",
+    "hr": "Djeca kuhaju s voditeljicom radionice"
+   }
+  },
+  {
+   "src": "057-workshops.webp",
+   "thumb": "057-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Full room at a creative workshop",
+    "hr": "Puna dvorana na kreativnoj radionici"
+   }
+  },
+  {
+   "src": "058-workshops.webp",
+   "thumb": "058-workshops-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "workshops",
+   "alt": {
+    "en": "Presentation evening in the free library",
+    "hr": "Predavanje u slobodnoj knjižnici"
+   }
+  },
+  {
+   "src": "059-market.webp",
+   "thumb": "059-market-thumb.webp",
+   "w": 512,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Busy EKO PLAC in front of the centre",
+    "hr": "Živahni EKO PLAC ispred centra"
+   }
+  },
+  {
+   "src": "060-outdoors.webp",
+   "thumb": "060-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Group cheering on a forest walk",
+    "hr": "Grupa veselo pozira na šetnji šumom"
+   }
+  },
+  {
+   "src": "061-community.webp",
+   "thumb": "061-community-thumb.webp",
+   "w": 361,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Afternoon gathering in the centre",
+    "hr": "Popodnevno druženje u centru"
+   }
+  },
+  {
+   "src": "062-workshops.webp",
+   "thumb": "062-workshops-thumb.webp",
+   "w": 360,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Painting class at the long table",
+    "hr": "Slikarski tečaj za dugim stolom"
+   }
+  },
+  {
+   "src": "063-people.webp",
+   "thumb": "063-people-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Portrait with a flower crown by a lake",
+    "hr": "Portret s cvjetnim vijencem uz jezero"
+   }
+  },
+  {
+   "src": "064-workshops.webp",
+   "thumb": "064-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Participants showing their prints",
+    "hr": "Sudionice pokazuju svoje grafike"
+   }
+  },
+  {
+   "src": "065-market.webp",
+   "thumb": "065-market-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "market",
+   "alt": {
+    "en": "Market in the park with a dog",
+    "hr": "Plac u parku s psom"
+   }
+  },
+  {
+   "src": "066-workshops.webp",
+   "thumb": "066-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Sewing a patchwork jacket",
+    "hr": "Šivanje jakne od zakrpa"
+   }
+  },
+  {
+   "src": "067-people.webp",
+   "thumb": "067-people-thumb.webp",
+   "w": 427,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader at the green door of Vestigium",
+    "hr": "Voditeljica na zelenim vratima Vestigiuma"
+   }
+  },
+  {
+   "src": "068-community.webp",
+   "thumb": "068-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Guitar and singing outdoors",
+    "hr": "Gitara i pjesma na otvorenom"
+   }
+  },
+  {
+   "src": "069-community.webp",
+   "thumb": "069-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Choosing clothes at a swap",
+    "hr": "Biranje odjeće na razmjeni"
+   }
+  },
+  {
+   "src": "070-outdoors.webp",
+   "thumb": "070-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Playful moment in the garden",
+    "hr": "Razigran trenutak u vrtu"
+   }
+  },
+  {
+   "src": "071-community.webp",
+   "thumb": "071-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Visitors at a swap in the blue hall",
+    "hr": "Posjetitelji razmjene u plavoj dvorani"
+   }
+  },
+  {
+   "src": "072-outdoors.webp",
+   "thumb": "072-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Group holding hands on a hill",
+    "hr": "Grupa drži ruke na brežuljku"
+   }
+  },
+  {
+   "src": "073-outdoors.webp",
+   "thumb": "073-outdoors-thumb.webp",
+   "w": 640,
+   "h": 361,
+   "category": "outdoors",
+   "alt": {
+    "en": "Group lying in a circle on the grass",
+    "hr": "Grupa leži u krugu na travi"
+   }
+  },
+  {
+   "src": "074-workshops.webp",
+   "thumb": "074-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Paintbrushes and the book Bajkarenje",
+    "hr": "Kistovi i knjiga Bajkarenje"
+   }
+  },
+  {
+   "src": "075-community.webp",
+   "thumb": "075-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Reading evening in the centre",
+    "hr": "Večer čitanja u centru"
+   }
+  },
+  {
+   "src": "076-community.webp",
+   "thumb": "076-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Reading a picture book in the park",
+    "hr": "Čitanje slikovnice u parku"
+   }
+  },
+  {
+   "src": "077-outdoors.webp",
+   "thumb": "077-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Planting the Cvjetnjak Vrbana flower bed",
+    "hr": "Sadnja Cvjetnjaka Vrbana"
+   }
+  },
+  {
+   "src": "078-outdoors.webp",
+   "thumb": "078-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Friends in the festival photo frame",
+    "hr": "Prijateljice u foto okviru festivala"
+   }
+  },
+  {
+   "src": "079-community.webp",
+   "thumb": "079-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Busy clothing swap",
+    "hr": "Gužva na razmjeni odjeće"
+   }
+  },
+  {
+   "src": "080-outdoors.webp",
+   "thumb": "080-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Wildflowers with handwritten labels",
+    "hr": "Livadno cvijeće s natpisima"
+   }
+  },
+  {
+   "src": "081-outdoors.webp",
+   "thumb": "081-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Jumping for joy on a country road",
+    "hr": "Skok od sreće na seoskom putu"
+   }
+  },
+  {
+   "src": "082-workshops.webp",
+   "thumb": "082-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Sewing together at the workshop",
+    "hr": "Zajedničko šivanje na radionici"
+   }
+  },
+  {
+   "src": "083-workshops.webp",
+   "thumb": "083-workshops-thumb.webp",
+   "w": 640,
+   "h": 361,
+   "category": "workshops",
+   "alt": {
+    "en": "Children planting seedlings",
+    "hr": "Djeca sade presadnice"
+   }
+  },
+  {
+   "src": "084-workshops.webp",
+   "thumb": "084-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Lecture in the full library",
+    "hr": "Predavanje u punoj knjižnici"
+   }
+  },
+  {
+   "src": "085-outdoors.webp",
+   "thumb": "085-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Value of Waste banner in the park",
+    "hr": "Transparent Value of Waste u parku"
+   }
+  },
+  {
+   "src": "086-people.webp",
+   "thumb": "086-people-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader with homemade pastries",
+    "hr": "Voditeljica s domaćim pecivom"
+   }
+  },
+  {
+   "src": "087-people.webp",
+   "thumb": "087-people-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Portrait of a workshop leader",
+    "hr": "Portret voditeljice radionice"
+   }
+  },
+  {
+   "src": "088-people.webp",
+   "thumb": "088-people-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Collage of a candle-making workshop",
+    "hr": "Kolaž radionice izrade svijeća"
+   }
+  },
+  {
+   "src": "089-people.webp",
+   "thumb": "089-people-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader with sewn textile pieces",
+    "hr": "Voditeljica sa sašivenim tekstilom"
+   }
+  },
+  {
+   "src": "090-people.webp",
+   "thumb": "090-people-thumb.webp",
+   "w": 454,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader in an apron at the table",
+    "hr": "Voditeljica radionice u pregači"
+   }
+  },
+  {
+   "src": "091-people.webp",
+   "thumb": "091-people-thumb.webp",
+   "w": 540,
+   "h": 540,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader with children in the library",
+    "hr": "Voditeljica s djecom u knjižnici"
+   }
+  },
+  {
+   "src": "092-people.webp",
+   "thumb": "092-people-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "people",
+   "alt": {
+    "en": "Embroidery hoops by a workshop leader",
+    "hr": "Vezovi u obručima voditeljice radionice"
+   }
+  },
+  {
+   "src": "093-people.webp",
+   "thumb": "093-people-thumb.webp",
+   "w": 637,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader with olive oil",
+    "hr": "Voditeljica radionice s maslinovim uljem"
+   }
+  },
+  {
+   "src": "094-market.webp",
+   "thumb": "094-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Farmers market in front of the centre",
+    "hr": "Plac ispred centra"
+   }
+  },
+  {
+   "src": "095-market.webp",
+   "thumb": "095-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Winter morning at the market stalls",
+    "hr": "Zimsko jutro na štandovima"
+   }
+  },
+  {
+   "src": "096-market.webp",
+   "thumb": "096-market-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "market",
+   "alt": {
+    "en": "Farmers holding freshly harvested carrots",
+    "hr": "Poljoprivrednici sa svježe ubranom mrkvom"
+   }
+  },
+  {
+   "src": "097-market.webp",
+   "thumb": "097-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Crate of oyster mushrooms",
+    "hr": "Gajba bukovača"
+   }
+  },
+  {
+   "src": "098-market.webp",
+   "thumb": "098-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Producer with crates of potatoes",
+    "hr": "Proizvođač s gajbama krumpira"
+   }
+  },
+  {
+   "src": "099-market.webp",
+   "thumb": "099-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Shoppers at the green market stalls",
+    "hr": "Kupci na zelenim štandovima"
+   }
+  },
+  {
+   "src": "100-market.webp",
+   "thumb": "100-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Homemade bread wrapped in paper",
+    "hr": "Domaći kruh u papiru"
+   }
+  },
+  {
+   "src": "101-market.webp",
+   "thumb": "101-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Wheels of homemade cheese",
+    "hr": "Kolutovi domaćeg sira"
+   }
+  },
+  {
+   "src": "102-market.webp",
+   "thumb": "102-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Packed homemade biscuits",
+    "hr": "Pakirani domaći keksi"
+   }
+  },
+  {
+   "src": "103-market.webp",
+   "thumb": "103-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Wholegrain bread from a local bakery",
+    "hr": "Integralni kruh iz lokalne pekare"
+   }
+  },
+  {
+   "src": "104-market.webp",
+   "thumb": "104-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Crate of red apples",
+    "hr": "Gajba crvenih jabuka"
+   }
+  },
+  {
+   "src": "105-market.webp",
+   "thumb": "105-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Stall of jams and juices in winter",
+    "hr": "Štand džemova i sokova zimi"
+   }
+  },
+  {
+   "src": "106-market.webp",
+   "thumb": "106-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Producer with fresh eggs and bread",
+    "hr": "Proizvođačica s jajima i kruhom"
+   }
+  },
+  {
+   "src": "107-market.webp",
+   "thumb": "107-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Market table full of local products",
+    "hr": "Stol pun lokalnih proizvoda"
+   }
+  },
+  {
+   "src": "108-people.webp",
+   "thumb": "108-people-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Grower holding amaranth in a flower field",
+    "hr": "Uzgajivačica s amarantom u polju cvijeća"
+   }
+  },
+  {
+   "src": "109-community.webp",
+   "thumb": "109-community-thumb.webp",
+   "w": 640,
+   "h": 361,
+   "category": "community",
+   "alt": {
+    "en": "Older neighbours chatting at the centre",
+    "hr": "Stariji susjedi u razgovoru u centru"
+   }
+  },
+  {
+   "src": "110-people.webp",
+   "thumb": "110-people-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader on a mountain viewpoint",
+    "hr": "Voditeljica radionice na vidikovcu"
+   }
+  },
+  {
+   "src": "111-market.webp",
+   "thumb": "111-market-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Pumpkins at the market by the mural",
+    "hr": "Bundeve na placu uz mural"
+   }
+  },
+  {
+   "src": "112-market.webp",
+   "thumb": "112-market-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Collage of EKO PLAC producers and products",
+    "hr": "Kolaž proizvođača i proizvoda EKO PLACA"
+   }
+  },
+  {
+   "src": "113-workshops.webp",
+   "thumb": "113-workshops-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "workshops",
+   "alt": {
+    "en": "Smiling group at a craft table",
+    "hr": "Nasmijana grupa za kreativnim stolom"
+   }
+  },
+  {
+   "src": "114-market.webp",
+   "thumb": "114-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Autumn market in front of the centre",
+    "hr": "Jesenski plac ispred centra"
+   }
+  },
+  {
+   "src": "115-market.webp",
+   "thumb": "115-market-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "market",
+   "alt": {
+    "en": "Fresh chard and kale",
+    "hr": "Svježa blitva i kelj"
+   }
+  },
+  {
+   "src": "116-community.webp",
+   "thumb": "116-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Music evening with keyboard",
+    "hr": "Glazbena večer uz klavijature"
+   }
+  },
+  {
+   "src": "117-workshops.webp",
+   "thumb": "117-workshops-thumb.webp",
+   "w": 640,
+   "h": 467,
+   "category": "workshops",
+   "alt": {
+    "en": "Laughing participants at a workshop",
+    "hr": "Nasmijani sudionici radionice"
+   }
+  },
+  {
+   "src": "118-workshops.webp",
+   "thumb": "118-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Workshop in the colourful kitchen",
+    "hr": "Radionica u šarenoj kuhinji"
+   }
+  },
+  {
+   "src": "119-workshops.webp",
+   "thumb": "119-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Participants trying a hands-on technique",
+    "hr": "Sudionici isprobavaju tehniku"
+   }
+  },
+  {
+   "src": "120-community.webp",
+   "thumb": "120-community-thumb.webp",
+   "w": 640,
+   "h": 435,
+   "category": "community",
+   "alt": {
+    "en": "Singers and guitarist in the park",
+    "hr": "Pjevačice i gitarist u parku"
+   }
+  },
+  {
+   "src": "121-workshops.webp",
+   "thumb": "121-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Cooking demonstration in the kitchen",
+    "hr": "Kuharska demonstracija u kuhinji"
+   }
+  },
+  {
+   "src": "122-workshops.webp",
+   "thumb": "122-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Hands weaving a colourful coiled basket",
+    "hr": "Ruke pletu šarenu košaru"
+   }
+  },
+  {
+   "src": "123-community.webp",
+   "thumb": "123-community-thumb.webp",
+   "w": 640,
+   "h": 482,
+   "category": "community",
+   "alt": {
+    "en": "Card game afternoon",
+    "hr": "Popodne uz kartaške igre"
+   }
+  },
+  {
+   "src": "124-community.webp",
+   "thumb": "124-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Older neighbours at the Brezovica centre",
+    "hr": "Stariji susjedi u centru u Brezovici"
+   }
+  },
+  {
+   "src": "125-workshops.webp",
+   "thumb": "125-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Children at a craft table",
+    "hr": "Djeca za kreativnim stolom"
+   }
+  },
+  {
+   "src": "126-community.webp",
+   "thumb": "126-community-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "community",
+   "alt": {
+    "en": "Browsing racks at a clothing swap",
+    "hr": "Razgledavanje odjeće na razmjeni"
+   }
+  },
+  {
+   "src": "127-community.webp",
+   "thumb": "127-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Full circle at a community talk",
+    "hr": "Pun krug na razgovoru u zajednici"
+   }
+  },
+  {
+   "src": "128-community.webp",
+   "thumb": "128-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Friends sharing a table in the centre",
+    "hr": "Prijatelji za zajedničkim stolom"
+   }
+  },
+  {
+   "src": "129-community.webp",
+   "thumb": "129-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Trying on clothes at a swap",
+    "hr": "Isprobavanje odjeće na razmjeni"
+   }
+  },
+  {
+   "src": "130-workshops.webp",
+   "thumb": "130-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Digital skills session for seniors",
+    "hr": "Radionica digitalnih vještina za starije"
+   }
+  },
+  {
+   "src": "131-community.webp",
+   "thumb": "131-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Hands joined in a circle against the sky",
+    "hr": "Ruke spojene u krug prema nebu"
+   }
+  },
+  {
+   "src": "132-people.webp",
+   "thumb": "132-people-thumb.webp",
+   "w": 512,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader holding a moss panel",
+    "hr": "Voditeljica s pločom od mahovine"
+   }
+  },
+  {
+   "src": "133-market.webp",
+   "thumb": "133-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Jars of seeds and coloured corn",
+    "hr": "Staklenke sjemenja i šareni kukuruz"
+   }
+  },
+  {
+   "src": "134-workshops.webp",
+   "thumb": "134-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Healthy cooking workshop table",
+    "hr": "Stol kuharske radionice zdrave prehrane"
+   }
+  },
+  {
+   "src": "135-outdoors.webp",
+   "thumb": "135-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Bike ride in Brezovica",
+    "hr": "Vožnja biciklima u Brezovici"
+   }
+  },
+  {
+   "src": "136-market.webp",
+   "thumb": "136-market-thumb.webp",
+   "w": 640,
+   "h": 361,
+   "category": "market",
+   "alt": {
+    "en": "EKO PLAC under the community centre sign",
+    "hr": "EKO PLAC ispod natpisa centra"
+   }
+  },
+  {
+   "src": "137-community.webp",
+   "thumb": "137-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Audience at an event in the Brezovica centre",
+    "hr": "Publika na događanju u centru u Brezovici"
+   }
+  },
+  {
+   "src": "138-market.webp",
+   "thumb": "138-market-thumb.webp",
+   "w": 576,
+   "h": 576,
+   "category": "market",
+   "alt": {
+    "en": "Child hiding behind a giant cabbage",
+    "hr": "Dijete skriveno iza velikog kupusa"
+   }
+  },
+  {
+   "src": "139-workshops.webp",
+   "thumb": "139-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Hands-on workshop in the blue hall",
+    "hr": "Praktična radionica u plavoj dvorani"
+   }
+  },
+  {
+   "src": "140-workshops.webp",
+   "thumb": "140-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Textile upcycling workshop",
+    "hr": "Radionica prenamjene tekstila"
+   }
+  },
+  {
+   "src": "141-workshops.webp",
+   "thumb": "141-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Notebooks bound at a workshop",
+    "hr": "Bilježnice uvezane na radionici"
+   }
+  },
+  {
+   "src": "142-workshops.webp",
+   "thumb": "142-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Sewing paper on a machine",
+    "hr": "Šivanje papira na stroju"
+   }
+  },
+  {
+   "src": "143-community.webp",
+   "thumb": "143-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Audience at an evening event",
+    "hr": "Publika na večernjem događanju"
+   }
+  },
+  {
+   "src": "144-community.webp",
+   "thumb": "144-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Team of the Value of Waste project",
+    "hr": "Tim projekta Value of Waste"
+   }
+  },
+  {
+   "src": "145-workshops.webp",
+   "thumb": "145-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Collage of a bike repair workshop",
+    "hr": "Kolaž radionice popravka bicikala"
+   }
+  },
+  {
+   "src": "146-outdoors.webp",
+   "thumb": "146-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Evening gathering in the Zelenica garden",
+    "hr": "Večernje druženje u vrtu Zelenice"
+   }
+  },
+  {
+   "src": "147-outdoors.webp",
+   "thumb": "147-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Campfire evening at Zelenica",
+    "hr": "Večer uz vatru u Zelenici"
+   }
+  },
+  {
+   "src": "148-market.webp",
+   "thumb": "148-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Morning market with shoppers",
+    "hr": "Jutarnji plac s kupcima"
+   }
+  },
+  {
+   "src": "149-community.webp",
+   "thumb": "149-community-thumb.webp",
+   "w": 572,
+   "h": 540,
+   "category": "community",
+   "alt": {
+    "en": "Dance performance at the Brezovica centre",
+    "hr": "Plesna izvedba u centru u Brezovici"
+   }
+  },
+  {
+   "src": "150-community.webp",
+   "thumb": "150-community-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "community",
+   "alt": {
+    "en": "Children's programme at the Brezovica centre",
+    "hr": "Dječji program u centru u Brezovici"
+   }
+  },
+  {
+   "src": "151-workshops.webp",
+   "thumb": "151-workshops-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "workshops",
+   "alt": {
+    "en": "Participant showing her embroidery",
+    "hr": "Sudionica pokazuje svoj vez"
+   }
+  },
+  {
+   "src": "152-community.webp",
+   "thumb": "152-community-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "community",
+   "alt": {
+    "en": "Puppet show at the Brezovica centre",
+    "hr": "Lutkarska predstava u centru u Brezovici"
+   }
+  },
+  {
+   "src": "153-people.webp",
+   "thumb": "153-people-thumb.webp",
+   "w": 555,
+   "h": 640,
+   "category": "people",
+   "alt": {
+    "en": "Workshop leader with fresh vegetables",
+    "hr": "Voditeljica sa svježim povrćem"
+   }
+  },
+  {
+   "src": "154-outdoors.webp",
+   "thumb": "154-outdoors-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "outdoors",
+   "alt": {
+    "en": "Children holding up their drawings",
+    "hr": "Djeca pokazuju svoje crteže"
+   }
+  },
+  {
+   "src": "155-outdoors.webp",
+   "thumb": "155-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Walking through the Zelenica garden",
+    "hr": "Šetnja vrtom Zelenice"
+   }
+  },
+  {
+   "src": "156-market.webp",
+   "thumb": "156-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Flower stall in the park",
+    "hr": "Štand s cvijećem u parku"
+   }
+  },
+  {
+   "src": "157-market.webp",
+   "thumb": "157-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Producers and volunteers at the market",
+    "hr": "Proizvođači i volonteri na placu"
+   }
+  },
+  {
+   "src": "158-community.webp",
+   "thumb": "158-community-thumb.webp",
+   "w": 640,
+   "h": 640,
+   "category": "community",
+   "alt": {
+    "en": "Clothing swap in front of a mural",
+    "hr": "Razmjena odjeće ispred murala"
+   }
+  },
+  {
+   "src": "159-workshops.webp",
+   "thumb": "159-workshops-thumb.webp",
+   "w": 640,
+   "h": 491,
+   "category": "workshops",
+   "alt": {
+    "en": "Children painting eggs together",
+    "hr": "Djeca zajedno bojaju jaja"
+   }
+  },
+  {
+   "src": "160-community.webp",
+   "thumb": "160-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Quiet afternoon in the library",
+    "hr": "Mirno popodne u knjižnici"
+   }
+  },
+  {
+   "src": "161-market.webp",
+   "thumb": "161-market-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "market",
+   "alt": {
+    "en": "Neighbours at a market stall",
+    "hr": "Susjedi na štandu"
+   }
+  },
+  {
+   "src": "162-workshops.webp",
+   "thumb": "162-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Creative workshop around the table",
+    "hr": "Kreativna radionica za stolom"
+   }
+  },
+  {
+   "src": "163-community.webp",
+   "thumb": "163-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Grandmother and child at the centre",
+    "hr": "Baka i dijete u centru"
+   }
+  },
+  {
+   "src": "164-outdoors.webp",
+   "thumb": "164-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Colourful festival gate in the park",
+    "hr": "Šarena ulazna vrata festivala u parku"
+   }
+  },
+  {
+   "src": "165-community.webp",
+   "thumb": "165-community-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "community",
+   "alt": {
+    "en": "Gathering in the sunny library",
+    "hr": "Druženje u sunčanoj knjižnici"
+   }
+  },
+  {
+   "src": "166-outdoors.webp",
+   "thumb": "166-outdoors-thumb.webp",
+   "w": 640,
+   "h": 480,
+   "category": "outdoors",
+   "alt": {
+    "en": "Outdoor workshop tables in the park",
+    "hr": "Stolovi radionice na otvorenom u parku"
+   }
+  },
+  {
+   "src": "167-community.webp",
+   "thumb": "167-community-thumb.webp",
+   "w": 640,
+   "h": 385,
+   "category": "community",
+   "alt": {
+    "en": "Hands stacked together",
+    "hr": "Ruke složene zajedno"
+   }
+  },
+  {
+   "src": "168-outdoors.webp",
+   "thumb": "168-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Painting a mural in Brezovica",
+    "hr": "Oslikavanje murala u Brezovici"
+   }
+  },
+  {
+   "src": "169-workshops.webp",
+   "thumb": "169-workshops-thumb.webp",
+   "w": 640,
+   "h": 426,
+   "category": "workshops",
+   "alt": {
+    "en": "Women crafting at a long table",
+    "hr": "Žene stvaraju za dugim stolom"
+   }
+  },
+  {
+   "src": "170-outdoors.webp",
+   "thumb": "170-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Mandala of dried flowers",
+    "hr": "Mandala od suhog cvijeća"
+   }
+  },
+  {
+   "src": "171-workshops.webp",
+   "thumb": "171-workshops-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "workshops",
+   "alt": {
+    "en": "Cooking workshop with seasonal produce",
+    "hr": "Kuharska radionica sa sezonskim namirnicama"
+   }
+  },
+  {
+   "src": "172-outdoors.webp",
+   "thumb": "172-outdoors-thumb.webp",
+   "w": 640,
+   "h": 360,
+   "category": "outdoors",
+   "alt": {
+    "en": "Night around the fire at Zelenica",
+    "hr": "Noć uz vatru u Zelenici"
+   }
+  }
+ ]
+}

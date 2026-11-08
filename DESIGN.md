@@ -193,6 +193,7 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 - **Hero** (`.hero`): full-width storefront photo with a translucent white panel (`#fefdfdbb`, 16px radius) holding the green display title and lead text. Below the lead text, `.hero__next` names the recurring next activity (EKO PLAC, Saturday 9–11, Rudeška 142) and `.hero__actions` holds a primary "See what's on" (→ calendar) and a secondary "Get involved".
 - **Event card** (`.event-card`, Coming up section): Forest Green date tile (day + short month; Deep Forest for Brezovica), weekday and time in green, title in Ink, place in Ink Muted; 16px radius, hairline border, no shadow.
 - **Calendar**: one full-width Google Calendar embed combining both calendars (Vrbani `#0B8043`, Brezovica `#33B679`, matched by the legend dots); month view 16:9 from 768px, agenda view below.
+- **Gallery page**: story cards (4:3 photo, title, green meta line, text, "See photos" link that filters), pill filter chips (selected = Forest Green), masonry photo grid (2–5 columns, 8px radius) and a dark `<dialog>` lightbox with keyboard and swipe navigation.
 - **CTA band** (`.cta`): solid Forest Green, white title and lead text, inverted primary button.
 - **Navigation**: sticky header, multi-level dropdowns on desktop, hamburger drawer on mobile, flag + language dropdown.
 - **Carousel** (`.about__carousel`): auto-advancing photo slider (4s) with prev/next, dots, keyboard arrows, pause on hover.

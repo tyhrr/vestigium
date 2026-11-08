@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="gallery.metaTitle">Gallery - Vestigium</title>
+    <meta name="description" content="Photos of life at Vestigium: the EKO PLAC farmers market, workshops, community evenings and the Zelenica cooperative in Zagreb.">
+      <!-- Canonical URL -->
+    <link rel="canonical" href="https://tyhrr.github.io/vestigium/src/pages/gallery.html">
+      <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vestigium - Ecological-Creative Association">
+    <meta property="og:description" content="Improving community quality of life in Zagreb through sustainable initiatives, ecological education and community support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tyhrr.github.io/vestigium/src/pages/gallery.html">
+    <meta property="og:image" content="https://tyhrr.github.io/vestigium/src/assets/images/content/vestigium-community.jpg">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vestigium - Sustainable Communities">
+    <meta name="twitter:description" content="Ecological-creative association in Zagreb promoting sustainability and community life">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" href="../assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="../../manifest.json">
+    <meta name="theme-color" content="#2E7D32">      <!-- Preload Critical Resources -->
+    <link rel="preload" href="../assets/css/main.css" as="style">
+    <link rel="preload" href="../assets/js/main.js" as="script">
+    <link rel="preload" href="../assets/js/visitor-counter.js" as="script">
+      <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/navigation-advanced.css">
+</head>
+<body>
+    <header role="banner" class="header">
+        <div class="header__container">
+            <!-- Primera fila para tablet (770px-1024px) -->
+            <div class="header__top-row" onclick="event.stopPropagation()">
+                <div class="header__brand" itemscope itemtype="https://schema.org/Organization" onclick="event.stopPropagation()">
+                    <div class="header__logo" itemprop="name">
+                        <span style="color:#000 !important;">Vestigium</span>
+                        <img src="../assets/images/logo/logo-png.png" alt="Vestigium logo" width="55" height="55" style="width:3.4rem;height:auto;margin-left:-18px;margin-top:-10px;vertical-align:middle;overflow:visible;" onclick="event.stopPropagation()">
+                    </div>
+                </div>
+                
+                <!-- Language Selector - will be inserted here by JavaScript -->
+
+                <nav class="navigation__quick" aria-label="Quick links">
+                    <a href="gallery.html" aria-current="page" class="navigation__link" data-i18n="nav.gallery">Gallery</a>
+                    <a href="../../index.html#projects" class="navigation__link" data-i18n="nav.projects">Projects</a>
+                </nav>
+
+                <button type="button" class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false" onclick="(function(b){var m=document.querySelector('.navigation__menu');var o=m.getAttribute('aria-expanded')==='true';m.setAttribute('aria-expanded',o?'false':'true');b.setAttribute('aria-expanded',o?'false':'true');})(this)">
+                    <span class="navigation__hamburger"></span>
+                </button>
+
+                <ul class="navigation__menu" role="menubar">
+                    <!-- Calendar -->
+                    <li class="navigation__item" role="none">
+                        <a href="../../index.html#calendar" class="navigation__link" role="menuitem" data-i18n="nav.calendar">Calendar</a>
+                    </li>
+                    
+                    <!-- Community Center with Dropdown -->
+                    <li class="navigation__item" role="none">                        <a href="../../index.html#community-center" 
+                           class="navigation__link navigation__link--has-submenu" 
+                           role="menuitem" 
+                           aria-expanded="false"
+                           data-i18n="nav.community-center">Community Center</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#nosotros" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#projects" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#get-engaged" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
+                            </li>                            <li class="navigation__item" role="none">
+                                <a href="news.html" class="navigation__link" role="menuitem" data-i18n="nav.news">News</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Calendar duplicate removed -->
+                    
+                    <!-- Zadruga Zelenica -->
+                    <li class="navigation__item" role="none">
+                        <a href="../../index.html#zadruga-zelenica" class="navigation__link" role="menuitem" data-i18n="nav.zadruga-zelenica">Zadruga Zelenica</a>
+                    </li>
+                    
+                    <!-- Get engaged with Dropdown -->
+                    <li class="navigation__item" role="none">
+                        <a href="../../index.html#get-engaged" 
+                           class="navigation__link navigation__link--has-submenu" 
+                           role="menuitem" 
+                           aria-expanded="false"
+                           data-i18n="nav.get-engaged">Get engaged</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#be-volunteer" class="navigation__link" role="menuitem" data-i18n="nav.be-volunteer">Be a Volunteer</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#esc" class="navigation__link" role="menuitem" data-i18n="nav.esc">ESC (European Solidarity Corp)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Gallery -->
+                    <li class="navigation__item navigation__item--core" role="none">
+                        <a href="gallery.html" aria-current="page" class="navigation__link" role="menuitem" data-i18n="nav.gallery">Gallery</a>
+                    </li>
+                    
+                    <!-- Projects with Complex Dropdown -->
+                    <li class="navigation__item navigation__item--core" role="none">
+                        <a href="../../index.html#projects" 
+                           class="navigation__link navigation__link--has-submenu" 
+                           role="menuitem" 
+                           aria-expanded="false"
+                           data-i18n="nav.projects">Projects</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#erasmus" class="navigation__link" role="menuitem" data-i18n="nav.erasmus">Erasmus</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#previous-projects" class="navigation__link" role="menuitem" data-i18n="nav.previous-projects">Previous projects</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Activities with Dropdown -->
+                    <li class="navigation__item" role="none">
+                        <a href="../../index.html#actividades" 
+                           class="navigation__link navigation__link--has-submenu" 
+                           role="menuitem" 
+                           aria-expanded="false"
+                           data-i18n="nav.activities">Activities</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#actividades" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="../../index.html#calendar" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main-content" class="main gallery-page">
+        <section class="gallery-intro" aria-labelledby="gallery-heading">
+            <div class="gallery__container">
+                <h1 id="gallery-heading" class="gallery-intro__title" data-i18n="gallery.title">Gallery</h1>
+                <p class="gallery-intro__lead" data-i18n="gallery.lead">Life at Vestigium in pictures: the Saturday market, workshops, swaps, evenings in the library and days in the Zelenica garden. Everything here is made by neighbours, for neighbours.</p>
+            </div>
+        </section>
+
+        <section class="gallery-stories" aria-labelledby="stories-heading">
+            <div class="gallery__container">
+                <h2 id="stories-heading" class="gallery-section__title" data-i18n="gallery.stories.title">What happens at Vestigium</h2>
+                <ul class="story-grid">
+                    <li class="story-card">
+                        <img class="story-card__image" src="../assets/images/gallery/059-market-thumb.webp" alt="" loading="lazy" width="640" height="480">
+                        <div class="story-card__body">
+                            <h3 class="story-card__title" data-i18n="gallery.stories.market.title">EKO PLAC</h3>
+                            <p class="story-card__meta" data-i18n="gallery.stories.market.meta">Every Saturday 9–11 · Rudeška 142</p>
+                            <p class="story-card__text" data-i18n="gallery.stories.market.text">Small local and organic farmers sell directly to the neighbourhood: bread, cheese, honey, seasonal vegetables and flowers.</p>
+                            <button type="button" class="story-card__link" data-filter="market" data-i18n="gallery.stories.see">See photos</button>
+                        </div>
+                    </li>
+                    <li class="story-card">
+                        <img class="story-card__image" src="../assets/images/gallery/122-workshops-thumb.webp" alt="" loading="lazy" width="640" height="480">
+                        <div class="story-card__body">
+                            <h3 class="story-card__title" data-i18n="gallery.stories.workshops.title">Workshops</h3>
+                            <p class="story-card__meta" data-i18n="gallery.stories.workshops.meta">Sewing, weaving, cooking, art</p>
+                            <p class="story-card__text" data-i18n="gallery.stories.workshops.text">Neighbours teach neighbours: from the little sewing school and textile upcycling to healthy cooking and painting.</p>
+                            <button type="button" class="story-card__link" data-filter="workshops" data-i18n="gallery.stories.see">See photos</button>
+                        </div>
+                    </li>
+                    <li class="story-card">
+                        <img class="story-card__image" src="../assets/images/gallery/001-community-thumb.webp" alt="" loading="lazy" width="640" height="480">
+                        <div class="story-card__body">
+                            <h3 class="story-card__title" data-i18n="gallery.stories.community.title">Community life</h3>
+                            <p class="story-card__meta" data-i18n="gallery.stories.community.meta">Free library · swaps · game nights</p>
+                            <p class="story-card__text" data-i18n="gallery.stories.community.text">A living room for the neighbourhood: book exchange, monthly clothes swaps, board games, concerts and talks.</p>
+                            <button type="button" class="story-card__link" data-filter="community" data-i18n="gallery.stories.see">See photos</button>
+                        </div>
+                    </li>
+                    <li class="story-card">
+                        <img class="story-card__image" src="../assets/images/gallery/147-outdoors-thumb.webp" alt="" loading="lazy" width="640" height="480">
+                        <div class="story-card__body">
+                            <h3 class="story-card__title" data-i18n="gallery.stories.outdoors.title">Zelenica &amp; outdoors</h3>
+                            <p class="story-card__meta" data-i18n="gallery.stories.outdoors.meta">Brezovica · gardens · walks</p>
+                            <p class="story-card__text" data-i18n="gallery.stories.outdoors.text">The cooperative garden in Brezovica, evenings by the fire, flower beds, murals and walks in nature.</p>
+                            <button type="button" class="story-card__link" data-filter="outdoors" data-i18n="gallery.stories.see">See photos</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery-photos" id="photos" aria-labelledby="photos-heading">
+            <div class="gallery__container">
+                <div class="gallery-photos__header">
+                    <h2 id="photos-heading" class="gallery-section__title" data-i18n="gallery.photos.title">Photos</h2>
+                    <p class="gallery-photos__count" aria-live="polite"></p>
+                </div>
+                <div class="gallery-filters" role="group" aria-labelledby="photos-heading">
+                    <button type="button" class="gallery-filter" data-filter="all" aria-pressed="true" data-i18n="gallery.filter.all">All</button>
+                    <button type="button" class="gallery-filter" data-filter="market" aria-pressed="false" data-i18n="gallery.filter.market">Market</button>
+                    <button type="button" class="gallery-filter" data-filter="workshops" aria-pressed="false" data-i18n="gallery.filter.workshops">Workshops</button>
+                    <button type="button" class="gallery-filter" data-filter="community" aria-pressed="false" data-i18n="gallery.filter.community">Community</button>
+                    <button type="button" class="gallery-filter" data-filter="outdoors" aria-pressed="false" data-i18n="gallery.filter.outdoors">Outdoors</button>
+                    <button type="button" class="gallery-filter" data-filter="people" aria-pressed="false" data-i18n="gallery.filter.people">Workshop leaders</button>
+                </div>
+                <ul class="gallery-grid"></ul>
+                <noscript><p>Enable JavaScript to see the photo gallery.</p></noscript>
+            </div>
+        </section>
+
+        <section class="gallery-facebook" aria-labelledby="facebook-heading">
+            <div class="gallery__container gallery-facebook__layout">
+                <div class="gallery-facebook__text">
+                    <h2 id="facebook-heading" class="gallery-section__title" data-i18n="gallery.facebook.title">Latest on Facebook</h2>
+                    <p data-i18n="gallery.facebook.text">Our newest posts, with likes, comments and shares, straight from the Udruga Vestigium page. Follow us to hear about workshops and events first.</p>
+                    <a class="button button--primary" href="https://www.facebook.com/udrugavestigium" target="_blank" rel="noopener" data-i18n="gallery.facebook.follow">Follow us on Facebook</a>
+                </div>
+                <div class="gallery-facebook__embed">
+                    <iframe title="Udruga Vestigium on Facebook" loading="lazy" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fudrugavestigium&amp;tabs=timeline&amp;width=500&amp;height=720&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true" width="500" height="720" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="lightbox" aria-labelledby="lightbox-caption">
+        <figure class="lightbox__figure">
+            <img class="lightbox__image" alt="">
+            <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+        </figure>
+        <button type="button" class="lightbox__btn lightbox__btn--close" data-action="close" aria-label="Close">×</button>
+        <button type="button" class="lightbox__btn lightbox__btn--prev" data-action="prev" aria-label="Previous photo">‹</button>
+        <button type="button" class="lightbox__btn lightbox__btn--next" data-action="next" aria-label="Next photo">›</button>
+    </dialog>
+
+    <footer class="footer" itemscope itemtype="https://schema.org/Organization">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__brand" id="contacto">
+                    <h2 class="footer__title" itemprop="name" data-i18n="footer.title">Vestigium</h2>
+                    <p class="footer__description" itemprop="address"><span data-i18n="footer.location.address">Grančarska 2a, Brezovica</span>, <span data-i18n="footer.location.country">Croatia</span></p>
+                    <p class="footer__description"><a href="mailto:udruga.vestigium@gmail.com" class="footer__contact-link" itemprop="email">udruga.vestigium@gmail.com</a></p>
+                    <p class="footer__description"><a href="tel:+385958561270" class="footer__contact-link" itemprop="telephone">+385 95 856 12 70</a></p>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <h2 class="footer__nav-title" data-i18n="footer.links">Links</h2>
+                    <ul class="footer__nav-list">
+                        <li><a href="../../index.html#inicio" class="footer__nav-link" data-i18n="footer.home">Home</a></li>
+                        <li><a href="../../index.html#actividades" class="footer__nav-link" data-i18n="footer.activities">Activities</a></li>
+                        <li><a href="../../index.html#nosotros" class="footer__nav-link" data-i18n="footer.about">About us</a></li>
+                        <li><a href="../../index.html#get-engaged" class="footer__nav-link" data-i18n="footer.get-involved">Get involved</a></li>
+                        <li><a href="../../index.html#calendar" class="footer__nav-link" data-i18n="nav.calendar">Calendar</a></li>
+                        <li><a href="../../index.html#contacto" class="footer__nav-link" data-i18n="footer.contact.title">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div id="involucrate" class="footer__involvement">
+                    <h2 class="footer__involvement-title" data-i18n="footer.involvement.title">Get Involved</h2>
+                    <p class="footer__involvement-text" data-i18n="footer.involvement.text">
+                        Join as a volunteer or member and help build a more resilient community.
+                    </p>
+                    <ul class="footer__involvement-list">
+                        <li data-i18n="footer.involvement.item1">Event volunteering</li>
+                        <li data-i18n="footer.involvement.item2">Workshops and education</li>
+                        <li data-i18n="footer.involvement.item3">Community agriculture</li>
+                        <li data-i18n="footer.involvement.item4">Organizational support</li>
+                    </ul>
+                </div>
+
+                <div class="footer__recognition">
+                    <p class="footer__achievement" data-i18n="footer.achievement1">🏆 Changemakers Croatia 2017</p>
+                    <p class="footer__achievement" data-i18n="footer.achievement2">🌟 Social Marie Award Finalist 2018</p>
+                    <img class="footer__erasmus" src="../assets/images/erasmus/erasmus-prueba.png" alt="Erasmus+" loading="lazy">
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright" data-i18n="footer.copyright" data-i18n-html>
+                    &copy; 2025 Vestigium Association. All rights reserved.
+                </p>
+                <p class="footer__tech" data-i18n="footer.tech">
+                    Building sustainable communities since 2011 • Over 1000 annual activities
+                </p>
+                <div class="visitor-counter">
+                    <span class="visitor-counter__label" data-i18n="footer.visitors.label">Visitors:</span>
+                    <span class="visitor-counter__count">9302</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/language-switcher.js"></script>
+    <script src="../assets/js/visitor-counter.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/gallery.js"></script>
+</body>
+</html>

@@ -53,6 +53,16 @@ The homepage shows the next 3 events from the two public Google Calendars (Vrban
 
 Run it locally with `npm install --no-save node-ical@0.20.1 && node tools/fetch-events.mjs`.
 
+## Gallery page
+
+`src/pages/gallery.html` (linked from the Gallery button in the navbar) shows:
+
+- Four story cards about what happens at Vestigium (EKO PLAC, workshops, community life, Zelenica).
+- 172 photos from the association's "WEB VESTIGIUM" Google Drive folder, optimised to WebP (640px thumbnails + 1600px full size) in `src/assets/images/gallery/`, with bilingual alt text and a theme in `src/data/gallery.json`. Filters, "Show more" and a lightbox are in `src/assets/js/gallery.js`.
+- The official Facebook Page Plugin for facebook.com/udrugavestigium, which shows the latest posts with their reactions, comments and shares.
+
+To add photos: save a WebP pair (`NNN-theme.webp` and `NNN-theme-thumb.webp`) in `src/assets/images/gallery/` and add an entry to `src/data/gallery.json` with `category` (market, workshops, community, outdoors, people) and `alt.en` / `alt.hr`.
+
 ## Adding a translation
 
 1. Open `src/assets/js/language-switcher.js`.
