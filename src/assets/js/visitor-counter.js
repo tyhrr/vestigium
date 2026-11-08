@@ -28,7 +28,7 @@ const VISITOR_CONFIG = {
   animationDuration: 1000,
   
   // Número inicial si es la primera vez
-  initialCount: 9320
+  initialCount: 0
 };
 
 /* =============================================================================

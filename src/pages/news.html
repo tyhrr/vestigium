@@ -431,10 +431,10 @@
             <!-- Primera fila para tablet (770px-1024px) -->
             <div class="header__top-row">
                 <div class="header__brand" itemscope itemtype="https://schema.org/Organization">
-                    <h1 class="header__logo" itemprop="name">
+                    <div class="header__logo" itemprop="name">
                         <a href="../../index.html" aria-label="Vestigium - Ecological-Creative Association - Home">Vestigium</a>
                         <img src="../assets/images/logo/logo-png.png" alt="Vestigium logo">
-                    </h1>
+                    </div>
                 </div>
                 
                 <!-- Language Selector - will be inserted here by JavaScript -->
@@ -442,7 +442,7 @@
             
             <!-- Navigation -->
             <nav role="navigation" class="navigation" aria-label="Main navigation">
-                <button class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false">
+                <button type="button" class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false">
                     <span class="navigation__hamburger"></span>
                 </button>
                 
@@ -588,8 +588,8 @@
                         </div>
                         
                         <!-- Navigation -->
-                        <div class="swiper-button-next" aria-label="Next post"></div>
-                        <div class="swiper-button-prev" aria-label="Previous post"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                         
                         <!-- Pagination -->
                         <div class="swiper-pagination"></div>
@@ -1013,6 +1013,10 @@
                     navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
+                    },
+                    a11y: {
+                        prevSlideMessage: 'Previous post',
+                        nextSlideMessage: 'Next post',
                     },
                     breakpoints: {
                         640: {

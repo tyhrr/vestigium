@@ -1159,8 +1159,12 @@
   }
 }
 
-.navigation__submenu {
-  overflow: visible;
+/* Desktop dropdowns may overflow; on mobile the collapsed submenu
+   (max-height: 0) must clip or its items paint over the parent links. */
+@media (min-width: 768px) {
+  .navigation__submenu {
+    overflow: visible;
+  }
 }
 
 

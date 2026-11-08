@@ -248,6 +248,8 @@ class NavigationManager {
     this.menu.setAttribute('role', 'menu');
     
     this.links.forEach((link, index) => {
+      // Quick links live outside the menu: they are plain links, not menu items
+      if (link.closest('.navigation__quick')) return;
       link.setAttribute('role', 'menuitem');
       link.setAttribute('tabindex', this.isOpen ? '0' : '-1');
     });

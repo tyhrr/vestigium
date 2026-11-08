@@ -12,6 +12,8 @@ colors:
   ink: "#212121"
   ink-muted: "#595959"
   hairline: "#E0E0E0"
+  footer-accent: "#A5D6A7"
+  hero-panel: "#fefdfdbb"
 typography:
   display:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif"
@@ -87,7 +89,7 @@ components:
     rounded: "{rounded.lg}"
     padding: "3rem"
   hero-panel:
-    backgroundColor: "#fefdfdbb"
+    backgroundColor: "{colors.hero-panel}"
     textColor: "{colors.ink}"
     rounded: "{rounded.xl}"
   cta-band:
@@ -135,6 +137,8 @@ A one-family palette: forest greens for identity and action, warm-free neutrals 
 - **Ink** (#212121): body text and card titles.
 - **Ink Muted** (#595959): secondary text and card descriptions.
 - **Charcoal** (#424242): footer ground.
+- **Footer Accent** (#A5D6A7): green text on Charcoal (footer headings, awards); 6.1:1. Use instead of Leaf Green on dark grounds.
+- **Hero Panel** (#fefdfdbb): translucent white panel over the hero photo.
 
 ### Named Rules
 **The One Family Rule.** Greens are the only hue. A new colour needs a reason in PRODUCT.md, not taste.
@@ -183,7 +187,7 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 
 - **Buttons** (`.button`, `--primary`, `--secondary`): 44px min height for touch, 2px border, medium weight. Primary is solid Forest Green → Deep Forest on hover; secondary is a green outline that fills on hover. On the green CTA band the primary inverts to white with green text. Transition 0.3s ease-in-out.
 - **Service card** (`.service-card`): white, hairline border, 8px radius, 48px padding, centred; 64px green SVG icon from an inline sprite (`<use href="#icon-…">`), Ink title, Ink Muted description. Hover lifts 4px, shadow-lg, green border.
-- **Hero** (`.hero`): full-width storefront photo with a translucent white panel (`#fefdfdbb`, 16px radius) holding the green display title and lead text. `.hero__actions` exists for buttons but is currently empty.
+- **Hero** (`.hero`): full-width storefront photo with a translucent white panel (`#fefdfdbb`, 16px radius) holding the green display title and lead text. Below the lead text, `.hero__next` names the recurring next activity (EKO PLAC, Saturday 9–11, Rudeška 142) and `.hero__actions` holds a primary "See what's on" (→ calendar) and a secondary "Get involved".
 - **CTA band** (`.cta`): solid Forest Green, white title and lead text, inverted primary button.
 - **Navigation**: sticky header, multi-level dropdowns on desktop, hamburger drawer on mobile, flag + language dropdown.
 - **Carousel** (`.about__carousel`): auto-advancing photo slider (4s) with prev/next, dots, keyboard arrows, pause on hover.
@@ -202,5 +206,5 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 **Don't**
 - Don't use Leaf Green or Stone Gray for text on white (insufficient contrast).
 - Don't introduce a second hue or web fonts without updating this file.
-- Don't add hard-coded colours like the hero panel's `#fefdfdbb`; promote them to tokens.
+- Don't add hard-coded colours; promote them to tokens in `main.css` and here.
 - Don't add shadows to elements at rest.

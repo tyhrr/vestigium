@@ -38,7 +38,9 @@ A grassroots, neighbour-founded community space that is also part of the Global 
 - Static site: plain HTML, CSS and vanilla JavaScript, no framework and no build step; hosted on GitHub Pages (`tyhrr.github.io/vestigium`). Must keep working by opening `index.html` directly.
 - Existing features: EN/HR language switcher (`data-i18n` keys), About carousel, multi-level responsive navigation with hamburger menu, footer visitor counter (localStorage), PWA manifest, robots.txt, sitemap.xml.
 - Any new copy must be added in both languages.
-- **Open decision:** the address. The README says it moved to Grančarska 2a, Brezovica, while the About copy still describes the founding in the Vrbana area, Zagreb. Confirm with the association which location and wording are current.
+- Two locations (confirmed on the association's previous site): **Community Center Vrbani**, Rudeška 142, Zagreb, and **Cooperative Community Center Zelenica**, Grančarska 2a, Brezovica (opened 2022). The office is at Grančarska 2a. Vrbani is where the association was founded.
+- Events are published in two Google Calendars (Vrbani: udruga.vestigium@gmail.com, Brezovica: zadruga.zelenica@gmail.com), embedded on the site. Keep the embeds; a future "next 3 activities" list should be derived from them.
+- Header navigation: at small widths only Gallery and Projects stay visible; everything else lives in the hamburger menu (owner decision).
 
 ## Brand Commitments
 
@@ -48,16 +50,22 @@ A grassroots, neighbour-founded community space that is also part of the Global 
 
 ## Evidence on Hand
 
-All figures below come from the current site copy and are **unverified**: the developer could not confirm them. Do not repeat them in new copy or headlines until the association confirms them.
+The figures below are self-reported by the association on its previous site (udrugavestigium.wixsite.com/vestigium). They are the association's own published claims, not independently verified; attribute them to Vestigium and avoid making them the headline.
 
 - Founded in 2011 by six women responding to their neighbours' needs.
 - "Over 1000 activities annually".
 - Institutional support from the National Foundation for Civil Society Development since 2017.
 - Presented as a "Changemakers" example from Croatia (2017); nominated among the top 30 of 250 projects for the Social Marie Award (2018).
+- About 50 volunteers a year, over 2,000 volunteer hours.
+- Zadruga Zelenica founded 2021; Brezovica cooperative centre opened 2022.
+
+Recurring programme (previous site): EKO PLAC local farmers market every **Saturday 9–11**; green-basket delivery Mondays (Vrbani) and Tuesdays (Brezovica); clothes swap usually the last Saturday of the month 10–12; evening yoga, fitness or dance; free library.
+
+Contact (previous site): +385 95 856 12 70, info@vestigium.hr; the current site footer uses udruga.vestigium@gmail.com. **Open decision:** which email is current.
 
 Real assets: activity photos in `src/assets/images/activities/` (9 images), Erasmus imagery in `src/assets/images/erasmus/`, hero banner `src/assets/images/index/banner-hero.jpg`.
 
-Absent: testimonials, partner logos, real calendar data feed, member or volunteer counts. Do not fabricate them.
+Absent: testimonials, partner logos. Do not fabricate them.
 
 ## Product Principles
 

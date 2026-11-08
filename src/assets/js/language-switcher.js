@@ -82,8 +82,12 @@ const TRANSLATIONS = {
     hero: {
       title: 'Building Sustainable Communities',
       subtitle: 'Vestigium is an ecological-creative association dedicated to improving the quality of life of our community, promoting a healthy and sustainable lifestyle for our future.',
-      'btn-activities': 'Discover Activities',
-      'btn-join': 'Join Us'
+      'btn-activities': 'See what\'s on',
+      'btn-join': 'Get involved',
+      'next-label': 'Every Saturday',
+      'next-time': '9–11',
+      'next-what': 'EKO PLAC farmers market',
+      'next-where': 'Rudeška 142, Vrbani'
     },
     
     // Activities Section
@@ -120,12 +124,6 @@ const TRANSLATIONS = {
         text1: 'Vestigium Association (lat. footprint) is an ecological-creative association for improving the quality of our community by approaching and promoting a healthy and sustainable way for our future. The idea of founding the association arose in 2011 by six women listening to the needs of their neighbours in creating a multifunctional space where initiatives could take place and develop.',
         text2: 'The Vrbana area is a typical young district of Zagreb with many residents being families. Services such as a market, a library, a health center and a community center have long been missing. Vestigium provides some of these by holding a farmers market, creating a free library, having poetry evenings, arranging storytelling sessions for the youngest and by organizing lectures and workshops on living a healthy lifestyle, cooking, sewing, relaxing as well as on educational, ecological and eco-creative content.',
         text3: 'Every year the association conducts over 1000 activities to educate children and youth in their participation in society, supporting the empowerment of women, preventing and fighting against all forms of addictions, helping social services and health care, maintaining international development cooperation, supporting social entrepreneurship developing and promoting of science, education, lifelong learning, culture, arts and succeeding as a community.'
-      },
-      detail: {
-        title: 'O Vestigiumu',
-        text1: 'Udruga Vestigium (lat. trag) je ekološko-kreativna udruga za poboljšanje kvalitete naše zajednice pristupanjem i promicanjem zdravog i održivog načina za našu budućnost. Ideja o osnivanju udruge nastala je 2011. godine druženjem šest žena koje su slušale potrebe svojih susjeda u stvaranju multifunkcionalnog prostora gdje bi se inicijative mogle odvijati i razvijati.',
-        text2: 'Područje Vrbana je karakteristična mlada četvrt u kojoj većinom žive obitelji s djecom, a usluge poput tržnice, knjižnice i doma zdravlja izostaju. Udruga Vestigium svojim djelovanjem pruža neke od ovih te još mnoge druge usluge i aktivnosti, pa je tako u svom dosadašnjem radu prepoznatljiva po promociji ekološke poljoprivrede kroz organizaciju manifestacija, grupa solidarne razmjene, izleta i povezivanja građana sa malim, lokalnim OPGovima, promociji kulture čitanja u slobodnoj knjižnici.',
-        text3: 'Godišnje se u udruzi provede preko 1000 termina raznih aktivnosti (obrazovanje djece i mladih te njihovu aktivnom sudjelovanju u društvu, prevencija i borba protiv svih oblika ovisnosti, promicanje i razvoj volonterstva, socijalne usluge, poticanje i razvoj socijalnog poduzetništva, zaštita okoliša i prirode, održivi razvoj, razvoj lokalne zajednice, međunarodna razvojna suradnja, zaštita zdravlja, razvoj i promicanje znanosti, obrazovanja, cjeloživotnog učenja, kulture i umjetnosti).'
       },
     // Community & Projects (added)
     community: {
@@ -186,7 +184,8 @@ const TRANSLATIONS = {
       title: 'Calendar',
       text: 'Open our event calendars for Vrbani and Brezovica.',
       vrbani: 'Community Center Vestigium - Vrbani',
-      brezovica: 'Cooperative Center Zelenica - Brezovica'
+      brezovica: 'Cooperative Center Zelenica - Brezovica',
+      open: 'Open in Google Calendar'
     },
     findus: {
       title: 'Find us',
@@ -303,9 +302,13 @@ const TRANSLATIONS = {
     // Hero Section
     hero: {
       title: 'Izgradnja Održivih Zajednica',
-      subtitle: 'Vestigium je ekolosko-kreativna udruga posvećena poboljšanju kvalitete života naše zajednice, promovira zdrav i održiv način života za našu budućnost.',
-      'btn-activities': 'Otkrijte Aktivnosti',
-      'btn-join': 'Pridružite Nam Se'
+      subtitle: 'Vestigium je ekološko-kreativna udruga posvećena poboljšanju kvalitete života naše zajednice, promovira zdrav i održiv način života za našu budućnost.',
+      'btn-activities': 'Pogledaj raspored',
+      'btn-join': 'Uključi se',
+      'next-label': 'Svake subote',
+      'next-time': '9–11 h',
+      'next-what': 'EKO PLAC',
+      'next-where': 'Rudeška 142, Vrbani'
     },
     
     // Activities Section
@@ -396,7 +399,8 @@ const TRANSLATIONS = {
       title: 'Kalendar',
       text: 'Otvorite naše kalendare događanja za Vrbane i Brezovicu.',
       vrbani: 'Društveni centar Vestigium - Vrbani',
-      brezovica: 'Zadružni centar Zelenica - Brezovica'
+      brezovica: 'Zadružni centar Zelenica - Brezovica',
+      open: 'Otvori u Google kalendaru'
     },
     findus: {
       title: 'Pronađite nas',
@@ -449,7 +453,7 @@ const TRANSLATIONS = {
     news: {
       meta: {
         title: 'Vijesti - Vestigium Ekolosko-Kreativna Udruga',
-        description: 'Budite u tijeku s najnovijim vijestima i aktivnostima Vestigium ekolosko-kreativne udruge u Zagrebu.'
+        description: 'Budite u tijeku s najnovijim vijestima i aktivnostima Vestigium ekološko-kreativne udruge u Zagrebu.'
       },
       hero: {
         title: 'Najnovije Vijesti',

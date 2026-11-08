@@ -43,20 +43,20 @@
             <!-- Primera fila para tablet (770px-1024px) -->
             <div class="header__top-row" onclick="event.stopPropagation()">
                 <div class="header__brand" itemscope itemtype="https://schema.org/Organization" onclick="event.stopPropagation()">
-                    <h1 class="header__logo" itemprop="name">
+                    <div class="header__logo" itemprop="name">
                         <span style="color:#000 !important;">Vestigium</span>
                         <img src="./src/assets/images/logo/logo-png.png" alt="Vestigium logo" width="55" height="55" style="width:55px;height:auto;margin-left:-18px;margin-top:-10px;vertical-align:middle;overflow:visible;" onclick="event.stopPropagation()">
-                    </h1>
+                    </div>
                 </div>
                 
                 <!-- Language Selector - will be inserted here by JavaScript -->
 
-                <div class="navigation__quick" aria-label="Quick links">
+                <nav class="navigation__quick" aria-label="Quick links">
                     <a href="#gallery" class="navigation__link" data-i18n="nav.gallery">Gallery</a>
                     <a href="#projects" class="navigation__link" data-i18n="nav.projects">Projects</a>
-                </div>
+                </nav>
 
-                <button class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false" onclick="(function(b){var m=document.querySelector('.navigation__menu');var o=m.getAttribute('aria-expanded')==='true';m.setAttribute('aria-expanded',o?'false':'true');b.setAttribute('aria-expanded',o?'false':'true');})(this)">
+                <button type="button" class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false" onclick="(function(b){var m=document.querySelector('.navigation__menu');var o=m.getAttribute('aria-expanded')==='true';m.setAttribute('aria-expanded',o?'false':'true');b.setAttribute('aria-expanded',o?'false':'true');})(this)">
                     <span class="navigation__hamburger"></span>
                 </button>
 
@@ -74,13 +74,13 @@
                            data-i18n="nav.community-center">Community Center</a>
                         <ul class="navigation__submenu" role="menu">
                             <li class="navigation__item" role="none">
-                                <a href="#who-are-we" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
+                                <a href="#nosotros" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#what-we-have-done" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
+                                <a href="#projects" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#join-us" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
+                                <a href="#get-engaged" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
                             </li>                            <li class="navigation__item" role="none">
                                 <a href="./src/pages/news.html" class="navigation__link" role="menuitem" data-i18n="nav.news">News</a>
                             </li>
@@ -138,17 +138,17 @@
                     
                     <!-- Activities with Dropdown -->
                     <li class="navigation__item" role="none">
-                        <a href="#activities" 
+                        <a href="#actividades" 
                            class="navigation__link navigation__link--has-submenu" 
                            role="menuitem" 
                            aria-expanded="false"
                            data-i18n="nav.activities">Activities</a>
                         <ul class="navigation__submenu" role="menu">
                             <li class="navigation__item" role="none">
-                                <a href="#frequent-activities" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
+                                <a href="#actividades" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#see-more" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
+                                <a href="#calendar" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
                             </li>
                         </ul>
                     </li>
@@ -171,13 +171,13 @@
                            data-i18n="nav.community-center">Community Center</a>
                         <ul class="navigation__submenu" role="menu">
                             <li class="navigation__item" role="none">
-                                <a href="#who-are-we" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
+                                <a href="#nosotros" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#what-we-have-done" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
+                                <a href="#projects" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#join-us" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
+                                <a href="#get-engaged" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
                             </li>                            <li class="navigation__item" role="none">
                                 <a href="./src/pages/news.html" class="navigation__link" role="menuitem" data-i18n="nav.news">News</a>
                             </li>
@@ -233,17 +233,17 @@
                     
                     <!-- Activities with Dropdown -->
                     <li class="navigation__item" role="none">
-                        <a href="#activities" 
+                        <a href="#actividades" 
                            class="navigation__link navigation__link--has-submenu" 
                            role="menuitem" 
                            aria-expanded="false"
                            data-i18n="nav.activities">Activities</a>
                         <ul class="navigation__submenu" role="menu">
                             <li class="navigation__item" role="none">
-                                <a href="#frequent-activities" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
+                                <a href="#actividades" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#see-more" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
+                                <a href="#calendar" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
                             </li>
                         </ul>
                     </li>
@@ -262,7 +262,14 @@
                     Vestigium is an ecological-creative association dedicated to improving the quality of life 
                     of our community, promoting a healthy and sustainable lifestyle for our future.
                 </p>
+                <p class="hero__next">
+                    <span class="hero__next-when"><span data-i18n="hero.next-label">Every Saturday</span> <time data-i18n="hero.next-time">9–11</time></span>
+                    <span class="hero__next-what" data-i18n="hero.next-what">EKO PLAC farmers market</span>
+                    <span class="hero__next-where" data-i18n="hero.next-where">Rudeška 142, Vrbani</span>
+                </p>
                 <div class="hero__actions">
+                    <a href="#calendar" class="button button--primary" data-i18n="hero.btn-activities">See what's on</a>
+                    <a href="#get-engaged" class="button button--secondary" data-i18n="hero.btn-join">Get involved</a>
                 </div>
             </div>
         </section>        <!-- Activities Section -->
@@ -355,7 +362,7 @@
                     
                     <div class="about__carousel">
                         <div class="carousel__container">
-                            <button class="carousel__btn carousel__btn--prev" aria-label="Previous image">
+                            <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">
                                 <svg class="carousel__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                     <polyline points="15,18 9,12 15,6"></polyline>
                                 </svg>
@@ -367,7 +374,7 @@
                                 </div>
                             </div>
                             
-                            <button class="carousel__btn carousel__btn--next" aria-label="Next image">
+                            <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">
                                 <svg class="carousel__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                     <polyline points="9,18 15,12 9,6"></polyline>
                                 </svg>
@@ -445,11 +452,11 @@
                 <h2 id="engaged-heading" class="services__title" data-i18n="engaged.title">Get Engaged</h2>
                 <p class="services__description" data-i18n="engaged.subtitle">Join us as a volunteer or participant in European Solidarity Corps projects.</p>
                 <div class="services__grid">
-                    <article class="service-card">
+                    <article class="service-card" id="be-volunteer">
                         <h3 class="service-card__title" data-i18n="engaged.volunteer.title">Be a Volunteer</h3>
                         <p class="service-card__description" data-i18n="engaged.volunteer.desc">Around 50 people volunteer annually, contributing over 2000 volunteer hours. Help with events, workshops, agriculture and organizational support.</p>
                     </article>
-                    <article class="service-card">
+                    <article class="service-card" id="esc">
                         <h3 class="service-card__title" data-i18n="engaged.esc.title">ESC (European Solidarity Corps)</h3>
                         <p class="service-card__description" data-i18n="engaged.esc.desc">International volunteering and solidarity projects for young people. Gain experience and contribute to community development.</p>
                     </article>
@@ -586,10 +593,12 @@
                             <div class="calendar-block">
                                 <h3 class="calendar-block__title" data-i18n="calendar.vrbani">Community Center Vestigium - Vrbani</h3>
                                 <iframe src="https://calendar.google.com/calendar/embed?src=udruga.vestigium%40gmail.com&ctz=Europe%2FZagreb" style="border:0" width="100%" height="600" frameborder="0" scrolling="no" title="Vestigium Vrbani calendar"></iframe>
+                                <a class="calendar-block__open" href="https://calendar.google.com/calendar/embed?src=udruga.vestigium%40gmail.com&amp;ctz=Europe%2FZagreb" target="_blank" rel="noopener" data-i18n="calendar.open">Open in Google Calendar</a>
                             </div>
                             <div class="calendar-block">
                                 <h3 class="calendar-block__title" data-i18n="calendar.brezovica">Cooperative Center Zelenica - Brezovica</h3>
                                 <iframe src="https://calendar.google.com/calendar/embed?src=zadruga.zelenica%40gmail.com&ctz=Europe%2FZagreb" style="border:0" width="100%" height="600" frameborder="0" scrolling="no" title="Zelenica Brezovica calendar"></iframe>
+                                <a class="calendar-block__open" href="https://calendar.google.com/calendar/embed?src=zadruga.zelenica%40gmail.com&amp;ctz=Europe%2FZagreb" target="_blank" rel="noopener" data-i18n="calendar.open">Open in Google Calendar</a>
                             </div>
                         </div>
                     </div>
@@ -600,16 +609,16 @@
     </main>    <footer role="contentinfo" class="footer" itemscope itemtype="https://schema.org/Organization">
         <div class="footer__container">
             <div class="footer__content">
-                <div class="footer__brand">
+                <div class="footer__brand" id="contacto">
                     <h3 class="footer__title" itemprop="name" data-i18n="footer.title">Vestigium</h3>
                     <p class="footer__description" itemprop="description" data-i18n="footer.location.address">Grančarska 2a, Brezovica</p>
                     <p class="footer__description" data-i18n="footer.location.country">Croatia</p>
-                    <p class="footer__description"><span itemprop="email">udruga.vestigium@gmail.com</span></p>
-                    <p class="footer__description">+385 95 856 12 70</p>
+                    <p class="footer__description"><a href="mailto:udruga.vestigium@gmail.com" class="footer__contact-link" itemprop="email">udruga.vestigium@gmail.com</a></p>
+                    <p class="footer__description"><a href="tel:+385958561270" class="footer__contact-link" itemprop="telephone">+385 95 856 12 70</a></p>
                     <div class="footer__achievements">
                         <p class="footer__achievement" data-i18n="footer.achievement1">🏆 Changemakers Croatia 2017</p>
                         <p class="footer__achievement" data-i18n="footer.achievement2">🌟 Social Marie Award Finalist 2018</p>
-                        <img src="./src/assets/images/erasmus/erasmus-prueba.png" alt="">
+                        <img src="./src/assets/images/erasmus/erasmus-prueba.png" alt="Erasmus+">
                     </div>
                 </div>
                 
