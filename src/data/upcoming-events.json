@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-11-08T14:38:03.375Z",
+  "timeZone": "Europe/Zagreb",
+  "events": [
+    {
+      "title": "Rimske terme",
+      "start": "2026-11-07",
+      "end": "2026-11-09",
+      "allDay": true,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Nives Qi_lightening (cijeli prostor)",
+      "start": "2026-11-08T14:30:00.000Z",
+      "end": "2026-11-08T16:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Artivna cijeli prostor",
+      "start": "2026-11-08T17:00:00.000Z",
+      "end": "2026-11-08T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Obuka AT Ana dvorana",
+      "start": "2026-11-09T15:45:00.000Z",
+      "end": "2026-11-09T18:15:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Zelene košarice - ispred Vestigiuma",
+      "start": "2026-11-09T17:00:00.000Z",
+      "end": "2026-11-09T17:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "MALA ŠKOLA ŠIVANJA",
+      "start": "2026-11-09T17:00:00.000Z",
+      "end": "2026-11-09T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Yoga Ivana",
+      "start": "2026-11-09T19:00:00.000Z",
+      "end": "2026-11-09T20:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Klub za osobe starije životne dobi",
+      "start": "2026-11-10T09:00:00.000Z",
+      "end": "2026-11-10T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Zelene košarice",
+      "start": "2026-11-10T17:00:00.000Z",
+      "end": "2026-11-10T18:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Podsvjesno crtanje",
+      "start": "2026-11-10T17:30:00.000Z",
+      "end": "2026-11-10T19:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Gitara",
+      "start": "2026-11-10T18:00:00.000Z",
+      "end": "2026-11-10T19:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Zbor SingInBreza",
+      "start": "2026-11-10T19:00:00.000Z",
+      "end": "2026-11-10T21:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    }
+  ]
+}

@@ -176,10 +176,15 @@ const TRANSLATIONS = {
     },
     calendar: {
       title: 'Calendar',
-      text: 'Open our event calendars for Vrbani and Brezovica.',
+      text: 'All activities in Vrbani and Brezovica, in one calendar.',
       vrbani: 'Community Center Vestigium - Vrbani',
       brezovica: 'Cooperative Center Zelenica - Brezovica',
       open: 'Open in Google Calendar'
+    },
+    upcoming: {
+      title: 'Coming up',
+      all: 'Full calendar',
+      allDay: 'All day'
     },
     findus: {
       title: 'Find us',
@@ -391,10 +396,15 @@ const TRANSLATIONS = {
     },
     calendar: {
       title: 'Kalendar',
-      text: 'Otvorite naše kalendare događanja za Vrbane i Brezovicu.',
+      text: 'Sve aktivnosti na Vrbanima i u Brezovici, u jednom kalendaru.',
       vrbani: 'Društveni centar Vestigium - Vrbani',
       brezovica: 'Zadružni centar Zelenica - Brezovica',
       open: 'Otvori u Google kalendaru'
+    },
+    upcoming: {
+      title: 'Uskoro',
+      all: 'Cijeli kalendar',
+      allDay: 'Cijeli dan'
     },
     findus: {
       title: 'Pronađite nas',

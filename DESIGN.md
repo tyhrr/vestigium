@@ -166,6 +166,7 @@ Scale tokens available: 0.75 / 0.875 / 1 / 1.125 / 1.25 / 1.5 / 1.875 / 2.25 / 3
 - Mobile-first; breakpoints 640 / 768 / 1024 / 1280 / 1536 px. Container max 1200px with 16px side padding (24px from the `md` breakpoint).
 - Large screens: the root size (14px base) rises to 16px at 1440px, 18px at 1920px and 22px at 2560px, and the container widens to 90vw from 1440px. Size components in rem so they scale with it.
 - The hero photo is a single centred image (`background-size: cover`), never tiled.
+- Sections after the hero alternate white / Mist Gray by position (`.main > section:nth-of-type`), so a new section inherits the rhythm automatically.
 - Spacing scale on a 4px base: 4, 8, 16, 24, 32, 48, 64, 96, 128 px. Sections use 96px vertical padding.
 - Services use a responsive card grid; about sections pair text with a photo carousel.
 - Sticky white header (z-index 100) with logo left, primary links + hamburger + language switcher right.
@@ -190,10 +191,12 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 - **Buttons** (`.button`, `--primary`, `--secondary`): 44px min height for touch, 2px border, medium weight. Primary is solid Forest Green → Deep Forest on hover; secondary is a green outline that fills on hover. On the green CTA band the primary inverts to white with green text. Transition 0.3s ease-in-out.
 - **Service card** (`.service-card`): white, hairline border, 8px radius, 48px padding, centred; 64px green SVG icon from an inline sprite (`<use href="#icon-…">`), Ink title, Ink Muted description. Hover lifts 4px, shadow-lg, green border.
 - **Hero** (`.hero`): full-width storefront photo with a translucent white panel (`#fefdfdbb`, 16px radius) holding the green display title and lead text. Below the lead text, `.hero__next` names the recurring next activity (EKO PLAC, Saturday 9–11, Rudeška 142) and `.hero__actions` holds a primary "See what's on" (→ calendar) and a secondary "Get involved".
+- **Event card** (`.event-card`, Coming up section): Forest Green date tile (day + short month; Deep Forest for Brezovica), weekday and time in green, title in Ink, place in Ink Muted; 16px radius, hairline border, no shadow.
+- **Calendar**: one full-width Google Calendar embed combining both calendars (Vrbani `#0B8043`, Brezovica `#33B679`, matched by the legend dots); month view 16:9 from 768px, agenda view below.
 - **CTA band** (`.cta`): solid Forest Green, white title and lead text, inverted primary button.
 - **Navigation**: sticky header, multi-level dropdowns on desktop, hamburger drawer on mobile, flag + language dropdown.
 - **Carousel** (`.about__carousel`): auto-advancing photo slider (4s) with prev/next, dots, keyboard arrows, pause on hover.
-- **Footer**: Charcoal ground, white text at 1.125rem, includes the visitor counter.
+- **Footer**: compact Charcoal band. Four columns from 1024px (contact, links, get involved, recognition with the Erasmus+ logo on a white plate), one bottom row with copyright, tagline and visitor counter.
 - **Icons**: inline SVG sprite for activity icons; add new ones as Lucide SVGs with `tools/add-icon.sh <name>` into `src/assets/icons/`, coloured with `currentColor`.
 
 ## Do's and Don'ts

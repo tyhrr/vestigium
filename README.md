@@ -43,6 +43,16 @@ vestigium/
     └── scripts/
 ```
 
+## Upcoming events ("Coming up")
+
+The homepage shows the next 3 events from the two public Google Calendars (Vrbani and Brezovica).
+
+- `tools/fetch-events.mjs` reads both iCal feeds, expands recurring events and writes `src/data/upcoming-events.json`.
+- `.github/workflows/update-events.yml` runs it every 3 hours (and on demand from the Actions tab) and commits the JSON only when the events change.
+- `src/assets/js/upcoming-events.js` renders the cards in the current language and hides the section if the file is missing (e.g. when opening `index.html` from disk).
+
+Run it locally with `npm install --no-save node-ical@0.20.1 && node tools/fetch-events.mjs`.
+
 ## Adding a translation
 
 1. Open `src/assets/js/language-switcher.js`.

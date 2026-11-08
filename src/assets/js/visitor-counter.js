@@ -27,8 +27,8 @@ const VISITOR_CONFIG = {
     // Animación del contador
   animationDuration: 1000,
   
-  // Número inicial si es la primera vez
-  initialCount: 0
+  // Visitas acumuladas antes de este contador (punto de partida)
+  initialCount: 9302
 };
 
 /* =============================================================================
@@ -104,8 +104,9 @@ class VisitorCounter {
    */
   getStoredCount() {
     try {
-      const stored = localStorage.getItem(VISITOR_CONFIG.storageKey);
-      return stored ? parseInt(stored, 10) || VISITOR_CONFIG.initialCount : VISITOR_CONFIG.initialCount;
+      const stored = parseInt(localStorage.getItem(VISITOR_CONFIG.storageKey), 10);
+      // Never show less than the starting point (older visits stored a lower count)
+      return Number.isFinite(stored) ? Math.max(stored, VISITOR_CONFIG.initialCount) : VISITOR_CONFIG.initialCount;
     } catch (error) {
       console.warn('No se pudo acceder al conteo en localStorage:', error);
       return VISITOR_CONFIG.initialCount;
