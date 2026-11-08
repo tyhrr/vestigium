@@ -81,7 +81,7 @@
                                 <a href="#projects" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
                             </li>
                             <li class="navigation__item" role="none">
-                                <a href="#get-engaged" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
+                                <a href="#membership" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
                             </li>                            <li class="navigation__item" role="none">
                                 <a href="./src/pages/news.html" class="navigation__link" role="menuitem" data-i18n="nav.news">News</a>
                             </li>
@@ -109,6 +109,9 @@
                             <li class="navigation__item" role="none">
                                 <a href="#esc" class="navigation__link" role="menuitem" data-i18n="nav.esc">ESC (European Solidarity Corp)</a>
                             </li>
+                            <li class="navigation__item" role="none">
+                                <a href="#erasmus" class="navigation__link" role="menuitem" data-i18n="nav.erasmus">Erasmus+</a>
+                            </li>
                         </ul>
                     </li>
                     
@@ -125,9 +128,6 @@
                            aria-expanded="false"
                            data-i18n="nav.projects">Projects</a>
                         <ul class="navigation__submenu" role="menu">
-                            <li class="navigation__item" role="none">
-                                <a href="#erasmus" class="navigation__link" role="menuitem" data-i18n="nav.erasmus">Erasmus</a>
-                            </li>
                             <li class="navigation__item" role="none">
                                 <a href="#previous-projects" class="navigation__link" role="menuitem" data-i18n="nav.previous-projects">Previous projects</a>
                             </li>
@@ -352,20 +352,63 @@
         </section>
 
         <!-- Get Engaged -->
-        <section id="get-engaged" class="services" aria-labelledby="engaged-heading">
-            <div class="services__container">
-                <h2 id="engaged-heading" class="services__title" data-i18n="engaged.title">Get Engaged</h2>
-                <p class="services__description" data-i18n="engaged.subtitle">Join us as a volunteer or participant in European Solidarity Corps projects.</p>
-                <div class="services__grid">
-                    <article class="service-card" id="be-volunteer">
-                        <h3 class="service-card__title" data-i18n="engaged.volunteer.title">Be a Volunteer</h3>
-                        <p class="service-card__description" data-i18n="engaged.volunteer.desc">Around 50 people volunteer annually, contributing over 2000 volunteer hours. Help with events, workshops, agriculture and organizational support.</p>
-                    </article>
-                    <article class="service-card" id="esc">
-                        <h3 class="service-card__title" data-i18n="engaged.esc.title">ESC (European Solidarity Corps)</h3>
-                        <p class="service-card__description" data-i18n="engaged.esc.desc">International volunteering and solidarity projects for young people. Gain experience and contribute to community development.</p>
-                    </article>
+        <section id="get-engaged" class="involve" aria-labelledby="engaged-heading">
+            <div class="involve__container">
+                <header class="involve__header">
+                    <h2 id="engaged-heading" class="involve__title" data-i18n="engaged.title">Get involved</h2>
+                    <p class="involve__lead" data-i18n="engaged.subtitle">Whether you live around the corner or are coming from abroad, there is a way to take part. Pick what fits you and write to us.</p>
+                </header>
+
+                <div class="involve-group" id="local">
+                    <div class="involve-group__intro">
+                        <h3 class="involve-group__title" data-i18n="engaged.local.title">Here in the neighbourhood</h3>
+                        <p class="involve-group__text" data-i18n="engaged.local.text">For people who live in Zagreb and want to help or belong.</p>
+                    </div>
+                    <ul class="involve-group__cards">
+                        <li class="involve-card" id="be-volunteer">
+                            <h4 class="involve-card__title" data-i18n="engaged.volunteer.title">Volunteer</h4>
+                            <p class="involve-card__who" data-i18n="engaged.volunteer.who">For anyone, any age</p>
+                            <p class="involve-card__desc" data-i18n="engaged.volunteer.desc">Lend a hand at the EKO PLAC, workshops, events, the garden or behind the scenes. Come as often as you like.</p>
+                            <a class="involve-card__cta" href="mailto:udruga.vestigium@gmail.com?subject=Volunteering" data-i18n="engaged.volunteer.cta">Write to us</a>
+                        </li>
+                        <li class="involve-card" id="membership">
+                            <h4 class="involve-card__title" data-i18n="engaged.member.title">Become a member</h4>
+                            <p class="involve-card__who" data-i18n="engaged.member.who">For neighbours who want to belong</p>
+                            <p class="involve-card__desc" data-i18n="engaged.member.desc">Members shape the programme, propose and run their own activities and keep the association going.</p>
+                            <a class="involve-card__cta" href="mailto:udruga.vestigium@gmail.com?subject=Membership" data-i18n="engaged.member.cta">Write to us</a>
+                        </li>
+                    </ul>
                 </div>
+
+                <div class="involve-group" id="erasmus">
+                    <div class="involve-group__intro">
+                        <h3 class="involve-group__title" data-i18n="engaged.europe.title">From abroad: European programmes</h3>
+                        <p class="involve-group__text" data-i18n="engaged.europe.text">Through the EU's Erasmus+ and European Solidarity Corps programmes, people from other countries can volunteer, learn and work with us.</p>
+                        <img class="involve-group__logo" src="./src/assets/images/erasmus/erasmus-prueba.png" alt="Erasmus+" loading="lazy">
+                    </div>
+                    <ul class="involve-group__cards">
+                        <li class="involve-card" id="esc">
+                            <h4 class="involve-card__title" data-i18n="engaged.esc.title">European Solidarity Corps</h4>
+                            <p class="involve-card__who" data-i18n="engaged.esc.who">For young people aged 18–30</p>
+                            <p class="involve-card__desc" data-i18n="engaged.esc.desc">Volunteer with us in Zagreb on community, ecology and culture projects, with travel and accommodation covered by the programme.</p>
+                            <a class="involve-card__cta" href="mailto:udruga.vestigium@gmail.com?subject=European%20Solidarity%20Corps" data-i18n="engaged.esc.cta">Write to us</a>
+                        </li>
+                        <li class="involve-card">
+                            <h4 class="involve-card__title" data-i18n="engaged.exchange.title">Erasmus+ youth exchanges & training</h4>
+                            <p class="involve-card__who" data-i18n="engaged.exchange.who">For young people and youth workers</p>
+                            <p class="involve-card__desc" data-i18n="engaged.exchange.desc">Short international projects where groups from different countries meet, learn and create together, in Croatia or with our partners abroad.</p>
+                            <a class="involve-card__cta" href="mailto:udruga.vestigium@gmail.com?subject=Erasmus%2B" data-i18n="engaged.exchange.cta">Write to us</a>
+                        </li>
+                        <li class="involve-card">
+                            <h4 class="involve-card__title" data-i18n="engaged.partners.title">Partner with us</h4>
+                            <p class="involve-card__who" data-i18n="engaged.partners.who">For organisations and schools</p>
+                            <p class="involve-card__desc" data-i18n="engaged.partners.desc">Plan a joint Erasmus+ project or a long-term partnership to share methods and strengthen our communities.</p>
+                            <a class="involve-card__cta" href="mailto:udruga.vestigium@gmail.com?subject=Partnership" data-i18n="engaged.partners.cta">Write to us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="involve__note"><span data-i18n="engaged.note">Not sure which one fits? Tell us a little about yourself:</span> <a href="mailto:udruga.vestigium@gmail.com">udruga.vestigium@gmail.com</a></p>
             </div>
         </section>
 
@@ -404,32 +447,6 @@
                         <h3 class="service-card__title" data-i18n="projects.regenerative.title">Regenerative Communities Fund</h3>
                         <img src="./src/assets/images/activities/about-us6.jpg" alt="Regenerative communities" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin:8px 0;">
                         <p class="service-card__description" data-i18n="projects.regenerative.desc">Community-led regeneration supported by ECOLISE and Funding Fairer Futures.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Erasmus -->
-        <section id="erasmus" class="services" aria-labelledby="erasmus-heading">
-            <div class="services__container">
-                <h2 id="erasmus-heading" class="services__title" data-i18n="erasmus.title">Erasmus</h2>
-                <p class="services__description" data-i18n="erasmus.subtitle">International youth exchanges, training courses and strategic partnerships.</p>
-                <div class="services__grid">
-                    <article class="service-card">
-                        <h3 class="service-card__title" data-i18n="erasmus.youth.title">Youth Exchanges</h3>
-                        <p class="service-card__description" data-i18n="erasmus.youth.desc">International mobility for young people to learn, share and build communities.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3 class="service-card__title" data-i18n="erasmus.training.title">Training Courses</h3>
-                        <p class="service-card__description" data-i18n="erasmus.training.desc">Capacity building for youth workers and volunteers.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3 class="service-card__title" data-i18n="erasmus.strategic.title">Strategic Partnerships</h3>
-                        <p class="service-card__description" data-i18n="erasmus.strategic.desc">Long-term cooperation with European partners.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3 class="service-card__title" data-i18n="erasmus.capacity.title">Capacity Building</h3>
-                        <p class="service-card__description" data-i18n="erasmus.capacity.desc">Strengthening organizational capacities and community resilience.</p>
                     </article>
                 </div>
             </div>

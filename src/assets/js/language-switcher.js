@@ -66,7 +66,7 @@ const TRANSLATIONS = {
       esc: 'ESC (European Solidarity Corps)',
       gallery: 'Gallery',
       projects: 'Projects',
-      erasmus: 'Erasmus',
+      erasmus: 'Erasmus+',
       'erasmus-youth': 'Youth Exchanges',
       'erasmus-training': 'Training Courses',
       'erasmus-strategic': 'Strategic Partnerships',
@@ -134,10 +134,16 @@ const TRANSLATIONS = {
       watch: 'Watch video'
     },
     engaged: {
-      title: 'Get Engaged',
-      subtitle: 'Join us as a volunteer or participant in European Solidarity Corps projects.',
-      volunteer: { title: 'Be a Volunteer', desc: 'Around 50 people volunteer annually, contributing over 2000 volunteer hours. Help with events, workshops, agriculture and organizational support.' },
-      esc: { title: 'ESC (European Solidarity Corps)', desc: 'International volunteering and solidarity projects for young people. Gain experience and contribute to community development.' }
+      title: 'Get involved',
+      subtitle: 'Whether you live around the corner or are coming from abroad, there is a way to take part. Pick what fits you and write to us.',
+      local: { title: 'Here in the neighbourhood', text: 'For people who live in Zagreb and want to help or belong.' },
+      europe: { title: 'From abroad: European programmes', text: "Through the EU's Erasmus+ and European Solidarity Corps programmes, people from other countries can volunteer, learn and work with us." },
+      volunteer: { title: 'Volunteer', who: 'For anyone, any age', desc: 'Lend a hand at the EKO PLAC, workshops, events, the garden or behind the scenes. Come as often as you like.', cta: 'Write to us' },
+      member: { title: 'Become a member', who: 'For neighbours who want to belong', desc: 'Members shape the programme, propose and run their own activities and keep the association going.', cta: 'Write to us' },
+      esc: { title: 'European Solidarity Corps', who: 'For young people aged 18–30', desc: 'Volunteer with us in Zagreb on community, ecology and culture projects, with travel and accommodation covered by the programme.', cta: 'Write to us' },
+      exchange: { title: 'Erasmus+ youth exchanges & training', who: 'For young people and youth workers', desc: 'Short international projects where groups from different countries meet, learn and create together, in Croatia or with our partners abroad.', cta: 'Write to us' },
+      partners: { title: 'Partner with us', who: 'For organisations and schools', desc: 'Plan a joint Erasmus+ project or a long-term partnership to share methods and strengthen our communities.', cta: 'Write to us' },
+      note: 'Not sure which one fits? Tell us a little about yourself:'
     },
     gallery: {
       metaTitle: 'Gallery - Vestigium',
@@ -169,14 +175,6 @@ const TRANSLATIONS = {
       livinglab: { title: 'Living Lab - Just and Regenerative Community', desc: 'Community activities, gardening club, clothing swaps and textile upcycling in Vrbani and Brezovica.' },
       institutional: { title: 'Institutional Support for Civil Society', desc: 'Capacity building, program development and digitalization supported by the National Foundation.' },
       regenerative: { title: 'Regenerative Communities Fund', desc: 'Community-led regeneration supported by ECOLISE and Funding Fairer Futures.' }
-    },
-    erasmus: {
-      title: 'Erasmus',
-      subtitle: 'International youth exchanges, training courses and strategic partnerships.',
-      youth: { title: 'Youth Exchanges', desc: 'International mobility for young people to learn, share and build communities.' },
-      training: { title: 'Training Courses', desc: 'Capacity building for youth workers and volunteers.' },
-      strategic: { title: 'Strategic Partnerships', desc: 'Long-term cooperation with European partners.' },
-      capacity: { title: 'Capacity Building', desc: 'Strengthening organizational capacities and community resilience.' }
     },
     national: {
       title: 'National',
@@ -303,7 +301,7 @@ const TRANSLATIONS = {
       esc: 'ESK (Europski Solidarni Korpus)',
       gallery: 'Galerija',
       projects: 'Projekti',
-      erasmus: 'Erasmus',
+      erasmus: 'Erasmus+',
       'erasmus-youth': 'Razmjene Mladih',
       'erasmus-training': 'Tečajevi Obuke',
       'erasmus-strategic': 'Strateška Partnerstva',
@@ -372,9 +370,15 @@ const TRANSLATIONS = {
     },
     engaged: {
       title: 'Uključi se',
-      subtitle: 'Pridružite nam se kao volonter ili sudionik projekata Europskih snaga solidarnosti.',
-      volunteer: { title: 'Budi volonter', desc: 'Oko 50 ljudi godišnje volontira, doprinoseći preko 2000 volonterskih sati. Pomoć na događanjima, radionicama, poljoprivredi i organizacijskoj podršci.' },
-      esc: { title: 'ESC (Europske snage solidarnosti)', desc: 'Međunarodni volonterski i solidarnosni projekti za mlade. Stjecanje iskustva i doprinos razvoju zajednice.' }
+      subtitle: 'Bilo da živiš iza ugla ili dolaziš iz inozemstva, postoji način da sudjeluješ. Odaberi što ti odgovara i javi nam se.',
+      local: { title: 'Ovdje u kvartu', text: 'Za one koji žive u Zagrebu i žele pomoći ili postati dio zajednice.' },
+      europe: { title: 'Iz inozemstva: europski programi', text: 'Kroz EU programe Erasmus+ i Europske snage solidarnosti ljudi iz drugih zemalja mogu volontirati, učiti i raditi s nama.' },
+      volunteer: { title: 'Volontiraj', who: 'Za sve, bez obzira na dob', desc: 'Pomozi na EKO PLACU, radionicama, događanjima, u vrtu ili iza kulisa. Dođi koliko često želiš.', cta: 'Javi nam se' },
+      member: { title: 'Postani član', who: 'Za susjede koji žele pripadati', desc: 'Članovi oblikuju program, predlažu i vode vlastite aktivnosti i održavaju udrugu živom.', cta: 'Javi nam se' },
+      esc: { title: 'Europske snage solidarnosti', who: 'Za mlade od 18 do 30 godina', desc: 'Volontiraj s nama u Zagrebu na projektima zajednice, ekologije i kulture, uz putne troškove i smještaj koje pokriva program.', cta: 'Javi nam se' },
+      exchange: { title: 'Erasmus+ razmjene mladih i tečajevi', who: 'Za mlade i osobe koje rade s mladima', desc: 'Kratki međunarodni projekti u kojima se grupe iz različitih zemalja susreću, uče i stvaraju zajedno, u Hrvatskoj ili kod naših partnera u inozemstvu.', cta: 'Javi nam se' },
+      partners: { title: 'Surađuj s nama', who: 'Za organizacije i škole', desc: 'Isplanirajmo zajednički Erasmus+ projekt ili dugoročno partnerstvo za razmjenu metoda i jačanje naših zajednica.', cta: 'Javi nam se' },
+      note: 'Niste sigurni što vam odgovara? Napišite nam nešto o sebi:'
     },
     gallery: {
       metaTitle: 'Galerija - Vestigium',
@@ -406,14 +410,6 @@ const TRANSLATIONS = {
       livinglab: { title: 'Living Lab - pravedna i regenerativna zajednica', desc: 'Aktivnosti zajednice, vrtlarski klub, razmjena odjeće i upcycling tekstila u Vrbanima i Brezovici.' },
       institutional: { title: 'Institucionalna podrška civilnom društvu', desc: 'Jačanje kapaciteta, razvoj programa i digitalizacija uz podršku Nacionalne zaklade.' },
       regenerative: { title: 'Fond regenerativnih zajednica', desc: 'Regeneracija vođena zajednicom uz podršku ECOLISE i Funding Fairer Futures.' }
-    },
-    erasmus: {
-      title: 'Erasmus',
-      subtitle: 'Međunarodne razmjene mladih, tečajevi i strateška partnerstva.',
-      youth: { title: 'Razmjene mladih', desc: 'Međunarodna mobilnost mladih za učenje, dijeljenje i izgradnju zajednice.' },
-      training: { title: 'Tečajevi', desc: 'Jačanje kapaciteta mladih radnika i volontera.' },
-      strategic: { title: 'Strateška partnerstva', desc: 'Dugoročna suradnja s europskim partnerima.' },
-      capacity: { title: 'Jačanje kapaciteta', desc: 'Jačanje organizacijskih kapaciteta i otpornosti zajednice.' }
     },
     national: {
       title: 'Nacionalno',
