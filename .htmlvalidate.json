@@ -1,0 +1,7 @@
+{
+  "extends": ["html-validate:document", "html-validate:a11y"],
+  "rules": {
+    "no-redundant-role": "off",
+    "require-sri": "off"
+  }
+}

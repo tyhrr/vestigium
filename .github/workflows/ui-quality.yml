@@ -1,0 +1,40 @@
+name: UI quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: JavaScript syntax
+        run: for f in src/assets/js/*.js; do node --check "$f"; done
+
+      - name: HTML validity and accessibility markup
+        run: npx --yes html-validate@9.4.0 index.html "src/pages/*.html"
+
+      - name: Impeccable live injection not committed
+        run: "! grep -rl 'impeccable-live-start' index.html src/pages"
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lighthouse (desktop + mobile emulation)
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./.github/lighthouserc.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
