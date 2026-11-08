@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T14:38:03.375Z",
+  "generatedAt": "2026-11-08T19:41:47.745Z",
   "timeZone": "Europe/Zagreb",
   "events": [
     {
@@ -9,24 +9,6 @@
       "allDay": true,
       "place": "Brezovica",
       "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "Nives Qi_lightening (cijeli prostor)",
-      "start": "2026-11-08T14:30:00.000Z",
-      "end": "2026-11-08T16:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Artivna cijeli prostor",
-      "start": "2026-11-08T17:00:00.000Z",
-      "end": "2026-11-08T19:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
       "location": null
     },
     {
@@ -108,6 +90,186 @@
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Coworking space Marilia",
+      "start": "2026-11-11T08:30:00.000Z",
+      "end": "2026-11-11T11:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Terapijska Yoga Iva",
+      "start": "2026-11-11T09:45:00.000Z",
+      "end": "2026-11-11T10:45:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Transition Communicators | Collective Wisdom",
+      "start": "2026-11-11T15:00:00.000Z",
+      "end": "2026-11-11T16:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": "https://us06web.zoom.us/j/89279786349"
+    },
+    {
+      "title": "Tanja dvorana",
+      "start": "2026-11-11T15:30:00.000Z",
+      "end": "2026-11-11T16:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Keramika",
+      "start": "2026-11-11T17:00:00.000Z",
+      "end": "2026-11-11T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Uvodno predavanje AT Ana dvorana",
+      "start": "2026-11-11T17:30:00.000Z",
+      "end": "2026-11-11T18:45:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Klub za osobe starije životne dobi",
+      "start": "2026-11-12T09:00:00.000Z",
+      "end": "2026-11-12T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Textile design, Sol",
+      "start": "2026-11-12T16:00:00.000Z",
+      "end": "2026-11-12T18:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Kikulu kids—radionica za djecu 6-12god.",
+      "start": "2026-11-12T16:30:00.000Z",
+      "end": "2026-11-12T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "zadrugari u botaničaru",
+      "start": "2026-11-12T17:00:00.000Z",
+      "end": "2026-11-12T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": "Botaničar, Trg Marka Marulića 6, 10000, Zagreb, Croatia"
+    },
+    {
+      "title": "Kreativne radionice za djecu",
+      "start": "2026-11-12T17:00:00.000Z",
+      "end": "2026-11-12T18:30:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Joga Tatjana",
+      "start": "2026-11-12T19:30:00.000Z",
+      "end": "2026-11-12T20:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Dramazona",
+      "start": "2026-11-13T17:00:00.000Z",
+      "end": "2026-11-13T21:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Makrame, Fantea",
+      "start": "2026-11-13T17:30:00.000Z",
+      "end": "2026-11-13T19:30:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "🎲 Boardgames night",
+      "start": "2026-11-13T18:00:00.000Z",
+      "end": "2026-11-13T21:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Eko plac",
+      "start": "2026-11-14T08:00:00.000Z",
+      "end": "2026-11-14T10:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Brazilski ritmovi s Mariliom",
+      "start": "2026-11-14T09:00:00.000Z",
+      "end": "2026-11-14T10:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "STITCH & BITCH _ kružok za ručni rad",
+      "start": "2026-11-14T09:30:00.000Z",
+      "end": "2026-11-14T12:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Youth club",
+      "start": "2026-11-14T13:00:00.000Z",
+      "end": "2026-11-14T16:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "German Cultural Night",
+      "start": "2026-11-14T16:00:00.000Z",
+      "end": "2026-11-14T22:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
       "location": null
     }
   ]
