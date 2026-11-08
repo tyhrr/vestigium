@@ -11,10 +11,10 @@
   --dark-green: #1B5E20;         /* Verde oscuro */
   --white: #FFFFFF;              /* Blanco */
   --light-gray: #F5F5F5;         /* Gris claro */
-  --medium-gray: #9E9E9E;        /* Gris medio */
+  --medium-gray: #b3b3b3;        /* Gris medio (mejor contraste) */
   --dark-gray: #424242;          /* Gris oscuro para contraste */
   --text-primary: #212121;       /* Texto principal */
-  --text-secondary: #757575;     /* Texto secundario */
+  --text-secondary: #595959;     /* Texto secundario */
   --border-color: #E0E0E0;       /* Color de bordes */
   
   /* === TIPOGRAFÍA === */
@@ -90,6 +90,17 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal scroll on zoom/small viewports */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Eliminar márgenes por defecto */
 * {
   margin: 0;
@@ -99,7 +110,7 @@
 /* HTML y Body */
 html {
   scroll-behavior: smooth;
-  font-size: 100%; /* 16px */
+  font-size: 87.5%; /* 14px base para reducir el tamaño al 100% de zoom */
 }
 
 body {
@@ -298,6 +309,11 @@ p {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
+  overflow: visible;
+}
+
+.header__logo {
+  overflow: visible;
 }
 
 .header__container {
@@ -319,7 +335,12 @@ p {
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  color: #000000;
+}
+
+.header__logo a {
+  color: #000000 !important;
 }
 
 .header__logo img {
@@ -888,6 +909,7 @@ p {
   background-color: var(--dark-gray);
   color: var(--white);
   padding: var(--space-2xl) 0 var(--space-md);
+  font-size: 1.125rem;
 }
 
 .footer__container {
@@ -951,7 +973,7 @@ p {
 
 .footer__nav-link:hover,
 .footer__nav-link:focus {
-  color: var(--light-green);
+  color: var(--white);
 }
 
 .footer__involvement {
@@ -1046,14 +1068,14 @@ p {
   }
   
   .footer__content {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     text-align: left;
+    gap: var(--space-lg);
   }
   
   .footer__brand,
   .footer__nav,
-  .footer__involvement,
-  .footer__contact {
+  .footer__involvement {
     text-align: left;
   }
 }
@@ -1139,7 +1161,7 @@ p {
 
 .visitor-counter__count {
   font-weight: var(--font-weight-bold);
-  color: var(--primary-green);
+  color: #ffffff;
   font-family: var(--font-family-mono);
   font-size: var(--font-size-base);
   min-width: 3ch;
@@ -1184,5 +1206,94 @@ p {
 @media (min-width: 1024px) {
   .visitor-counter {
     justify-content: center;
+  }
+}
+
+/* =============================================================================
+   CALENDAR SECTION
+   ============================================================================= */
+.calendar-embed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  width: 90vw;
+  max-width: 90vw;
+  margin: var(--space-lg) 0 0 calc(5vw - 20px);
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .calendar-embed {
+    flex-direction: row;
+    gap: var(--space-lg);
+    width: 90vw;
+    max-width: 90vw;
+    margin-left: calc(5vw - 20px);
+  }
+  .calendar-block {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.calendar-block {
+  width: 100%;
+}
+
+.calendar-block__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--primary-green);
+  margin-bottom: var(--space-sm);
+}
+
+.calendar-embed iframe {
+  width: 100%;
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  min-height: 360px;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .calendar-embed iframe {
+    min-height: 260px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .calendar-embed iframe {
+    min-height: 320px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .calendar-embed iframe {
+    min-height: 420px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .calendar-embed iframe {
+    min-height: 560px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calendar-embed iframe {
+    min-height: 460px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .calendar-embed {
+    max-width: 100%;
+  }
+  .calendar-embed iframe {
+    min-height: 640px;
+  }
+  .calendar-block__title {
+    font-size: var(--font-size-2xl);
   }
 }

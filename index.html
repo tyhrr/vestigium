@@ -7,13 +7,13 @@
     <title data-i18n="meta.title">Vestigium - Ecological-Creative Association for Sustainable Communities</title>
     <meta name="description" content="Vestigium is an association in Zagreb that improves community quality of life by promoting healthy and sustainable lifestyle through educational and ecological activities." data-i18n-attr="content:meta.description">
       <!-- Canonical URL -->
-    <link rel="canonical" href=""> <!-- AUN POR DEFINIRSE -->
+    <link rel="canonical" href="https://tyhrr.github.io/vestigium/">
       <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Vestigium - Ecological-Creative Association" data-i18n-attr="content:meta.title">
     <meta property="og:description" content="Improving community quality of life in Zagreb through sustainable initiatives, ecological education and community support." data-i18n-attr="content:meta.description">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vestigium.hr/">
-    <meta property="og:image" content="src/assets/images/content/vestigium-community.jpg">
+    <meta property="og:image" content="https://tyhrr.github.io/vestigium/src/assets/images/content/vestigium-community.jpg">
     <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card -->
@@ -37,27 +37,35 @@
     <link rel="stylesheet" href="./src/assets/css/navigation-advanced.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Estructura Semántica Principal -->    <header role="banner" class="header">
         <div class="header__container">
             <!-- Primera fila para tablet (770px-1024px) -->
-            <div class="header__top-row">
-                <div class="header__brand" itemscope itemtype="https://schema.org/Organization">
+            <div class="header__top-row" onclick="event.stopPropagation()">
+                <div class="header__brand" itemscope itemtype="https://schema.org/Organization" onclick="event.stopPropagation()">
                     <h1 class="header__logo" itemprop="name">
-                        <a href="/" aria-label="Vestigium - Ecological-Creative Association - Home">Vestigium</a>
-                        <img src="./src/assets/images/logo/logo-png.png" alt="logo-img">
+                        <span style="color:#000 !important;">Vestigium</span>
+                        <img src="./src/assets/images/logo/logo-png.png" alt="Vestigium logo" width="55" height="55" style="width:55px;height:auto;margin-left:-18px;margin-top:-10px;vertical-align:middle;overflow:visible;" onclick="event.stopPropagation()">
                     </h1>
                 </div>
                 
                 <!-- Language Selector - will be inserted here by JavaScript -->
-            </div>
-            
-            <!-- Advanced Navigation -->
-            <nav role="navigation" class="navigation" aria-label="Main navigation">
-                <button class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false">
+
+                <div class="navigation__quick" aria-label="Quick links">
+                    <a href="#gallery" class="navigation__link" data-i18n="nav.gallery">Gallery</a>
+                    <a href="#projects" class="navigation__link" data-i18n="nav.projects">Projects</a>
+                </div>
+
+                <button class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false" onclick="(function(b){var m=document.querySelector('.navigation__menu');var o=m.getAttribute('aria-expanded')==='true';m.setAttribute('aria-expanded',o?'false':'true');b.setAttribute('aria-expanded',o?'false':'true');})(this)">
                     <span class="navigation__hamburger"></span>
                 </button>
-                
+
                 <ul class="navigation__menu" role="menubar">
+                    <!-- Calendar -->
+                    <li class="navigation__item" role="none">
+                        <a href="#calendar" class="navigation__link" role="menuitem" data-i18n="nav.calendar">Calendar</a>
+                    </li>
+                    
                     <!-- Community Center with Dropdown -->
                     <li class="navigation__item" role="none">                        <a href="#community-center" 
                            class="navigation__link navigation__link--has-submenu" 
@@ -79,9 +87,101 @@
                         </ul>
                     </li>
                     
+                    <!-- Calendar duplicate removed -->
+                    
+                    <!-- Zadruga Zelenica -->
+                    <li class="navigation__item" role="none">
+                        <a href="#zadruga-zelenica" class="navigation__link" role="menuitem" data-i18n="nav.zadruga-zelenica">Zadruga Zelenica</a>
+                    </li>
+                    
+                    <!-- Get engaged with Dropdown -->
+                    <li class="navigation__item" role="none">
+                        <a href="#get-engaged" 
+                           class="navigation__link navigation__link--has-submenu" 
+                           role="menuitem" 
+                           aria-expanded="false"
+                           data-i18n="nav.get-engaged">Get engaged</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="#be-volunteer" class="navigation__link" role="menuitem" data-i18n="nav.be-volunteer">Be a Volunteer</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="#esc" class="navigation__link" role="menuitem" data-i18n="nav.esc">ESC (European Solidarity Corp)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Gallery -->
+                    <li class="navigation__item navigation__item--core" role="none">
+                        <a href="#gallery" class="navigation__link" role="menuitem" data-i18n="nav.gallery">Gallery</a>
+                    </li>
+                    
+                    <!-- Projects with Complex Dropdown -->
+                    <li class="navigation__item navigation__item--core" role="none">
+                        <a href="#projects" 
+                           class="navigation__link navigation__link--has-submenu" 
+                           role="menuitem" 
+                           aria-expanded="false"
+                           data-i18n="nav.projects">Projects</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="#erasmus" class="navigation__link" role="menuitem" data-i18n="nav.erasmus">Erasmus</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="#national" class="navigation__link" role="menuitem" data-i18n="nav.national">National</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="#previous-projects" class="navigation__link" role="menuitem" data-i18n="nav.previous-projects">Previous projects</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Activities with Dropdown -->
+                    <li class="navigation__item" role="none">
+                        <a href="#activities" 
+                           class="navigation__link navigation__link--has-submenu" 
+                           role="menuitem" 
+                           aria-expanded="false"
+                           data-i18n="nav.activities">Activities</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="#frequent-activities" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="#see-more" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Advanced Navigation -->
+            <nav role="navigation" class="navigation" aria-label="Main navigation" style="display:none;">
+
                     <!-- Calendar -->
                     <li class="navigation__item" role="none">
                         <a href="#calendar" class="navigation__link" role="menuitem" data-i18n="nav.calendar">Calendar</a>
+                    </li>
+                    
+                    <!-- Community Center with Dropdown -->
+                    <li class="navigation__item" role="none">                        <a href="#community-center" 
+                           class="navigation__link navigation__link--has-submenu" 
+                           role="menuitem" 
+                           aria-expanded="false"
+                           data-i18n="nav.community-center">Community Center</a>
+                        <ul class="navigation__submenu" role="menu">
+                            <li class="navigation__item" role="none">
+                                <a href="#who-are-we" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="#what-we-have-done" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
+                            </li>
+                            <li class="navigation__item" role="none">
+                                <a href="#join-us" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
+                            </li>                            <li class="navigation__item" role="none">
+                                <a href="./src/pages/news.html" class="navigation__link" role="menuitem" data-i18n="nav.news">News</a>
+                            </li>
+                        </ul>
                     </li>
                     
                     <!-- Zadruga Zelenica -->
@@ -113,7 +213,7 @@
                     </li>
                     
                     <!-- Projects with Complex Dropdown -->
-                    <li class="navigation__item" role="none">
+                    <li class="navigation__item navigation__item--core" role="none">
                         <a href="#projects" 
                            class="navigation__link navigation__link--has-submenu" 
                            role="menuitem" 
@@ -152,7 +252,7 @@
         </div>
     </header>
     <!-- Hero Section -->
-    <main role="main" class="main">        
+    <main id="main-content" role="main" class="main">        
         <section id="inicio" class="hero" aria-labelledby="hero-heading">
             <div class="hero__container">
                 <h1 id="hero-heading" class="hero__title" data-i18n="hero.title">
@@ -182,7 +282,7 @@
                                 <use href="#icon-education"></use>
                             </svg>
                         </div>
-                        <h3 class="service-card__title" itemprop="name" data-i18n="activities.education.title">Education & Workshops</h3>
+                        <h3 class="service-card__title" itemprop="name" data-i18n="activities.education.title">Education &amp; Workshops</h3>
                         <p class="service-card__description" itemprop="description" data-i18n="activities.education.description">
                             Workshops on urban gardening, composting, social permaculture, healthy cooking, 
                             sewing and relaxation for all ages.
@@ -280,28 +380,232 @@
                     </div>
                 </div>
             </div>
-        </section>        <!-- Aside complementario -->
-        <aside role="complementary" class="cta" aria-labelledby="cta-heading">
-            <div class="cta__container">
-                <h2 id="cta-heading" class="cta__title" data-i18n="cta.title">
-                    Ready to be part of the change?
-                </h2>
-                <p class="cta__text" data-i18n="cta.text">
-                    Join our community of volunteers and members working together 
-                    to create a more sustainable and connected future.
-                </p>
-                <a href="#involucrate" class="button button--primary" data-i18n="cta.btn">Get Involved</a>
+        </section>        <!-- About Detail -->
+        <section id="about-detail" class="about" aria-labelledby="about-detail-heading">
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__text-content">
+                        <h2 id="about-detail-heading" class="about__title" data-i18n="detail.title">About Vestigium</h2>
+                        <p class="about__text" data-i18n="detail.text1" data-i18n-html></p>
+                        <p class="about__text" data-i18n="detail.text2" data-i18n-html></p>
+                        <p class="about__text" data-i18n="detail.text3" data-i18n-html></p>
+                    </div>
+                </div>
             </div>
-        </aside>
+        </section>
+
+        <!-- Community Center -->
+        <section id="community-center" class="about" aria-labelledby="community-center-heading">
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__text-content">
+                        <h2 id="community-center-heading" class="about__title" data-i18n="community.title">Community Center</h2>
+                        <p class="about__text" data-i18n="community.text" data-i18n-html>
+                            Vestigium is a community center in the hands of citizens. We organize a free library, creative workshops, healthy cooking, recycling and environmental care, lectures and presentations of different cultures. We support short supply chains through EKO PLAC every Saturday 9-11h, swap clothes monthly, and evening yoga/fitness/dance classes. Spaces are available for coworking, celebrations and promotions.
+                        </p>
+                        <p class="about__text" data-i18n="community.locations" data-i18n-html>
+                            We operate in two locations: <strong>Community Center Vrbani</strong>, Rudeška 142, and <strong>Cooperative Community Center Zelenica</strong>, Grančarska 2a, Brezovica.
+                        </p>
+                    </div>
+                </div>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="community.vrbani.title">Community Center Vrbani</h3>
+                        <p class="service-card__description" data-i18n="community.vrbani.desc">Rudeška 142, Zagreb. Free library, workshops, farmers market, swap shops and cultural events.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="community.brezovica.title">Cooperative Center Zelenica</h3>
+                        <p class="service-card__description" data-i18n="community.brezovica.desc">Grančarska 2a, Brezovica. Cooperative hub for local food, culture and community initiatives.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zadruga Zelenica -->
+        <section id="zadruga-zelenica" class="about" aria-labelledby="zadruga-heading">
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__text-content">
+                        <h2 id="zadruga-heading" class="about__title" data-i18n="zadruga.title">Zadruga Zelenica</h2>
+                        <p class="about__text" data-i18n="zadruga.text1" data-i18n-html>
+                            The Zelenica platform was launched in 2016 to guide society from unsustainable to sustainable practices that support people, nature and fair distribution. It connects organic and ecological food producers with citizens.
+                        </p>
+                        <p class="about__text" data-i18n="zadruga.text2" data-i18n-html>
+                            In 2021 Zelenica became a social cooperative, and in 2022 the Cooperative Community Center Brezovica opened. We continue gathering members and developing the audience.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=sW66niBEG8I" class="button button--primary" target="_blank" rel="noopener" data-i18n="zadruga.watch">Watch video</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Engaged -->
+        <section id="get-engaged" class="services" aria-labelledby="engaged-heading">
+            <div class="services__container">
+                <h2 id="engaged-heading" class="services__title" data-i18n="engaged.title">Get Engaged</h2>
+                <p class="services__description" data-i18n="engaged.subtitle">Join us as a volunteer or participant in European Solidarity Corps projects.</p>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="engaged.volunteer.title">Be a Volunteer</h3>
+                        <p class="service-card__description" data-i18n="engaged.volunteer.desc">Around 50 people volunteer annually, contributing over 2000 volunteer hours. Help with events, workshops, agriculture and organizational support.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="engaged.esc.title">ESC (European Solidarity Corps)</h3>
+                        <p class="service-card__description" data-i18n="engaged.esc.desc">International volunteering and solidarity projects for young people. Gain experience and contribute to community development.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="about" aria-labelledby="gallery-heading">
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__text-content">
+                        <h2 id="gallery-heading" class="about__title" data-i18n="gallery.title">Gallery</h2>
+                        <p class="about__text" data-i18n="gallery.text">Moments from our community activities, workshops and events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="services" aria-labelledby="projects-heading">
+            <div class="services__container">
+                <h2 id="projects-heading" class="services__title" data-i18n="projects.title">Projects</h2>
+                <p class="services__description" data-i18n="projects.subtitle">Our current and recent projects supported by the City of Zagreb, EU and foundations.</p>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="projects.sustainable.title">Sustainable Future - Path to Healthy Food</h3>
+                        <img src="./src/assets/images/activities/about-us1.jpg" alt="Sustainable future" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin:8px 0;">
+                        <p class="service-card__description" data-i18n="projects.sustainable.desc">Regenerative agriculture, short supply chains and school gardens. Education on healthy soil and biodiversity.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="projects.culture.title">Culture in Brezovica</h3>
+                        <img src="./src/assets/images/activities/about-us2.jpg" alt="Culture in Brezovica" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin:8px 0;">
+                        <p class="service-card__description" data-i18n="projects.culture.desc">Performances, concerts, creative workshops and cultural evenings connecting residents, artists and schools.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="projects.kreaktivno.title">KreAktivno 2026</h3>
+                        <img src="./src/assets/images/activities/about-us3.jpg" alt="KreAktivno" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin:8px 0;">
+                        <p class="service-card__description" data-i18n="projects.kreaktivno.desc">Erasmus+ adult mobility for capacity building at ufaFabrik (Berlin) and Center Rog (Ljubljana).</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="projects.livinglab.title">Living Lab - Just and Regenerative Community</h3>
+                        <img src="./src/assets/images/activities/about-us4.jpg" alt="Living Lab" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin:8px 0;">
+                        <p class="service-card__description" data-i18n="projects.livinglab.desc">Community activities, gardening club, clothing swaps and textile upcycling in Vrbani and Brezovica.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="projects.institutional.title">Institutional Support for Civil Society</h3>
+                        <img src="./src/assets/images/activities/about-us5.jpg" alt="Institutional support" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin:8px 0;">
+                        <p class="service-card__description" data-i18n="projects.institutional.desc">Capacity building, program development and digitalization supported by the National Foundation.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="projects.regenerative.title">Regenerative Communities Fund</h3>
+                        <img src="./src/assets/images/activities/about-us6.jpg" alt="Regenerative communities" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin:8px 0;">
+                        <p class="service-card__description" data-i18n="projects.regenerative.desc">Community-led regeneration supported by ECOLISE and Funding Fairer Futures.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Erasmus -->
+        <section id="erasmus" class="services" aria-labelledby="erasmus-heading">
+            <div class="services__container">
+                <h2 id="erasmus-heading" class="services__title" data-i18n="erasmus.title">Erasmus</h2>
+                <p class="services__description" data-i18n="erasmus.subtitle">International youth exchanges, training courses and strategic partnerships.</p>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="erasmus.youth.title">Youth Exchanges</h3>
+                        <p class="service-card__description" data-i18n="erasmus.youth.desc">International mobility for young people to learn, share and build communities.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="erasmus.training.title">Training Courses</h3>
+                        <p class="service-card__description" data-i18n="erasmus.training.desc">Capacity building for youth workers and volunteers.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="erasmus.strategic.title">Strategic Partnerships</h3>
+                        <p class="service-card__description" data-i18n="erasmus.strategic.desc">Long-term cooperation with European partners.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="erasmus.capacity.title">Capacity Building</h3>
+                        <p class="service-card__description" data-i18n="erasmus.capacity.desc">Strengthening organizational capacities and community resilience.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- National -->
+        <section id="national" class="services" aria-labelledby="national-heading">
+            <div class="services__container">
+                <h2 id="national-heading" class="services__title" data-i18n="national.title">National</h2>
+                <p class="services__description" data-i18n="national.subtitle">Projects supported by the City of Zagreb and national institutions.</p>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="national.kultura.title">Culture in Brezovica</h3>
+                        <p class="service-card__description" data-i18n="national.kultura.desc">Cultural events on the outskirts of the city.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="national.zelenica.title">Zelenica</h3>
+                        <p class="service-card__description" data-i18n="national.zelenica.desc">Green exchange platform and cooperative development.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Previous projects -->
+        <section id="previous-projects" class="services" aria-labelledby="previous-heading">
+            <div class="services__container">
+                <h2 id="previous-heading" class="services__title" data-i18n="previous.title">Previous projects</h2>
+                <p class="services__description" data-i18n="previous.subtitle">A selection of past initiatives and collaborations.</p>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="previous.emotional.title">Emotional and Artificial Intelligence</h3>
+                        <p class="service-card__description" data-i18n="previous.emotional.desc">Erasmus+ training course on media literacy and emotional intelligence.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="previous.grassy.title">Grassy Perspectives</h3>
+                        <p class="service-card__description" data-i18n="previous.grassy.desc">Urban biodiversity and participatory climate practices in Osijek.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card__title" data-i18n="previous.value.title">Value of Waste</h3>
+                        <p class="service-card__description" data-i18n="previous.value.desc">Reducing textile waste through upcycling initiatives.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar -->
+        <section id="calendar" class="about" aria-labelledby="calendar-heading">
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__text-content">
+                        <h2 id="calendar-heading" class="about__title" data-i18n="calendar.title">Calendar</h2>
+                        <p class="about__text" data-i18n="calendar.text">Open our event calendars for Vrbani and Brezovica.</p>
+                        <div class="calendar-embed">
+                            <div class="calendar-block">
+                                <h3 class="calendar-block__title" data-i18n="calendar.vrbani">Community Center Vestigium - Vrbani</h3>
+                                <iframe src="https://calendar.google.com/calendar/embed?src=udruga.vestigium%40gmail.com&ctz=Europe%2FZagreb" style="border:0" width="100%" height="600" frameborder="0" scrolling="no" title="Vestigium Vrbani calendar"></iframe>
+                            </div>
+                            <div class="calendar-block">
+                                <h3 class="calendar-block__title" data-i18n="calendar.brezovica">Cooperative Center Zelenica - Brezovica</h3>
+                                <iframe src="https://calendar.google.com/calendar/embed?src=zadruga.zelenica%40gmail.com&ctz=Europe%2FZagreb" style="border:0" width="100%" height="600" frameborder="0" scrolling="no" title="Zelenica Brezovica calendar"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>    <footer role="contentinfo" class="footer" itemscope itemtype="https://schema.org/Organization">
         <div class="footer__container">
             <div class="footer__content">
                 <div class="footer__brand">
                     <h3 class="footer__title" itemprop="name" data-i18n="footer.title">Vestigium</h3>
-                    <p class="footer__description" itemprop="description" data-i18n="footer.description">
-                        Ecological-creative association improving community quality of life 
-                        through sustainable initiatives and education in Zagreb.
-                    </p>
+                    <p class="footer__description" itemprop="description" data-i18n="footer.location.address">Grančarska 2a, Brezovica</p>
+                    <p class="footer__description" data-i18n="footer.location.country">Croatia</p>
+                    <p class="footer__description"><span itemprop="email">udruga.vestigium@gmail.com</span></p>
+                    <p class="footer__description">+385 95 856 12 70</p>
                     <div class="footer__achievements">
                         <p class="footer__achievement" data-i18n="footer.achievement1">🏆 Changemakers Croatia 2017</p>
                         <p class="footer__achievement" data-i18n="footer.achievement2">🌟 Social Marie Award Finalist 2018</p>
@@ -333,19 +637,6 @@
                     </ul>
                 </div>
                 
-                <div id="contacto" class="footer__contact" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-                    <h4 class="footer__contact-title" data-i18n="footer.contact.title">Contact</h4>                    <div class="footer__contact-info" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                        <p><strong data-i18n="footer.location.label">Location:</strong></p>
-                        <p itemprop="streetAddress" data-i18n="footer.location.address">Grančarska 2a, Brezovica</p>
-                        <p itemprop="addressCountry" data-i18n="footer.location.country">Croatia</p>
-                    </div>
-                    <p class="footer__contact-info">
-                        <span itemprop="email">udruga.vestigium@gmail.com</span>
-                    </p>
-                    <p class="footer__contact-info">
-                        <strong data-i18n="footer.movement">Global Transition Movement</strong>
-                    </p>
-                </div>
             </div>
             
             <div class="footer__bottom">
@@ -359,22 +650,10 @@
                 <div class="visitor-counter">
                     <span class="visitor-counter__label" data-i18n="footer.visitors.label">Visitors:</span>
                     <span class="visitor-counter__count">0</span>
-                    <span class="visitor-counter__suffix" data-i18n="footer.visitors.count">visits</span>
                 </div>
             </div>
         </div>
     </footer>
-      <!-- Language Switcher Status Indicator (solo para desarrollo) -->
-    <div id="ls-status" style="position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.8); color: white; padding: 10px 15px; border-radius: 8px; font-family: monospace; font-size: 12px; z-index: 10000; max-width: 250px; line-height: 1.4;">
-        <div style="font-weight: bold; margin-bottom: 5px;">🌐 Language Status</div>
-        <div>Estado: <span id="ls-status-state">Cargando...</span></div>
-        <div>Idioma: <span id="ls-status-lang">-</span></div>
-        <div>HTML: <span id="ls-status-html">-</span></div>
-        <div style="margin-top: 8px; font-size: 10px; opacity: 0.8;">
-            Click para debug completo
-        </div>
-    </div>
-
     <!-- SVG Icons Sprite -->
     <svg style="display: none;" aria-hidden="true">
         <defs>
@@ -396,72 +675,7 @@
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
             </symbol>
         </defs>
-    </svg>    <!-- ==========================================
-         DESARROLLO - SCRIPT ANTI-CACHÉ
-         ¡ELIMINAR ANTES DE PRODUCCIÓN!
-         ========================================== -->
-    <script>
-        /* 
-         * SCRIPT DE DESARROLLO - NO CACHE
-         * Este script previene que el navegador guarde en caché la página
-         * durante el desarrollo para facilitar la visualización de cambios.
-         * 
-         * ⚠️ IMPORTANTE: Eliminar este script antes del deployment final
-         */
-        (function() {
-            console.log('🚧 MODO DESARROLLO: Cache deshabilitado');
-            
-            // Deshabilitar caché para la página actual
-            if ('serviceWorker' in navigator) {
-                // Eliminar cualquier service worker existente
-                navigator.serviceWorker.getRegistrations().then(function(registrations) {
-                    for(let registration of registrations) {
-                        registration.unregister();
-                    }
-                });
-            }
-            
-            // Agregar headers meta para deshabilitar caché
-            const metaNoCache = document.createElement('meta');
-            metaNoCache.httpEquiv = 'Cache-Control';
-            metaNoCache.content = 'no-cache, no-store, must-revalidate';
-            document.head.appendChild(metaNoCache);
-            
-            const metaPragma = document.createElement('meta');
-            metaPragma.httpEquiv = 'Pragma';
-            metaPragma.content = 'no-cache';
-            document.head.appendChild(metaPragma);
-            
-            const metaExpires = document.createElement('meta');
-            metaExpires.httpEquiv = 'Expires';
-            metaExpires.content = '0';
-            document.head.appendChild(metaExpires);
-            
-            // Agregar timestamp a todos los recursos para forzar recarga
-            const resources = document.querySelectorAll('link[rel="stylesheet"], script[src]');
-            resources.forEach(resource => {
-                if (resource.href || resource.src) {
-                    const url = resource.href || resource.src;
-                    const separator = url.includes('?') ? '&' : '?';
-                    const timestamp = `${separator}v=${Date.now()}`;
-                    
-                    if (resource.href) {
-                        resource.href = url + timestamp;
-                    } else {
-                        resource.src = url + timestamp;
-                    }
-                }
-            });
-            
-            // Mostrar aviso en consola
-            console.log('%c🚧 DESARROLLO ACTIVO', 'background: #ff6b35; color: white; padding: 2px 5px; border-radius: 3px;');
-            console.log('Cache deshabilitado para facilitar desarrollo');
-            console.log('Recuerda eliminar el script anti-caché antes de producción');
-        })();
-    </script>
-    <!-- ========================================== 
-         FIN SCRIPT ANTI-CACHÉ DE DESARROLLO
-         ========================================== -->
+    </svg>    
 
     <!-- Scripts al final del body -->
     <script src="./src/assets/js/language-switcher.js"></script>
@@ -469,81 +683,6 @@
     <script src="./src/assets/js/about-carousel.js"></script>
     <script src="./src/assets/js/main.js"></script>
     
-    <!-- Script de monitoreo del Language Switcher (solo para desarrollo) -->
-    <script>
-        (function() {
-            const statusEl = document.getElementById('ls-status');
-            const stateEl = document.getElementById('ls-status-state');
-            const langEl = document.getElementById('ls-status-lang');
-            const htmlEl = document.getElementById('ls-status-html');
-            
-            function updateStatus() {
-                if (window.vestigiumLanguageSwitcher) {
-                    const ls = window.vestigiumLanguageSwitcher;
-                    const currentLang = ls.getCurrentLanguage();
-                    const config = ls.getLanguageConfig();
-                    const langName = config.languages[currentLang]?.name || currentLang;
-                    
-                    stateEl.textContent = ls.isInitialized ? '✅ Activo' : '⚠️ No Init';
-                    langEl.textContent = `${langName} (${currentLang})`;
-                    htmlEl.textContent = document.documentElement.lang;
-                    
-                    // Cambiar color según estado
-                    if (ls.isInitialized) {
-                        statusEl.style.background = 'rgba(76, 175, 80, 0.9)';
-                    } else {
-                        statusEl.style.background = 'rgba(255, 152, 0, 0.9)';
-                    }
-                } else {
-                    stateEl.textContent = '❌ No Cargado';
-                    langEl.textContent = 'N/A';
-                    htmlEl.textContent = document.documentElement.lang;
-                    statusEl.style.background = 'rgba(244, 67, 54, 0.9)';
-                }
-            }
-            
-            // Actualizar cada 2 segundos
-            setInterval(updateStatus, 2000);
-            
-            // Actualizar cuando el DOM esté listo
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', () => {
-                    setTimeout(updateStatus, 500);
-                });
-            } else {
-                setTimeout(updateStatus, 500);
-            }
-            
-            // Actualizar cuando cambie el idioma
-            document.addEventListener('languageChanged', updateStatus);
-            
-            // Click en el status para mostrar debug completo
-            statusEl.addEventListener('click', function() {
-                if (window.vestigiumLanguageSwitcher) {
-                    console.log('🔍 DEBUG COMPLETO DEL LANGUAGE SWITCHER:');
-                    console.log('='.repeat(50));
-                    const ls = window.vestigiumLanguageSwitcher;
-                    console.log('Current Language:', ls.getCurrentLanguage());
-                    console.log('Is Initialized:', ls.isInitialized);
-                    console.log('Animation in Progress:', ls.animationInProgress);
-                    console.log('Available Languages:', Object.keys(ls.getLanguageConfig().languages));
-                    console.log('Available Translations:', Object.keys(ls.translations));
-                    console.log('HTML Lang Attribute:', document.documentElement.lang);
-                    console.log('LocalStorage:', localStorage.getItem('vestigium-language'));
-                    console.log('Selector in DOM:', !!document.querySelector('.language-selector'));
-                    console.log('Elements with data-i18n:', document.querySelectorAll('[data-i18n]').length);
-                    console.log('Sample translation (hero.title):', ls.t('hero.title'));
-                    console.log('='.repeat(50));
-                    
-                    // Test functions
-                    window.testEN = () => ls.changeLanguageSmooth('en');
-                    window.testHR = () => ls.changeLanguageSmooth('hr');
-                    console.log('💡 Test functions: testEN(), testHR()');
-                } else {
-                    console.error('❌ Language Switcher no disponible');
-                }
-            });
-        })();
-    </script>
+
 </body>
 </html>

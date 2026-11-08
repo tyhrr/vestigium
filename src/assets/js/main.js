@@ -59,7 +59,6 @@ const Utils = {
     try {
       return context.querySelector(selector);
     } catch (error) {
-      console.warn(`Error en selector: ${selector}`, error);
       return null;
     }
   },
@@ -74,7 +73,6 @@ const Utils = {
     try {
       return context.querySelectorAll(selector);
     } catch (error) {
-      console.warn(`Error en selector múltiple: ${selector}`, error);
       return [];
     }
   },
@@ -88,14 +86,12 @@ const Utils = {
    */
   addEvent(element, event, handler, options = {}) {
     if (!element || typeof handler !== 'function') {
-      console.warn('Elemento o handler inválido para evento:', event);
       return;
     }
     
     try {
       element.addEventListener(event, handler, options);
     } catch (error) {
-      console.error(`Error añadiendo evento ${event}:`, error);
     }
   },
 
@@ -111,7 +107,6 @@ const Utils = {
     try {
       element.removeEventListener(event, handler);
     } catch (error) {
-      console.error(`Error removiendo evento ${event}:`, error);
     }
   },
 
@@ -197,7 +192,6 @@ class NavigationManager {
    */
   init() {
     if (!this.toggle || !this.menu) {
-      console.warn('Elementos de navegación no encontrados');
       return;
     }
 
@@ -314,7 +308,6 @@ class NavigationManager {
   animateHamburger(isOpen) {
     // La animación se maneja automáticamente por CSS
     // basándose en el estado aria-expanded del toggle
-    console.log(`Hamburger ${isOpen ? 'abierto' : 'cerrado'}`);
   }
 
   /**
@@ -784,7 +777,6 @@ class ErrorManager {
    * @param {Object} details - Detalles del error
    */
   logError(type, details) {
-    console.error(`[${type}]`, details);
     
     // En producción, aquí se enviarían los errores a un servicio de logging
     if (typeof gtag !== 'undefined') {
@@ -818,7 +810,6 @@ const AdvancedNavigation = {
   init() {
     if (this.isInitialized) return;
 
-    console.log('🚀 Inicializando navegación avanzada...');
     
     // Inicializar atributos ARIA de forma segura
     this.initializeARIAAttributes();
@@ -826,7 +817,6 @@ const AdvancedNavigation = {
     this.bindMenuEvents();
     this.handleKeyboardNavigation();
     this.isInitialized = true;
-    console.log('✅ Navegación avanzada inicializada correctamente');
   },
   /**
    * Inicializar atributos ARIA de forma segura
@@ -847,20 +837,17 @@ const AdvancedNavigation = {
       }
     });
     
-    console.log(`🔧 Inicializados atributos ARIA para ${allSubmenus.length} submenús y ${menuLinks.length} enlaces`);
   },
   /**
    * Bind eventos de menú
    */
   bindMenuEvents() {
     const menuItems = Utils.$$('.navigation__link--has-submenu');
-    console.log(`🔍 Encontrados ${menuItems.length} elementos con submenús`);
     
     menuItems.forEach((item, index) => {
       const submenu = item.nextElementSibling;
       const parentLi = item.closest('.navigation__item');
       
-      console.log(`📋 Procesando menú ${index + 1}:`, {
         link: item.textContent.trim(),
         hasSubmenu: !!submenu,
         hasParentLi: !!parentLi
@@ -1157,7 +1144,6 @@ const AdvancedNavigation = {
  * Inicializar todos los módulos cuando el DOM esté listo
  */
 function initVestigium() {
-  console.log('🚀 Iniciando Vestigium 2.0...');
   
   try {
     // El Language Switcher se auto-inicializa, solo verificamos si existe
@@ -1182,9 +1168,7 @@ function initVestigium() {
       window.vestigiumScrollManager = new SmoothScrollManager();
     }
     
-    console.log('✅ Vestigium 2.0 inicializado correctamente');
   } catch (error) {
-    console.error('❌ Error inicializando Vestigium:', error);
   }
 }
 

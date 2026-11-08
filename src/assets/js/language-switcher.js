@@ -115,6 +115,83 @@ const TRANSLATIONS = {
       text2: 'As part of the <strong>Global Transition Movement for Sustainable Communities</strong>, we work to solve problems such as the growing distance between people, the lack of meeting and socializing places, and the exclusion of families and elderly residents.',
       text3: 'Since 2017 we are beneficiaries of institutional support from the National Foundation for Civil Society Development. In 2017 we were presented as an inspiring example "Changemakers" from Croatia, and in 2018 nominated among the top 30 projects for the "Social Marie Award" among 250 European socially innovative projects.'
     },    
+      detail: {
+        title: 'About Vestigium',
+        text1: 'Vestigium Association (lat. footprint) is an ecological-creative association for improving the quality of our community by approaching and promoting a healthy and sustainable way for our future. The idea of founding the association arose in 2011 by six women listening to the needs of their neighbours in creating a multifunctional space where initiatives could take place and develop.',
+        text2: 'The Vrbana area is a typical young district of Zagreb with many residents being families. Services such as a market, a library, a health center and a community center have long been missing. Vestigium provides some of these by holding a farmers market, creating a free library, having poetry evenings, arranging storytelling sessions for the youngest and by organizing lectures and workshops on living a healthy lifestyle, cooking, sewing, relaxing as well as on educational, ecological and eco-creative content.',
+        text3: 'Every year the association conducts over 1000 activities to educate children and youth in their participation in society, supporting the empowerment of women, preventing and fighting against all forms of addictions, helping social services and health care, maintaining international development cooperation, supporting social entrepreneurship developing and promoting of science, education, lifelong learning, culture, arts and succeeding as a community.'
+      },
+      detail: {
+        title: 'O Vestigiumu',
+        text1: 'Udruga Vestigium (lat. trag) je ekološko-kreativna udruga za poboljšanje kvalitete naše zajednice pristupanjem i promicanjem zdravog i održivog načina za našu budućnost. Ideja o osnivanju udruge nastala je 2011. godine druženjem šest žena koje su slušale potrebe svojih susjeda u stvaranju multifunkcionalnog prostora gdje bi se inicijative mogle odvijati i razvijati.',
+        text2: 'Područje Vrbana je karakteristična mlada četvrt u kojoj većinom žive obitelji s djecom, a usluge poput tržnice, knjižnice i doma zdravlja izostaju. Udruga Vestigium svojim djelovanjem pruža neke od ovih te još mnoge druge usluge i aktivnosti, pa je tako u svom dosadašnjem radu prepoznatljiva po promociji ekološke poljoprivrede kroz organizaciju manifestacija, grupa solidarne razmjene, izleta i povezivanja građana sa malim, lokalnim OPGovima, promociji kulture čitanja u slobodnoj knjižnici.',
+        text3: 'Godišnje se u udruzi provede preko 1000 termina raznih aktivnosti (obrazovanje djece i mladih te njihovu aktivnom sudjelovanju u društvu, prevencija i borba protiv svih oblika ovisnosti, promicanje i razvoj volonterstva, socijalne usluge, poticanje i razvoj socijalnog poduzetništva, zaštita okoliša i prirode, održivi razvoj, razvoj lokalne zajednice, međunarodna razvojna suradnja, zaštita zdravlja, razvoj i promicanje znanosti, obrazovanja, cjeloživotnog učenja, kulture i umjetnosti).'
+      },
+    // Community & Projects (added)
+    community: {
+      title: 'Community Center',
+      text: 'Vestigium is a community center in the hands of citizens. We organize a free library, creative workshops, healthy cooking, recycling and environmental care, lectures and presentations of different cultures. We support short supply chains through EKO PLAC every Saturday 9-11h, swap clothes monthly, and evening yoga/fitness/dance classes. Spaces are available for coworking, celebrations and promotions.',
+      locations: 'We operate in two locations: <strong>Community Center Vrbani</strong>, Rudeška 142, and <strong>Cooperative Community Center Zelenica</strong>, Grančarska 2a, Brezovica.',
+      vrbani: { title: 'Community Center Vrbani', desc: 'Rudeška 142, Zagreb. Free library, workshops, farmers market, swap shops and cultural events.' },
+      brezovica: { title: 'Cooperative Center Zelenica', desc: 'Grančarska 2a, Brezovica. Cooperative hub for local food, culture and community initiatives.' }
+    },
+    zadruga: {
+      title: 'Zadruga Zelenica',
+      text1: 'The Zelenica platform was launched in 2016 to guide society from unsustainable to sustainable practices that support people, nature and fair distribution. It connects organic and ecological food producers with citizens.',
+      text2: 'In 2021 Zelenica became a social cooperative, and in 2022 the Cooperative Community Center Brezovica opened. We continue gathering members and developing the audience.',
+      watch: 'Watch video'
+    },
+    engaged: {
+      title: 'Get Engaged',
+      subtitle: 'Join us as a volunteer or participant in European Solidarity Corps projects.',
+      volunteer: { title: 'Be a Volunteer', desc: 'Around 50 people volunteer annually, contributing over 2000 volunteer hours. Help with events, workshops, agriculture and organizational support.' },
+      esc: { title: 'ESC (European Solidarity Corps)', desc: 'International volunteering and solidarity projects for young people. Gain experience and contribute to community development.' }
+    },
+    gallery: {
+      title: 'Gallery',
+      text: 'Moments from our community activities, workshops and events.'
+    },
+    projects: {
+      title: 'Projects',
+      subtitle: 'Our current and recent projects supported by the City of Zagreb, EU and foundations.',
+      sustainable: { title: 'Sustainable Future - Path to Healthy Food', desc: 'Regenerative agriculture, short supply chains and school gardens. Education on healthy soil and biodiversity.' },
+      culture: { title: 'Culture in Brezovica', desc: 'Performances, concerts, creative workshops and cultural evenings connecting residents, artists and schools.' },
+      kreaktivno: { title: 'KreAktivno 2026', desc: 'Erasmus+ adult mobility for capacity building at ufaFabrik (Berlin) and Center Rog (Ljubljana).' },
+      livinglab: { title: 'Living Lab - Just and Regenerative Community', desc: 'Community activities, gardening club, clothing swaps and textile upcycling in Vrbani and Brezovica.' },
+      institutional: { title: 'Institutional Support for Civil Society', desc: 'Capacity building, program development and digitalization supported by the National Foundation.' },
+      regenerative: { title: 'Regenerative Communities Fund', desc: 'Community-led regeneration supported by ECOLISE and Funding Fairer Futures.' }
+    },
+    erasmus: {
+      title: 'Erasmus',
+      subtitle: 'International youth exchanges, training courses and strategic partnerships.',
+      youth: { title: 'Youth Exchanges', desc: 'International mobility for young people to learn, share and build communities.' },
+      training: { title: 'Training Courses', desc: 'Capacity building for youth workers and volunteers.' },
+      strategic: { title: 'Strategic Partnerships', desc: 'Long-term cooperation with European partners.' },
+      capacity: { title: 'Capacity Building', desc: 'Strengthening organizational capacities and community resilience.' }
+    },
+    national: {
+      title: 'National',
+      subtitle: 'Projects supported by the City of Zagreb and national institutions.',
+      kultura: { title: 'Culture in Brezovica', desc: 'Cultural events on the outskirts of the city.' },
+      zelenica: { title: 'Zelenica', desc: 'Green exchange platform and cooperative development.' }
+    },
+    previous: {
+      title: 'Previous projects',
+      subtitle: 'A selection of past initiatives and collaborations.',
+      emotional: { title: 'Emotional and Artificial Intelligence', desc: 'Erasmus+ training course on media literacy and emotional intelligence.' },
+      grassy: { title: 'Grassy Perspectives', desc: 'Urban biodiversity and participatory climate practices in Osijek.' },
+      value: { title: 'Value of Waste', desc: 'Reducing textile waste through upcycling initiatives.' }
+    },
+    calendar: {
+      title: 'Calendar',
+      text: 'Open our event calendars for Vrbani and Brezovica.',
+      vrbani: 'Community Center Vestigium - Vrbani',
+      brezovica: 'Cooperative Center Zelenica - Brezovica'
+    },
+    findus: {
+      title: 'Find us',
+      text: 'Contact us and visit our centers.'
+    },
     // CTA Section
     cta: {
       title: 'Ready to be part of the change?',
@@ -145,7 +222,7 @@ const TRANSLATIONS = {
         address: 'Grančarska 2a, Brezovica',
         country: 'Croatia'
       },movement: 'Global Transition Movement',
-      copyright: '&copy; 2025 Vestigium Association. All rights reserved.',
+      copyright: '&copy; {year} Vestigium Association.',
       tech: 'Building sustainable communities since 2011 • Over 1000 annual activities',
       visitors: {
         label: 'Visitors:',
@@ -260,6 +337,71 @@ const TRANSLATIONS = {
       text2: 'Kao dio <strong>Globalnog Tranzicijskog Pokreta za Održive Zajednice</strong>, radimo na rješavanju problema poput rastućeg distanciranja između ljudi, nedostajanja mjesta za druženje i socijalizaciju te isključivanja obitelji i starijih stanovnika.',
       text3: 'Od 2017. godine korisnici smo institucionalne podrške Nacionalne zaklade za razvoj civilnoga društva. 2017. godine predstavljeni smo kao inspirativan primjer "Changemakers" iz Hrvatske, a 2018. nominirani među 30 najboljih projekata za "Social Marie Award" među 250 europskih socijalno inovativnih projekata.'
     },    
+    // Community & Projects (added)
+    community: {
+      title: 'Društveni centar',
+      text: 'Vestigium je društveni centar u rukama građana. Organiziramo slobodnu knjižnicu, kreativne radionice, kuhanje, recikliranje i brigu o okolišu, predavanja i predstavljanja raznih kultura. Podržavamo kratke lance opskrbe kroz EKO PLAC svake subote 9-11h, mjesečnu razmjenu odjeće te večernje satove yoge/fitnesa/plesa. Prostori su dostupni za coworking, proslave i promocije.',
+      locations: 'Djelujemo na dvije lokacije: <strong>Društveni centar Vrbani</strong>, Rudeška 142, i <strong>Zadružni društveni centar Zelenica</strong>, Grančarska 2a, Brezovica.',
+      vrbani: { title: 'Društveni centar Vrbani', desc: 'Rudeška 142, Zagreb. Slobodna knjižnica, radionice, tržnica, razmjena odjeće i kulturna događanja.' },
+      brezovica: { title: 'Zadružni centar Zelenica', desc: 'Grančarska 2a, Brezovica. Zadružno središte za lokalnu hranu, kulturu i inicijative zajednice.' }
+    },
+    zadruga: {
+      title: 'Zadruga Zelenica',
+      text1: 'Platforma Zelenica pokrenuta je 2016. kako bi usmjerila društvo od neodrživih prema održivim praksama koje podupiru ljude, prirodu i pravednu raspodjelu. Povezuje ekološke proizvođače hrane s građanima.',
+      text2: '2021. Zelenica je postala društvena zadruga, a 2022. otvoren je Zadružni društveni centar Brezovica. Nastavljamo okupljati članove i razvijati publiku.',
+      watch: 'Pogledaj video'
+    },
+    engaged: {
+      title: 'Uključi se',
+      subtitle: 'Pridružite nam se kao volonter ili sudionik projekata Europskih snaga solidarnosti.',
+      volunteer: { title: 'Budi volonter', desc: 'Oko 50 ljudi godišnje volontira, doprinoseći preko 2000 volonterskih sati. Pomoć na događanjima, radionicama, poljoprivredi i organizacijskoj podršci.' },
+      esc: { title: 'ESC (Europske snage solidarnosti)', desc: 'Međunarodni volonterski i solidarnosni projekti za mlade. Stjecanje iskustva i doprinos razvoju zajednice.' }
+    },
+    gallery: {
+      title: 'Galerija',
+      text: 'Trenuci iz naših aktivnosti, radionica i događanja.'
+    },
+    projects: {
+      title: 'Projekti',
+      subtitle: 'Naši aktualni i nedavni projekti uz podršku Grada Zagreba, EU i zaklada.',
+      sustainable: { title: 'Održiva budućnost - put do zdrave hrane', desc: 'Regenerativna poljoprivreda, kratki lanci opskrbe i školski vrtovi. Edukacija o zdravom tlu i bioraznolikosti.' },
+      culture: { title: 'Kultura u Brezovici', desc: 'Predstave, koncerti, kreativne radionice i kulturne večeri koje povezuju stanovnike, umjetnike i škole.' },
+      kreaktivno: { title: 'KreAktivno 2026', desc: 'Erasmus+ mobilnost za odrasle za jačanje kapaciteta u ufaFabrik (Berlin) i Center Rog (Ljubljana).' },
+      livinglab: { title: 'Living Lab - pravedna i regenerativna zajednica', desc: 'Aktivnosti zajednice, vrtlarski klub, razmjena odjeće i upcycling tekstila u Vrbanima i Brezovici.' },
+      institutional: { title: 'Institucionalna podrška civilnom društvu', desc: 'Jačanje kapaciteta, razvoj programa i digitalizacija uz podršku Nacionalne zaklade.' },
+      regenerative: { title: 'Fond regenerativnih zajednica', desc: 'Regeneracija vođena zajednicom uz podršku ECOLISE i Funding Fairer Futures.' }
+    },
+    erasmus: {
+      title: 'Erasmus',
+      subtitle: 'Međunarodne razmjene mladih, tečajevi i strateška partnerstva.',
+      youth: { title: 'Razmjene mladih', desc: 'Međunarodna mobilnost mladih za učenje, dijeljenje i izgradnju zajednice.' },
+      training: { title: 'Tečajevi', desc: 'Jačanje kapaciteta mladih radnika i volontera.' },
+      strategic: { title: 'Strateška partnerstva', desc: 'Dugoročna suradnja s europskim partnerima.' },
+      capacity: { title: 'Jačanje kapaciteta', desc: 'Jačanje organizacijskih kapaciteta i otpornosti zajednice.' }
+    },
+    national: {
+      title: 'Nacionalno',
+      subtitle: 'Projekti uz podršku Grada Zagreba i nacionalnih institucija.',
+      kultura: { title: 'Kultura u Brezovici', desc: 'Kulturna događanja na rubovima grada.' },
+      zelenica: { title: 'Zelenica', desc: 'Platforma zelene razmjene i razvoj zadruge.' }
+    },
+    previous: {
+      title: 'Prethodni projekti',
+      subtitle: 'Odabir prošlih inicijativa i suradnji.',
+      emotional: { title: 'Emocionalna i umjetna inteligencija', desc: 'Erasmus+ tečaj o medijskoj pismenosti i emocionalnoj inteligenciji.' },
+      grassy: { title: 'Travnate perspektive', desc: 'Urbana bioraznolikost i participativne klimatske prakse u Osijeku.' },
+      value: { title: 'Vrijednost otpada', desc: 'Smanjenje tekstilnog otpada kroz upcycling inicijative.' }
+    },
+    calendar: {
+      title: 'Kalendar',
+      text: 'Otvorite naše kalendare događanja za Vrbane i Brezovicu.',
+      vrbani: 'Društveni centar Vestigium - Vrbani',
+      brezovica: 'Zadružni centar Zelenica - Brezovica'
+    },
+    findus: {
+      title: 'Pronađite nas',
+      text: 'Kontaktirajte nas i posjetite naše centre.'
+    },
     // CTA Section
     cta: {
       title: 'Spremni ste biti dio promjene?',
@@ -290,7 +432,7 @@ const TRANSLATIONS = {
         address: 'Grančarska 2a, Brezovica',
         country: 'Hrvatska'
       },movement: 'Globalni Tranzicijski Pokret',
-      copyright: '&copy; 2025 Udruga Vestigium. Sva prava pridržana.',
+      copyright: '&copy; {year} Udruga Vestigium.',
       tech: 'Izgradnja održivih zajednica od 2011. • Preko 1000 godišnjih aktivnosti',
       visitors: {
         label: 'Posjetitelji:',
@@ -354,7 +496,6 @@ class LanguageSwitcher {
   init() {
     if (this.isInitialized) return;
 
-    console.log('🌐 Inicializando Language Switcher...');
     
     try {
       this.updateHtmlLang();
@@ -363,9 +504,7 @@ class LanguageSwitcher {
       this.bindEvents();
       this.isInitialized = true;
       
-      console.log(`✅ Language Switcher inicializado - Idioma: ${this.currentLanguage}`);
     } catch (error) {
-      console.error('❌ Error inicializando Language Switcher:', error);
     }
   }
 
@@ -376,7 +515,6 @@ class LanguageSwitcher {
     try {
       return localStorage.getItem(LANGUAGE_CONFIG.storageKey);
     } catch (error) {
-      console.warn('No se pudo acceder a localStorage:', error);
       return null;
     }
   }
@@ -388,7 +526,6 @@ class LanguageSwitcher {
     try {
       localStorage.setItem(LANGUAGE_CONFIG.storageKey, language);
     } catch (error) {
-      console.warn('No se pudo guardar en localStorage:', error);
     }
   }
 
@@ -403,9 +540,8 @@ class LanguageSwitcher {
    * Crear selector de idioma en el header
    */
   createLanguageSelector() {
-    const header = document.querySelector('.header__container');
+    const header = document.querySelector('.header__top-row');
     if (!header) {
-      console.warn('Header container no encontrado');
       return;
     }
 
@@ -418,12 +554,10 @@ class LanguageSwitcher {
     // Crear el selector
     const selectorHTML = this.generateSelectorHTML();
     header.insertAdjacentHTML('beforeend', selectorHTML);
+    const _sel = header.querySelector('.language-selector');
+    if (_sel) _sel.addEventListener('click', (e) => e.stopPropagation());
     
-    // Posicionar correctamente
-    const selector = header.querySelector('.language-selector');
-    if (selector) {
-      selector.style.order = '3'; // Después del logo y antes de la navegación
-    }
+    // Insertado al final del top-row (derecha)
   }
 
   /**
@@ -481,7 +615,6 @@ class LanguageSwitcher {
     const options = document.querySelectorAll('.language-selector__option');
 
     if (!toggle || !menu) {
-      console.warn('❌ No se pudo encontrar el toggle o menu del selector de idioma');
       return;
     }
 
@@ -498,25 +631,19 @@ class LanguageSwitcher {
         e.stopPropagation();
         
         const selectedLang = option.dataset.lang;
-        console.log(`🖱️ Opción de idioma clickeada: ${selectedLang}`);
         
         if (selectedLang && selectedLang !== this.currentLanguage) {
-          console.log(`🔄 Iniciando cambio de idioma a: ${selectedLang}`);
           
           // Cambio de idioma inmediato (sin async/await para simplificar)
           this.changeLanguageSmooth(selectedLang)
             .then(success => {
               if (success) {
-                console.log(`✅ Cambio de idioma exitoso a: ${selectedLang}`);
               } else {
-                console.error(`❌ Falló el cambio de idioma a: ${selectedLang}`);
               }
             })
             .catch(error => {
-              console.error(`❌ Error en cambio de idioma: ${error.message}`);
             });
         } else {
-          console.log(`⚠️ Idioma no válido o ya seleccionado: ${selectedLang}`);
         }
         
         this.closeLanguageMenu();
@@ -629,26 +756,20 @@ class LanguageSwitcher {
    * Cambiar idioma con animación suave
    */
   async changeLanguageSmooth(language) {
-    console.log(`🔄 Iniciando cambio de idioma a: ${language}`);
-    console.log(`📍 Estado actual - idioma: ${this.currentLanguage}, animación en progreso: ${this.animationInProgress}`);
     
     // Validaciones iniciales
     if (this.animationInProgress) {
-      console.warn(`⚠️ Animación en progreso, cancelando cambio a: ${language}`);
       return false;
     }
     
     if (!this.translations[language]) {
-      console.error(`❌ Traducciones no encontradas para idioma: ${language}`);
       return false;
     }
 
     if (language === this.currentLanguage) {
-      console.log(`⚠️ Idioma ya seleccionado: ${language}`);
       return false;
     }
 
-    console.log(`🔄 Cambiando idioma de ${this.currentLanguage} a ${language}`);
     
     // Guardar idioma anterior antes de cambiarlo
     const previousLanguage = this.currentLanguage;
@@ -660,13 +781,11 @@ class LanguageSwitcher {
       await this.fadeOutContent();
       
       // Fase 2: Cambiar idioma
-      console.log(`📝 Actualizando idioma interno de ${this.currentLanguage} a ${language}`);
       this.currentLanguage = language;
       this.setStoredLanguage(language);
       this.updateHtmlLang();
       
       // Fase 3: Actualizar contenido
-      console.log(`🌐 Traduciendo página a: ${language}`);
       this.translatePage();
       this.updateLanguageSelector();
       
@@ -676,11 +795,9 @@ class LanguageSwitcher {
       // Emitir evento personalizado con el idioma anterior correcto
       this.dispatchLanguageChangeEvent(language, previousLanguage);
       
-      console.log(`✅ Idioma cambiado exitosamente a: ${language}`);
       return true;
       
     } catch (error) {
-      console.error('❌ Error cambiando idioma:', error);
       // Revertir el idioma en caso de error
       this.currentLanguage = previousLanguage;
       return false;
@@ -732,24 +849,20 @@ class LanguageSwitcher {
    * Traducir toda la página
    */
   translatePage() {
-    console.log(`🌐 Traduciendo página al idioma: ${this.currentLanguage}`);
     
     // Verificar que tenemos las traducciones
     if (!this.translations[this.currentLanguage]) {
-      console.error(`❌ No se encontraron traducciones para: ${this.currentLanguage}`);
       return;
     }
     
     // Traducir elementos con data-i18n
     const elements = document.querySelectorAll('[data-i18n]');
-    console.log(`📊 Elementos encontrados con data-i18n: ${elements.length}`);
     
     let translatedCount = 0;
     elements.forEach((element, index) => {
       const key = element.getAttribute('data-i18n');
       const translation = this.t(key);
       
-      console.log(`🔍 Elemento ${index + 1}: clave="${key}", traducción="${translation}"`);
       
       if (translation && translation !== key) {
         if (element.hasAttribute('data-i18n-html')) {
@@ -758,17 +871,13 @@ class LanguageSwitcher {
           element.textContent = translation;
         }
         translatedCount++;
-        console.log(`✅ Traducido: ${key} → ${translation.substring(0, 50)}...`);
       } else {
-        console.warn(`⚠️ No se encontró traducción para: ${key}`);
       }
     });
     
-    console.log(`✅ Elementos traducidos: ${translatedCount}/${elements.length}`);
 
     // Traducir atributos específicos
     const attributeElements = document.querySelectorAll('[data-i18n-attr]');
-    console.log(`📊 Elementos con data-i18n-attr: ${attributeElements.length}`);
     
     attributeElements.forEach(element => {
       const attrData = element.getAttribute('data-i18n-attr');
@@ -777,7 +886,6 @@ class LanguageSwitcher {
       
       if (translation && attr) {
         element.setAttribute(attr, translation);
-        console.log(`✅ Atributo traducido: ${attr}="${translation}"`);
       }
     });
 
@@ -838,13 +946,11 @@ class LanguageSwitcher {
    */
   t(key) {
     if (!key) {
-      console.warn('⚠️ Clave de traducción vacía');
       return '';
     }
     
     // Verificar que tenemos traducciones para el idioma actual
     if (!this.translations[this.currentLanguage]) {
-      console.error(`❌ No hay traducciones para el idioma: ${this.currentLanguage}`);
       return key;
     }
     
@@ -857,17 +963,18 @@ class LanguageSwitcher {
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
-        console.warn(`⚠️ Clave de traducción no encontrada: ${key} (falló en '${k}')`);
         return key;
       }
     }
     
     // Verificar que el valor final es una cadena
     if (typeof value !== 'string') {
-      console.warn(`⚠️ Valor de traducción no es string para: ${key}`);
       return key;
     }
-    
+
+    // Reemplazar año dinámico
+    value = value.replace('{year}', new Date().getFullYear());
+
     return value;
   }
   /**
@@ -943,23 +1050,17 @@ if (typeof window !== 'undefined') {
   function initLanguageSwitcher() {
     if (!window.vestigiumLanguageSwitcher) {
       try {
-        console.log('🚀 Inicializando Language Switcher...');
         window.vestigiumLanguageSwitcher = new LanguageSwitcher();
         window.vestigiumLanguageSwitcher.init();
-        console.log('✅ Language Switcher inicializado exitosamente');
       } catch (error) {
-        console.error('❌ Error inicializando Language Switcher:', error);
         
         // Fallback: intentar de nuevo después de un breve delay
         setTimeout(() => {
           if (!window.vestigiumLanguageSwitcher) {
             try {
-              console.log('🔄 Reintentando inicialización...');
               window.vestigiumLanguageSwitcher = new LanguageSwitcher();
               window.vestigiumLanguageSwitcher.init();
-              console.log('✅ Language Switcher inicializado en reintento');
             } catch (retryError) {
-              console.error('❌ Error en reintento:', retryError);
             }
           }
         }, 1000);
@@ -969,6 +1070,5 @@ if (typeof window !== 'undefined') {
   
   // Listener para cambios de idioma
   document.addEventListener('languageChanged', function(e) {
-    console.log('📢 Idioma cambiado:', e.detail);
   });
 }
