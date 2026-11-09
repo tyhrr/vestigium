@@ -203,7 +203,7 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 
 ## Components
 
-- **Logo**: footprint with a leaf (`src/assets/images/logo/logo-mark.png`, trimmed; `logo-png.png` square master). Foot in Deep Forest `#1B5E20`, leaf in Leaf Green `#4CAF50`. In the header it sits left of the Fraunces wordmark at 1.5em, the pair being one link to the homepage. Favicons are generated from the same mark.
+- **Logo**: footprint with a leaf (`src/assets/images/logo/logo-mark.png`, trimmed; `logo-png.png` square master). Yellow foot and toes, terracotta heel and a green leaf; these colours belong to the mark and are not page tokens. In the header it sits left of the Fraunces wordmark at 1.5em, the pair being one link to the homepage. Favicons are generated from the same mark.
 - **Get involved** (`.involve`): one section with two groups divided by a hairline, "Here in the neighbourhood" and "From abroad: European programmes" (with the Erasmus+ logo). Each group has a title column and cards with title (Fraunces), a green "who it's for" line, description and a "Write to us" mailto link.
 - **Project bento** (`.project-bento`): 4-column grid on desktop (two 2×2 feature tiles, four single tiles), 2 columns on tablet, 1 on phones. Each tile is a solid brand colour with faint footprint contour lines, a white circular Lucide icon badge, Fraunces title (light 400 at 2.25rem on feature tiles), description and a darkened category chip. Ochre tiles use Ink text.
 - **Buttons** (`.button`, `--primary`, `--secondary`): 44px min height for touch, 2px border, medium weight. Primary is solid Forest Green → Deep Forest on hover; secondary is a green outline that fills on hover. On the green CTA band the primary inverts to white with green text. Transition 0.3s ease-in-out.
@@ -215,9 +215,11 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 - **Gallery page**: story cards (4:3 photo, title, green meta line, text, "See photos" link that filters), pill filter chips (selected = Forest Green), masonry photo grid (2–5 columns, 8px radius) and a dark `<dialog>` lightbox with keyboard and swipe navigation.
 - **CTA band** (`.cta`): solid Forest Green, white title and lead text, inverted primary button.
 - **Navigation**: sticky header; dropdowns open on hover or focus from 1024px and inside the list when tapped below it; flag + language dropdown.
-- **Carousel** (`.about__carousel`): auto-advancing photo slider (4s) with prev/next, dots, keyboard arrows, pause on hover. Square rounded photos on a Sand Tint tile, next to a Sage Tint text tile (Forest Green title, Ink body), sharing the Project bento shape.
+- **About Vestigium** (`#nosotros`): one Deep Forest tile with the Project bento radius and contour lines. White story text (Fraunces 400 title and lead paragraph) sits beside a full-bleed photo, stacked below 1024px.
+- **Carousel** (`.about__carousel`): auto-advancing photo slider (4s), no frame around the photo, pause on hover or keyboard focus. A bar below it holds the count in Fraunces and outlined white prev/next buttons (44px, 6px radius).
+- **Social links** (`.social-link`): Lucide Facebook and Instagram icons in `currentColor`. In the header (Forest Green) from 1024px, below that in the footer under the Erasmus+ logo (white).
 - **Activity tiles** (`#actividades`): the four cards reuse `.project-tile`, one colour per theme: Education ochre, Community Life terracotta, Sustainability forest, Empowerment beetroot.
-- **Footer**: compact Charcoal band. Four columns from 1024px (contact, links, get involved, recognition with the Erasmus+ logo on a white plate), one bottom row with copyright, tagline and visitor counter.
+- **Footer**: compact Charcoal band. Four columns from 1024px (contact, links, get involved, recognition with the Erasmus+ logo on a white plate, followed by the social links below 1024px), one bottom row with copyright, tagline and visitor counter.
 - **Icons**: inline SVG sprite for activity icons; add new ones as Lucide SVGs with `tools/add-icon.sh <name>` into `src/assets/icons/`, coloured with `currentColor`.
 
 ## Do's and Don'ts

@@ -14,6 +14,7 @@ class VestigiumCarousel {
 
         this.currentIndex = 0;
         this.autoSlideInterval = null;
+        this.held = false; // pointer or keyboard focus is on the carousel
         this.autoSlideDelay = 4000; // 4 seconds
 
         this.init();
@@ -24,17 +25,16 @@ class VestigiumCarousel {
      */
     init() {
         this.track = document.getElementById('carousel-track');
-        this.dotsContainer = document.getElementById('carousel-dots');
+        this.count = document.getElementById('carousel-count');
         this.prevBtn = document.querySelector('.carousel__btn--prev');
         this.nextBtn = document.querySelector('.carousel__btn--next');
         
-        if (!this.track || !this.dotsContainer) {
+        if (!this.track || !this.count) {
             console.warn('Carousel elements not found');
             return;
         }
         
         this.createImages();
-        this.createDots();
         this.translateLabels();
         document.addEventListener('languageChanged', () => this.translateLabels());
         this.bindEvents();
@@ -51,42 +51,24 @@ class VestigiumCarousel {
             const imageElement = document.createElement('div');
             imageElement.className = 'carousel__slide';
             imageElement.innerHTML = `
-                <div class="carousel__image-container">
-                    <img 
-                        src="${image.src}" 
-                        class="carousel__image"
-                        loading="lazy"
-                        onerror="this.onerror=null; this.src='src/assets/images/logo/logo-png.png'; this.alt='Vestigium placeholder image';"
-                    />
-                </div>
+                <img
+                    src="${image.src}"
+                    class="carousel__image"
+                    loading="lazy"
+                    onerror="this.onerror=null; this.src='src/assets/images/logo/logo-png.png'; this.alt='Vestigium placeholder image';"
+                />
             `;
             this.track.appendChild(imageElement);
         });
     }
     
     /**
-     * Create navigation dots
-     */
-    createDots() {
-        this.dotsContainer.innerHTML = '';
-        this.images.forEach((_, index) => {
-            const dot = document.createElement('button');
-            dot.className = 'carousel__dot';
-            dot.addEventListener('click', () => this.goToSlide(index));
-            this.dotsContainer.appendChild(dot);
-        });
-    }
-    
-    /**
-     * Put the image and dot labels in the current language
+     * Put the image descriptions in the current language
      */
     translateLabels() {
         const t = (key) => window.vestigiumLanguageSwitcher?.t(key) ?? '';
         this.track.querySelectorAll('.carousel__image').forEach((image, index) => {
             image.alt = t(this.images[index].altKey);
-        });
-        this.dotsContainer.querySelectorAll('.carousel__dot').forEach((dot, index) => {
-            dot.setAttribute('aria-label', t('carousel.goto').replace('{n}', index + 1));
         });
     }
 
@@ -104,13 +86,17 @@ class VestigiumCarousel {
         // Pause auto-slide on hover
         const carousel = document.querySelector('.about__carousel');
         if (carousel) {
-            carousel.addEventListener('mouseenter', () => this.pauseAutoSlide());
-            carousel.addEventListener('mouseleave', () => this.startAutoSlide());
+            const hold = () => { this.held = true; this.pauseAutoSlide(); };
+            const release = () => { this.held = false; this.startAutoSlide(); };
+            carousel.addEventListener('mouseenter', hold);
+            carousel.addEventListener('mouseleave', release);
+            carousel.addEventListener('focusin', hold);
+            carousel.addEventListener('focusout', release);
         }
         
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
-            if (document.querySelector('.about__carousel:hover')) {
+            if (document.querySelector('.about__carousel:hover, .about__carousel:focus-within')) {
                 if (e.key === 'ArrowLeft') this.prevSlide();
                 if (e.key === 'ArrowRight') this.nextSlide();
             }
@@ -191,21 +177,11 @@ class VestigiumCarousel {
      * @param {number} index - The index of the slide to show
      */
     showSlide(index) {
-        const slides = this.track.querySelectorAll('.carousel__slide');
-        const dots = this.dotsContainer.querySelectorAll('.carousel__dot');
-        
-        // Remove active classes
-        slides.forEach(slide => slide.classList.remove('carousel__slide--active'));
-        dots.forEach(dot => dot.classList.remove('carousel__dot--active'));
-        
-        // Add active class to current slide and dot
-        if (slides[index]) {
-            slides[index].classList.add('carousel__slide--active');
-        }
-        if (dots[index]) {
-            dots[index].classList.add('carousel__dot--active');
-        }
-        
+        this.track.querySelectorAll('.carousel__slide').forEach((slide, i) => {
+            slide.classList.toggle('carousel__slide--active', i === index);
+        });
+        this.count.textContent = `${index + 1} / ${this.images.length}`;
+
         this.currentIndex = index;
     }
     
@@ -231,7 +207,7 @@ class VestigiumCarousel {
      */
     goToSlide(index) {
         this.showSlide(index);
-        this.startAutoSlide();
+        if (!this.held) this.startAutoSlide();
     }
     
     /**

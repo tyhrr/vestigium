@@ -243,6 +243,21 @@
   background-color: var(--light-gray);
 }
 
+/* Social links: only in the bar from 1024px, below that they live in the footer */
+.header__social {
+  display: none;
+  order: 1;
+}
+
+.header__social .social-link {
+  color: var(--primary-green);
+}
+
+.header__social .social-link:hover {
+  background-color: var(--light-gray);
+  color: var(--dark-green);
+}
+
 /* Language selector
    ========================================================================== */
 
@@ -464,8 +479,12 @@
     display: none;
   }
 
+  .header__social {
+    display: flex;
+  }
+
   .language-selector {
-    margin: 0 0 0 var(--space-sm);
+    margin: 0;
   }
 
   .navigation__menu {
@@ -529,6 +548,18 @@
 
   .navigation__submenu .navigation__item:last-child .navigation__link {
     border-bottom: none;
+  }
+}
+
+/* Keeps the whole bar in one row at the narrowest desktop widths */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .navigation__link {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+  }
+
+  .header__social .social-link {
+    width: 36px;
   }
 }
 

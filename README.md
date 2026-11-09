@@ -8,9 +8,10 @@ Live site: https://tyhrr.github.io/vestigium (GitHub Pages, published from `main
 
 - **Language switcher**: toggles English and Croatian, remembers the choice in `localStorage` and translates text and attributes through `data-i18n` keys.
 - **Responsive header**: sticks to the top. The whole menu sits in one row from 1024px; below that it collapses into a hamburger.
-- **"About" carousel**: slides every 4s, with buttons, dots, swipe and keyboard arrows. It stays still for visitors who ask for reduced motion.
+- **"About" carousel**: slides every 4s, with previous/next buttons, a photo count, swipe and keyboard arrows. It stays still for visitors who ask for reduced motion.
 - **"Coming up"**: the next events, read from two Google Calendars.
 - **Gallery page**: photos, filters, lightbox and the association's Facebook feed.
+- **Facebook and Instagram links**: icons in the header from 1024px, in the footer below that.
 - **Visitor counter** in the footer.
 
 ## Running locally

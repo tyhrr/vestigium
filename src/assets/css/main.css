@@ -550,53 +550,33 @@ p {
 .about__carousel {
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-width: 0;
+  color: var(--white);
 }
 
-.carousel__container {
-  position: relative;
-  width: 100%;
-  max-width: 30rem;
-}
-
+/* Slides are absolute, so the photo area takes whatever height the column has */
 .carousel__wrapper {
-  aspect-ratio: 1;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
   position: relative;
-  background: var(--white);
+  flex: 1 1 auto;
+  aspect-ratio: 1;
+  overflow: hidden;
 }
 
-.carousel__track {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.carousel__track,
+.carousel__slide {
+  position: absolute;
+  inset: 0;
 }
 
 .carousel__slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
 }
 
 .carousel__slide--active {
   opacity: 1;
-}
-
-.carousel__image-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  visibility: visible;
 }
 
 .carousel__image {
@@ -606,87 +586,61 @@ p {
   object-fit: cover;
 }
 
+.carousel__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.carousel__count {
+  margin: 0;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  font-variant-numeric: tabular-nums;
+}
+
+.carousel__controls {
+  display: flex;
+  gap: var(--space-sm);
+}
+
 .carousel__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--primary-green);
-  border: 0;
-  color: var(--white);
+  display: grid;
+  place-items: center;
   width: max(44px, 2.75rem);
   height: max(44px, 2.75rem);
   padding: 0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid var(--white);
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--white);
   cursor: pointer;
-  transition: all var(--transition-fast);
-  z-index: 2;
-  box-shadow: var(--shadow-md);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
 .carousel__btn:hover {
-  background: var(--dark-green);
-  transform: translateY(-50%) scale(1.1);
+  background: var(--white);
+  color: var(--dark-green);
 }
 
-.carousel__btn:active {
-  transform: translateY(-50%) scale(0.95);
-}
-
-.carousel__btn--prev {
-  left: var(--space-sm);
-}
-
-.carousel__btn--next {
-  right: var(--space-sm);
+.carousel__btn:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
 }
 
 .carousel__icon {
   width: 50%;
   height: 50%;
+  fill: none;
+  stroke: currentColor;
   stroke-width: 2;
-}
-
-.carousel__dots {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2px;
-}
-
-/* 24px hit area around a smaller visible dot */
-.carousel__dot {
-  display: grid;
-  place-items: center;
-  width: max(24px, 1.5rem);
-  height: max(24px, 1.5rem);
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
-}
-
-.carousel__dot::before {
-  content: "";
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  border: 2px solid var(--dark-green);
-  transition: background-color var(--transition-fast);
-}
-
-.carousel__dot:hover::before,
-.carousel__dot--active::before {
-  background: var(--dark-green);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .carousel__slide,
-  .carousel__btn,
-  .carousel__dot::before {
+  .carousel__btn {
     transition: none;
   }
 }
@@ -842,14 +796,6 @@ p {
   color: var(--primary-green);
   font-weight: var(--font-weight-medium);
   text-underline-offset: 0.2em;
-}
-
-/* Carousel controls use the brand focus ring */
-.carousel__btn:focus-visible,
-.carousel__dot:focus-visible {
-  outline: 2px solid var(--dark-green);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 4px var(--white); /* keeps the ring visible over any photo */
 }
 
 /* =============================================================================
@@ -1234,6 +1180,51 @@ p {
   padding: 0.35rem 0.5rem;
   background-color: var(--white); /* EU visibility rules: logo on a light ground */
   border-radius: var(--radius-md);
+}
+
+/* Icon links to the association's social pages: header from 1024px, footer below */
+.social-link {
+  display: grid;
+  place-items: center;
+  width: max(44px, 2.75rem);
+  height: max(44px, 2.75rem);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.social-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.social-link__icon {
+  width: 1.375rem;
+  height: 1.375rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--space-sm);
+  margin: var(--space-sm) 0 0 -0.75rem; /* lines the icon, not its tap area, up with the logo */
+}
+
+.footer__social .social-link {
+  color: var(--white);
+}
+
+.footer__social .social-link:hover {
+  color: var(--footer-accent);
+}
+
+@media (min-width: 1024px) {
+  .footer__social {
+    display: none;
+  }
 }
 
 .footer__bottom {
@@ -1893,8 +1884,7 @@ h3 {
 }
 
 .project-tile,
-#nosotros .about__text-content,
-#nosotros .about__carousel {
+#nosotros .about__text-content {
   --tile: var(--primary-green);
   --tile-ink: var(--white);
   --tile-lines: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none' stroke='%23fff' stroke-opacity='.14' stroke-width='3'%3E%3Cg transform='rotate(-24 330 330)'%3E%3Cellipse cx='330' cy='330' rx='40' ry='58'/%3E%3Cellipse cx='330' cy='330' rx='76' ry='106'/%3E%3Cellipse cx='330' cy='330' rx='112' ry='154'/%3E%3Cellipse cx='330' cy='330' rx='148' ry='202'/%3E%3Cellipse cx='330' cy='330' rx='184' ry='250'/%3E%3Cellipse cx='330' cy='330' rx='220' ry='298'/%3E%3Cellipse cx='330' cy='330' rx='256' ry='346'/%3E%3C/g%3E%3C/svg%3E");
@@ -1936,9 +1926,7 @@ h3 {
 .project-tile--beetroot { --tile: var(--beetroot); }
 .project-tile--pine { --tile: var(--pine); }
 
-.project-tile--ochre,
-#nosotros .about__text-content,
-#nosotros .about__carousel {
+.project-tile--ochre {
   --tile: var(--ochre);
   --tile-ink: var(--text-primary);
   --tile-lines: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none' stroke='%23000' stroke-opacity='.08' stroke-width='3'%3E%3Cg transform='rotate(-24 330 330)'%3E%3Cellipse cx='330' cy='330' rx='40' ry='58'/%3E%3Cellipse cx='330' cy='330' rx='76' ry='106'/%3E%3Cellipse cx='330' cy='330' rx='112' ry='154'/%3E%3Cellipse cx='330' cy='330' rx='148' ry='202'/%3E%3Cellipse cx='330' cy='330' rx='184' ry='250'/%3E%3Cellipse cx='330' cy='330' rx='220' ry='298'/%3E%3Cellipse cx='330' cy='330' rx='256' ry='346'/%3E%3C/g%3E%3C/svg%3E");
@@ -2042,37 +2030,52 @@ h3 {
 }
 
 /* =============================================================================
-   ABOUT VESTIGIUM: Projects tile shape in soft tints (sage story, sand photos)
+   ABOUT VESTIGIUM: one Deep Forest tile, the story beside a full-bleed photo
    ============================================================================= */
-#nosotros .about__text-content { --tile: var(--sage-tint); }
-#nosotros .about__carousel { --tile: var(--sand-tint); }
-
 #nosotros .about__content {
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-lg);
+  gap: 0;
   align-items: stretch;
-}
-
-@media (min-width: 900px) {
-  #nosotros .about__content {
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  }
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background-color: var(--dark-green);
 }
 
 #nosotros .about__text-content {
+  --tile: var(--dark-green);
   justify-content: center;
   gap: 0;
   padding: clamp(var(--space-lg), 5vw, var(--space-3xl));
+  border-radius: 0;
+}
+
+#nosotros .about__title {
+  color: inherit;
+  font-size: var(--font-size-4xl);
+  font-weight: 400;
+  letter-spacing: -0.015em;
 }
 
 #nosotros .about__text {
   color: inherit;
-  max-width: 70ch;
+  max-width: 62ch;
 }
 
-#nosotros .about__carousel {
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-md);
-  padding: clamp(var(--space-md), 4vw, var(--space-xl));
+#nosotros .about__title + .about__text {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  line-height: 1.5;
+}
+
+/* Wider than a phone but still stacked: a full square would be too tall */
+@media (min-width: 480px) and (max-width: 1023px) {
+  #nosotros .carousel__wrapper {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  #nosotros .about__content {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  }
 }

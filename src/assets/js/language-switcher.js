@@ -305,10 +305,13 @@ const TRANSLATIONS = {
       current: 'Current language',
       select: 'Select language'
     },
+    social: {
+      facebook: 'Vestigium on Facebook',
+      instagram: 'Vestigium on Instagram'
+    },
     carousel: {
       previous: 'Previous image',
       next: 'Next image',
-      goto: 'Go to slide {n}',
       photo1: 'Group lying head to head on colourful blankets in the grass',
       photo2: 'Group in long skirts, arms around each other, looking over a green valley',
       photo3: 'Smiling person holding an embroidery hoop in the community space',
@@ -581,10 +584,13 @@ const TRANSLATIONS = {
       current: 'Trenutni jezik',
       select: 'Odaberite jezik'
     },
+    social: {
+      facebook: 'Vestigium na Facebooku',
+      instagram: 'Vestigium na Instagramu'
+    },
     carousel: {
       previous: 'Prethodna slika',
       next: 'Sljedeća slika',
-      goto: 'Idi na sliku {n}',
       photo1: 'Skupina ljudi leži glavom uz glavu na šarenim dekama u travi',
       photo2: 'Skupina u dugim suknjama, zagrljena, gleda preko zelene doline',
       photo3: 'Nasmiješena osoba drži okvir za vez u prostoru zajednice',

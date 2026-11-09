@@ -45,7 +45,7 @@ A grassroots, neighbour-founded community space that is also part of the Global 
 ## Brand Commitments
 
 - Name: Vestigium, with the meaning *footprint* (lat.) as part of its story.
-- Existing logo files in `src/assets/images/logo/` (several alternates; which one is official is undecided).
+- Official logo in `src/assets/images/logo/`: `logo-mark.png` (header) and `logo-png.png` (square master).
 - Voice in the current copy: warm, community-first, inclusive of families, elderly residents, women and young people.
 
 ## Evidence on Hand
