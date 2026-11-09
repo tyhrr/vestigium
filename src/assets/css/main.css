@@ -814,7 +814,7 @@ p {
    ============================================================================= */
 @media (min-width: 1440px) {
   html {
-    font-size: 100%; /* 16px (base is 14px) */
+    font-size: 90%; /* 14.4px (base is 14px) */
   }
 
   :root {
@@ -824,13 +824,13 @@ p {
 
 @media (min-width: 1920px) {
   html {
-    font-size: 112.5%; /* 18px */
+    font-size: 101.25%; /* 16.2px */
   }
 }
 
 @media (min-width: 2560px) {
   html {
-    font-size: 137.5%; /* 22px */
+    font-size: 123.75%; /* 19.8px */
   }
 }
 

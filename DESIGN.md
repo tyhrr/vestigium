@@ -179,7 +179,7 @@ Scale tokens available: 0.75 / 0.875 / 1 / 1.125 / 1.25 / 1.5 / 1.875 / 2.25 / 3
 ## Layout
 
 - Mobile-first; breakpoints 640 / 768 / 1024 / 1280 / 1536 px. Container max 1200px with 16px side padding (24px from the `md` breakpoint).
-- Large screens: the root size (14px base) rises to 16px at 1440px, 18px at 1920px and 22px at 2560px, and the container widens to 90vw from 1440px. Size components in rem so they scale with it.
+- Large screens: the root size (14px base) rises to 14.4px at 1440px, 16.2px at 1920px and 19.8px at 2560px, and the container widens to 90vw from 1440px. Size components in rem so they scale with it.
 - The hero photo is a single centred image (`background-size: cover`), never tiled.
 - Sections after the hero alternate white / Mist Gray by position (`.main > section:nth-of-type`), so a new section inherits the rhythm automatically.
 - Spacing scale on a 4px base: 4, 8, 16, 24, 32, 48, 64, 96, 128 px. Sections use 96px vertical padding.
