@@ -1,43 +1,7 @@
 {
-  "generatedAt": "2026-11-09T00:55:51.015Z",
+  "generatedAt": "2026-11-09T22:22:16.993Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Obuka AT Ana dvorana",
-      "start": "2026-11-09T16:00:00.000Z",
-      "end": "2026-11-09T18:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Zelene košarice - ispred Vestigiuma",
-      "start": "2026-11-09T17:00:00.000Z",
-      "end": "2026-11-09T17:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "MALA ŠKOLA ŠIVANJA",
-      "start": "2026-11-09T17:00:00.000Z",
-      "end": "2026-11-09T19:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Yoga Ivana",
-      "start": "2026-11-09T19:00:00.000Z",
-      "end": "2026-11-09T20:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Klub za osobe starije životne dobi",
       "start": "2026-11-10T09:00:00.000Z",
@@ -120,15 +84,6 @@
       "location": null
     },
     {
-      "title": "Keramika",
-      "start": "2026-11-11T17:00:00.000Z",
-      "end": "2026-11-11T19:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
       "title": "Uvodno predavanje AT Ana dvorana",
       "start": "2026-11-11T17:30:00.000Z",
       "end": "2026-11-11T18:45:00.000Z",
@@ -141,6 +96,15 @@
       "title": "Klub za osobe starije životne dobi",
       "start": "2026-11-12T09:00:00.000Z",
       "end": "2026-11-12T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Individualni razgovor Ana dvorana",
+      "start": "2026-11-12T11:30:00.000Z",
+      "end": "2026-11-12T12:30:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -255,18 +219,54 @@
       "location": null
     },
     {
-      "title": "German Cultural Night",
-      "start": "2026-11-14T16:00:00.000Z",
-      "end": "2026-11-14T22:00:00.000Z",
+      "title": "Makrame radionica",
+      "start": "2026-11-14T17:00:00.000Z",
+      "end": "2026-11-14T18:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Makrame radionica",
-      "start": "2026-11-14T17:00:00.000Z",
-      "end": "2026-11-14T18:00:00.000Z",
+      "title": "Nives_Qi-Lightening (cijeli prostor)",
+      "start": "2026-11-15T14:30:00.000Z",
+      "end": "2026-11-15T16:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Meditativno slikanje",
+      "start": "2026-11-15T16:00:00.000Z",
+      "end": "2026-11-15T17:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": "Brezovica, Croatia"
+    },
+    {
+      "title": "Ana dvorana",
+      "start": "2026-11-15T17:00:00.000Z",
+      "end": "2026-11-15T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Obuka AT Ana dvorana",
+      "start": "2026-11-16T15:45:00.000Z",
+      "end": "2026-11-16T18:15:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Zelene košarice - ispred Vestigiuma",
+      "start": "2026-11-16T17:00:00.000Z",
+      "end": "2026-11-16T17:30:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
