@@ -1,0 +1,8 @@
+{
+  "name": "vestigium-tools",
+  "private": true,
+  "description": "Dependencies of tools/fetch-events.mjs",
+  "dependencies": {
+    "node-ical": "0.20.1"
+  }
+}

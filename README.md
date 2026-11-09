@@ -1,104 +1,102 @@
-# Vestigium 2.0
+# Vestigium
 
-A small multilingual website (English/Croatian) for **Vestigium**, a community-focused association. Built with plain HTML, CSS and vanilla JavaScript — no frameworks, no build step. You can open `index.html` in a browser and it just works.
+A bilingual website (English/Croatian) for **Vestigium**, an ecological-creative association in Zagreb. Built with plain HTML, CSS and vanilla JavaScript: no framework and no build step.
 
-Live site: https://tyhrr.github.io/vestigium (GitHub Pages)
+Live site: https://tyhrr.github.io/vestigium (GitHub Pages, published from `main`)
 
 ## What's in it
 
-- **Language switcher** — toggles between English and Croatian, saves the choice in `localStorage`, and translates text, meta tags and attributes via `data-i18n` keys.
-- **Image carousel** in the "About" section — auto-slides every 4s, with prev/next buttons, dots, keyboard arrows and pause-on-hover.
-- **Visitor counter** in the footer, persisted in `localStorage`.
-- **Responsive navigation** with a hamburger menu for mobile and multi-level dropdowns.
-- SEO bits: dynamic meta tags, `manifest.json`, `robots.txt`, `sitemap.xml`.
-
-The palette is green/white/gray and the layout is mobile-first.
+- **Language switcher**: toggles English and Croatian, remembers the choice in `localStorage` and translates text and attributes through `data-i18n` keys.
+- **Responsive header**: sticks to the top. The whole menu sits in one row from 1024px; below that it collapses into a hamburger.
+- **"About" carousel**: slides every 4s, with buttons, dots, swipe and keyboard arrows. It stays still for visitors who ask for reduced motion.
+- **"Coming up"**: the next events, read from two Google Calendars.
+- **Gallery page**: photos, filters, lightbox and the association's Facebook feed.
+- **Visitor counter** in the footer.
 
 ## Running locally
-
-No install needed.
 
 ```bash
 git clone https://github.com/tyhrr/vestigium.git
 cd vestigium
-# open index.html in your browser
+python3 -m http.server 8000 --bind 127.0.0.1
+# open http://127.0.0.1:8000
 ```
 
-For development, the test pages live in `tests/language-switcher/` and there's a small debug helper at `tests/scripts/verify-language-switcher.js` (exposes `testEN()`, `testHR()`, `debugLS()` in the console).
+Opening `index.html` directly also works, but "Coming up" and the gallery photos need a local server to load their JSON.
 
 ## Project layout
 
 ```
 vestigium/
 ├── index.html
-├── manifest.json, robots.txt, sitemap.xml
+├── manifest.json
 ├── src/
 │   ├── assets/
-│   │   ├── css/        # main.css, navigation-advanced.css
-│   │   ├── js/         # language-switcher.js, about-carousel.js, visitor-counter.js, main.js
-│   │   └── images/     # activities/, favicon/, logo/, erasmus/
-│   └── pages/
-└── tests/
-    ├── language-switcher/
-    └── scripts/
+│   │   ├── css/    # main.css, navigation-advanced.css (header and menu)
+│   │   ├── js/     # main.js (menu), language-switcher.js, about-carousel.js,
+│   │   │           # upcoming-events.js, gallery.js, visitor-counter.js
+│   │   ├── fonts/  icons/
+│   │   └── images/
+│   ├── data/       # upcoming-events.json, gallery.json
+│   └── pages/      # gallery.html
+├── tools/          # calendar script and its test, add-icon.sh
+├── DESIGN.md       # colours, type and components
+└── PRODUCT.md      # who the site is for
 ```
 
-## Upcoming events ("Coming up")
+## Checks
 
-The homepage shows the next 3 events from the two public Google Calendars (Vrbani and Brezovica).
+GitHub Actions (`.github/workflows/ui-quality.yml`) runs these on every push to `main`:
 
-- `tools/fetch-events.mjs` reads both iCal feeds, expands recurring events and writes `src/data/upcoming-events.json`.
-- `.github/workflows/update-events.yml` runs it every 3 hours (and on demand from the Actions tab) and commits the JSON only when the events change.
-- `src/assets/js/upcoming-events.js` renders the cards in the current language and hides the section if the file is missing (e.g. when opening `index.html` from disk).
+```bash
+for f in src/assets/js/*.js; do node --check "$f"; done
+node --test tools/occurrences.test.mjs
+npx html-validate@9.4.0 index.html "src/pages/*.html"
+```
 
-Run it locally with `npm install --no-save node-ical@0.20.1 && node tools/fetch-events.mjs`.
+It also runs Lighthouse on both pages.
 
-## Gallery page
+## Visitor counter
 
-`src/pages/gallery.html` (linked from the Gallery button in the navbar) shows:
+GitHub Pages has no server, so the shared total is kept by [Abacus](https://abacus.jasoncameron.dev), a free counter API that needs no account. `src/assets/js/visitor-counter.js` adds one visit per browser every 24 hours and shows that total plus the 9302 visits recorded before it existed.
 
-- Four story cards about what happens at Vestigium (EKO PLAC, workshops, community life, Zelenica).
-- 172 photos from the association's "WEB VESTIGIUM" Google Drive folder, optimised to WebP (640px thumbnails + 1600px full size) in `src/assets/images/gallery/`, with bilingual alt text and a theme in `src/data/gallery.json`. Filters, "Show more" and a lightbox are in `src/assets/js/gallery.js`.
-- The official Facebook Page Plugin for facebook.com/udrugavestigium, which shows the latest posts with their reactions, comments and shares.
+Visits from `localhost` are read but not counted. If Abacus does not answer, the counter stays hidden. Every visitor's browser connects to that service, so it can see their IP address.
 
-To add photos: save a WebP pair (`NNN-theme.webp` and `NNN-theme-thumb.webp`) in `src/assets/images/gallery/` and add an entry to `src/data/gallery.json` with `category` (market, workshops, community, outdoors, people) and `alt.en` / `alt.hr`.
+## Upcoming events
+
+- `tools/fetch-events.mjs` reads both iCal feeds, expands repeating events and writes `src/data/upcoming-events.json`. If either calendar fails, it keeps the existing file.
+- `.github/workflows/update-events.yml` runs it every 3 hours (or on demand from the Actions tab) and commits the JSON only when the events change.
+- `src/assets/js/upcoming-events.js` renders the cards in the current language and hides the section if the file is missing.
+
+To run it locally:
+
+```bash
+npm ci --ignore-scripts --prefix tools
+node tools/fetch-events.mjs
+```
+
+## Gallery
+
+`src/pages/gallery.html` shows four story cards, 172 optimised photos and the Facebook Page Plugin for facebook.com/udrugavestigium.
+
+To add a photo, save a WebP pair (`NNN-theme.webp` and `NNN-theme-thumb.webp`) in `src/assets/images/gallery/` and add an entry to `src/data/gallery.json` with `category` (market, workshops, community, outdoors, people) and `alt.en` / `alt.hr`.
 
 ## Adding a translation
 
-1. Open `src/assets/js/language-switcher.js`.
-2. Add a key to the `TRANSLATIONS` object in both `en` and `hr` (it's nested, e.g. `hero.title`).
-3. Put `data-i18n="hero.title"` on the element in `index.html`.
-
-```js
-// in TRANSLATIONS
-en: { hero: { title: 'Building Sustainable Communities' } },
-hr: { hero: { title: 'Izgradnja održivih zajednica' } }
-```
+1. Add the key to both `en` and `hr` in `TRANSLATIONS`, in `src/assets/js/language-switcher.js`.
+2. Put it on the element: `data-i18n="hero.title"` for text, or `data-i18n-attr="aria-label:carousel.next"` for an attribute.
 
 ## Adding carousel images
 
-Drop images into `src/assets/images/activities/` and register them:
-
-```js
-window.vestigiumCarousel.addImage({
-    src: 'src/assets/images/activities/new-image.jpg',
-    alt: 'Description',
-    title: 'Image title'
-});
-```
-
-You can also tweak the auto-slide delay with `window.vestigiumCarousel.updateSettings({ autoSlideDelay: 6000 })`.
+1. Save the image as `src/assets/images/activities/about-usN.jpg`, continuing the numbering.
+2. Raise `length` in `this.images` in `src/assets/js/about-carousel.js`.
+3. Add `carousel.photoN` in both languages in `TRANSLATIONS`.
 
 ## Troubleshooting
 
-- **Language selector missing** — check that `language-switcher.js` loaded and look at the browser console. `tests/language-switcher/debug-final.html` is the quickest way to diagnose.
-- **Translations not changing** — make sure elements have `data-i18n` and the keys exist in `TRANSLATIONS`.
-- **Carousel broken** — confirm `about-carousel.js` is included, the container exists in the HTML, and the images are in `src/assets/images/activities/`.
-
-## Notes
-
-- Address on the site: Grančarska 2a, Brezovica (updated from the old Vrbana Area, Zagreb).
-- The original (v1) Vestigium site lives in a separate repo.
+- **Language selector missing or text not changing**: look for errors in the browser console, and check the keys exist in `TRANSLATIONS`.
+- **Carousel broken**: confirm `about-carousel.js` is included and the images are in `src/assets/images/activities/`.
+- **Changes not showing after a push**: reload with Ctrl+Shift+R; GitHub Pages and the browser cache files for a few minutes.
 
 ---
 

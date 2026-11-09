@@ -35,8 +35,7 @@ const LANGUAGE_CONFIG = {
   // Configuración de animaciones
   animations: {
     fadeOut: 150,
-    fadeIn: 200,
-    slideDown: 300
+    fadeIn: 200
   }
 };
 
@@ -46,51 +45,35 @@ const LANGUAGE_CONFIG = {
 
 const TRANSLATIONS = {
   en: {
-    // Meta tags
     meta: {
       title: 'Vestigium - Ecological-Creative Association for Sustainable Communities',
       description: 'Vestigium is an association in Zagreb that improves community quality of life by promoting healthy and sustainable lifestyle through educational and ecological activities.'
     },
-      // Navigation
     nav: {
-      'community-center': 'Community Center',
       'who-are-we': 'Who are we?',
-      'what-we-have-done': 'What we have done',
-      'join-us': 'Join us / Become a member',
-      news: 'News',
+      'join-us': 'Join us',
       calendar: 'Calendar',
       'zadruga-zelenica': 'Zadruga Zelenica',
-      'find-us': 'Find us',
       'get-engaged': 'Get engaged',
       'be-volunteer': 'Be a Volunteer',
       esc: 'ESC (European Solidarity Corps)',
       gallery: 'Gallery',
-      projects: 'Projects',
       erasmus: 'Erasmus+',
-      'erasmus-youth': 'Youth Exchanges',
-      'erasmus-training': 'Training Courses',
-      'erasmus-strategic': 'Strategic Partnerships',
-      'erasmus-capacity': 'Capacity Building',
-      national: 'National',
       'previous-projects': 'Previous projects',
       activities: 'Activities',
       'frequent-activities': 'Frequent activities',
       'see-more': 'See more'
     },
-    
-    // Hero Section
     hero: {
       title: 'Building Sustainable Communities',
       subtitle: 'Vestigium is an ecological-creative association dedicated to improving the quality of life of our community, promoting a healthy and sustainable lifestyle for our future.',
-      'btn-activities': 'See what\'s on',
+      'btn-activities': "See what's on",
       'btn-join': 'Get involved',
       'next-label': 'Every Saturday',
       'next-time': '9–11',
       'next-what': 'EKO PLAC farmers market',
       'next-where': 'Rudeška 142, Vrbani'
     },
-    
-    // Activities Section
     activities: {
       title: 'Our Activities',
       subtitle: 'We conduct over 1000 activities annually to educate, empower and create a resilient community.',
@@ -111,21 +94,24 @@ const TRANSLATIONS = {
         description: 'Women empowerment support, addiction prevention, sociocracy and Theatre of the Oppressed for social change.'
       }
     },
-    
-    // About Section
     about: {
       title: 'About Vestigium',
       text1: '<strong>Vestigium (lat. footprint)</strong> was born in 2011 by the initiative of six women who listened to the needs of their neighbors in the Vrbana area, Zagreb. We created a multifunctional space where initiatives can develop and flourish.',
       text2: 'As part of the <strong>Global Transition Movement for Sustainable Communities</strong>, we work to solve problems such as the growing distance between people, the lack of meeting and socializing places, and the exclusion of families and elderly residents.',
       text3: 'Since 2017 we are beneficiaries of institutional support from the National Foundation for Civil Society Development. In 2017 we were presented as an inspiring example "Changemakers" from Croatia, and in 2018 nominated among the top 30 projects for the "Social Marie Award" among 250 European socially innovative projects.'
-    },    
-    // Community & Projects (added)
+    },
     community: {
       title: 'Community Center',
       text: 'Vestigium is a community center in the hands of citizens. We organize a free library, creative workshops, healthy cooking, recycling and environmental care, lectures and presentations of different cultures. We support short supply chains through EKO PLAC every Saturday 9-11h, swap clothes monthly, and evening yoga/fitness/dance classes. Spaces are available for coworking, celebrations and promotions.',
       locations: 'We operate in two locations: <strong>Community Center Vrbani</strong>, Rudeška 142, and <strong>Cooperative Community Center Zelenica</strong>, Grančarska 2a, Brezovica.',
-      vrbani: { title: 'Community Center Vrbani', desc: 'Rudeška 142, Zagreb. Free library, workshops, farmers market, swap shops and cultural events.' },
-      brezovica: { title: 'Cooperative Center Zelenica', desc: 'Grančarska 2a, Brezovica. Cooperative hub for local food, culture and community initiatives.' }
+      vrbani: {
+        title: 'Community Center Vrbani',
+        desc: 'Rudeška 142, Zagreb. Free library, workshops, farmers market, swap shops and cultural events.'
+      },
+      brezovica: {
+        title: 'Cooperative Center Zelenica',
+        desc: 'Grančarska 2a, Brezovica. Cooperative hub for local food, culture and community initiatives.'
+      }
     },
     zadruga: {
       title: 'Zadruga Zelenica',
@@ -136,30 +122,87 @@ const TRANSLATIONS = {
     engaged: {
       title: 'Get involved',
       subtitle: 'Whether you live around the corner or are coming from abroad, there is a way to take part. Pick what fits you and write to us.',
-      local: { title: 'Here in the neighbourhood', text: 'For people who live in Zagreb and want to help or belong.' },
-      europe: { title: 'From abroad: European programmes', text: "Through the EU's Erasmus+ and European Solidarity Corps programmes, people from other countries can volunteer, learn and work with us." },
-      volunteer: { title: 'Volunteer', who: 'For anyone, any age', desc: 'Lend a hand at the EKO PLAC, workshops, events, the garden or behind the scenes. Come as often as you like.', cta: 'Write to us' },
-      member: { title: 'Become a member', who: 'For neighbours who want to belong', desc: 'Members shape the programme, propose and run their own activities and keep the association going.', cta: 'Write to us' },
-      esc: { title: 'European Solidarity Corps', who: 'For young people aged 18–30', desc: 'Volunteer with us in Zagreb on community, ecology and culture projects, with travel and accommodation covered by the programme.', cta: 'Write to us' },
-      exchange: { title: 'Erasmus+ youth exchanges & training', who: 'For young people and youth workers', desc: 'Short international projects where groups from different countries meet, learn and create together, in Croatia or with our partners abroad.', cta: 'Write to us' },
-      partners: { title: 'Partner with us', who: 'For organisations and schools', desc: 'Plan a joint Erasmus+ project or a long-term partnership to share methods and strengthen our communities.', cta: 'Write to us' },
+      local: {
+        title: 'Here in the neighbourhood',
+        text: 'For people who live in Zagreb and want to help or belong.'
+      },
+      europe: {
+        title: 'From abroad: European programmes',
+        text: "Through the EU's Erasmus+ and European Solidarity Corps programmes, people from other countries can volunteer, learn and work with us."
+      },
+      volunteer: {
+        title: 'Volunteer',
+        who: 'For anyone, any age',
+        desc: 'Lend a hand at the EKO PLAC, workshops, events, the garden or behind the scenes. Come as often as you like.',
+        cta: 'Write to us'
+      },
+      member: {
+        title: 'Become a member',
+        who: 'For neighbours who want to belong',
+        desc: 'Members shape the programme, propose and run their own activities and keep the association going.',
+        cta: 'Write to us'
+      },
+      esc: {
+        title: 'European Solidarity Corps',
+        who: 'For young people aged 18–30',
+        desc: 'Volunteer with us in Zagreb on community, ecology and culture projects, with travel and accommodation covered by the programme.',
+        cta: 'Write to us'
+      },
+      exchange: {
+        title: 'Erasmus+ youth exchanges & training',
+        who: 'For young people and youth workers',
+        desc: 'Short international projects where groups from different countries meet, learn and create together, in Croatia or with our partners abroad.',
+        cta: 'Write to us'
+      },
+      partners: {
+        title: 'Partner with us',
+        who: 'For organisations and schools',
+        desc: 'Plan a joint Erasmus+ project or a long-term partnership to share methods and strengthen our communities.',
+        cta: 'Write to us'
+      },
       note: 'Not sure which one fits? Tell us a little about yourself:'
     },
     gallery: {
       metaTitle: 'Gallery - Vestigium',
       title: 'Gallery',
-      text: 'Moments from our community activities, workshops and events.',
       lead: 'Life at Vestigium in pictures: the Saturday market, workshops, swaps, evenings in the library and days in the Zelenica garden. Everything here is made by neighbours, for neighbours.',
       stories: {
         title: 'What happens at Vestigium',
         see: 'See photos',
-        market: { title: 'EKO PLAC', meta: 'Every Saturday 9–11 · Rudeška 142', text: 'Small local and organic farmers sell directly to the neighbourhood: bread, cheese, honey, seasonal vegetables and flowers.' },
-        workshops: { title: 'Workshops', meta: 'Sewing, weaving, cooking, art', text: 'Neighbours teach neighbours: from the little sewing school and textile upcycling to healthy cooking and painting.' },
-        community: { title: 'Community life', meta: 'Free library · swaps · game nights', text: 'A living room for the neighbourhood: book exchange, monthly clothes swaps, board games, concerts and talks.' },
-        outdoors: { title: 'Zelenica & outdoors', meta: 'Brezovica · gardens · walks', text: 'The cooperative garden in Brezovica, evenings by the fire, flower beds, murals and walks in nature.' }
+        market: {
+          title: 'EKO PLAC',
+          meta: 'Every Saturday 9–11 · Rudeška 142',
+          text: 'Small local and organic farmers sell directly to the neighbourhood: bread, cheese, honey, seasonal vegetables and flowers.'
+        },
+        workshops: {
+          title: 'Workshops',
+          meta: 'Sewing, weaving, cooking, art',
+          text: 'Neighbours teach neighbours: from the little sewing school and textile upcycling to healthy cooking and painting.'
+        },
+        community: {
+          title: 'Community life',
+          meta: 'Free library · swaps · game nights',
+          text: 'A living room for the neighbourhood: book exchange, monthly clothes swaps, board games, concerts and talks.'
+        },
+        outdoors: {
+          title: 'Zelenica & outdoors',
+          meta: 'Brezovica · gardens · walks',
+          text: 'The cooperative garden in Brezovica, evenings by the fire, flower beds, murals and walks in nature.'
+        }
       },
-      photos: { title: 'Photos', count: 'photos', more: 'Show more photos' },
-      filter: { all: 'All', market: 'Market', workshops: 'Workshops', community: 'Community', outdoors: 'Outdoors', people: 'Workshop leaders' },
+      photos: {
+        title: 'Photos',
+        count: 'photos',
+        more: 'Show more photos'
+      },
+      filter: {
+        all: 'All',
+        market: 'Market',
+        workshops: 'Workshops',
+        community: 'Community',
+        outdoors: 'Outdoors',
+        people: 'Workshop leaders'
+      },
       facebook: {
         title: 'Latest on Facebook',
         text: 'Our newest posts, with likes, comments and shares, straight from the Udruga Vestigium page. Follow us to hear about workshops and events first.',
@@ -169,25 +212,52 @@ const TRANSLATIONS = {
     projects: {
       title: 'Projects',
       subtitle: 'Our current and recent projects supported by the City of Zagreb, EU and foundations.',
-      sustainable: { title: 'Sustainable Future - Path to Healthy Food', desc: 'Regenerative agriculture, short supply chains and school gardens. Education on healthy soil and biodiversity.', tag: 'Food & soil' },
-      culture: { title: 'Culture in Brezovica', desc: 'Performances, concerts, creative workshops and cultural evenings connecting residents, artists and schools.', tag: 'Culture' },
-      kreaktivno: { title: 'KreAktivno 2026', desc: 'Erasmus+ adult mobility for capacity building at ufaFabrik (Berlin) and Center Rog (Ljubljana).', tag: 'Erasmus+ · Berlin & Ljubljana' },
-      livinglab: { title: 'Living Lab - Just and Regenerative Community', desc: 'Community activities, gardening club, clothing swaps and textile upcycling in Vrbani and Brezovica.', tag: 'Community · Vrbani & Brezovica' },
-      institutional: { title: 'Institutional Support for Civil Society', desc: 'Capacity building, program development and digitalization supported by the National Foundation.', tag: 'Organisation' },
-      regenerative: { title: 'Regenerative Communities Fund', desc: 'Community-led regeneration supported by ECOLISE and Funding Fairer Futures.', tag: 'Regeneration' }
-    },
-    national: {
-      title: 'National',
-      subtitle: 'Projects supported by the City of Zagreb and national institutions.',
-      kultura: { title: 'Culture in Brezovica', desc: 'Cultural events on the outskirts of the city.' },
-      zelenica: { title: 'Zelenica', desc: 'Green exchange platform and cooperative development.' }
+      sustainable: {
+        title: 'Sustainable Future - Path to Healthy Food',
+        desc: 'Regenerative agriculture, short supply chains and school gardens. Education on healthy soil and biodiversity.',
+        tag: 'Food & soil'
+      },
+      culture: {
+        title: 'Culture in Brezovica',
+        desc: 'Performances, concerts, creative workshops and cultural evenings connecting residents, artists and schools.',
+        tag: 'Culture'
+      },
+      kreaktivno: {
+        title: 'KreAktivno 2026',
+        desc: 'Erasmus+ adult mobility for capacity building at ufaFabrik (Berlin) and Center Rog (Ljubljana).',
+        tag: 'Erasmus+ · Berlin & Ljubljana'
+      },
+      livinglab: {
+        title: 'Living Lab - Just and Regenerative Community',
+        desc: 'Community activities, gardening club, clothing swaps and textile upcycling in Vrbani and Brezovica.',
+        tag: 'Community · Vrbani & Brezovica'
+      },
+      institutional: {
+        title: 'Institutional Support for Civil Society',
+        desc: 'Capacity building, program development and digitalization supported by the National Foundation.',
+        tag: 'Organisation'
+      },
+      regenerative: {
+        title: 'Regenerative Communities Fund',
+        desc: 'Community-led regeneration supported by ECOLISE and Funding Fairer Futures.',
+        tag: 'Regeneration'
+      }
     },
     previous: {
       title: 'Previous projects',
       subtitle: 'A selection of past initiatives and collaborations.',
-      emotional: { title: 'Emotional and Artificial Intelligence', desc: 'Erasmus+ training course on media literacy and emotional intelligence.' },
-      grassy: { title: 'Grassy Perspectives', desc: 'Urban biodiversity and participatory climate practices in Osijek.' },
-      value: { title: 'Value of Waste', desc: 'Reducing textile waste through upcycling initiatives.' }
+      emotional: {
+        title: 'Emotional and Artificial Intelligence',
+        desc: 'Erasmus+ training course on media literacy and emotional intelligence.'
+      },
+      grassy: {
+        title: 'Grassy Perspectives',
+        desc: 'Urban biodiversity and participatory climate practices in Osijek.'
+      },
+      value: {
+        title: 'Value of Waste',
+        desc: 'Reducing textile waste through upcycling initiatives.'
+      }
     },
     calendar: {
       title: 'Calendar',
@@ -201,25 +271,14 @@ const TRANSLATIONS = {
       all: 'Full calendar',
       allDay: 'All day'
     },
-    findus: {
-      title: 'Find us',
-      text: 'Contact us and visit our centers.'
-    },
-    // CTA Section
-    cta: {
-      title: 'Ready to be part of the change?',
-      text: 'Join our community of volunteers and members working together to create a more sustainable and connected future.',
-      btn: 'Get Involved'
-    },    // Footer
     footer: {
       title: 'Vestigium',
-      description: 'Ecological-creative association improving community quality of life through sustainable initiatives and education in Zagreb.',
       achievement1: '🏆 Changemakers Croatia 2017',
-      achievement2: '🌟 Social Marie Award Finalist 2018',      links: 'Links',
+      achievement2: '🌟 Social Marie Award Finalist 2018',
+      links: 'Links',
       home: 'Home',
       activities: 'Activities',
       about: 'About us',
-      news: 'News',
       'get-involved': 'Get involved',
       involvement: {
         title: 'Get Involved',
@@ -228,92 +287,59 @@ const TRANSLATIONS = {
         item2: 'Workshops and education',
         item3: 'Community agriculture',
         item4: 'Organizational support'
-      },      contact: {
+      },
+      contact: {
         title: 'Contact'
-      },      location: {
-        label: 'Location:',
+      },
+      location: {
         address: 'Grančarska 2a, Brezovica',
         country: 'Croatia'
-      },movement: 'Global Transition Movement',
+      },
       copyright: '&copy; {year} Vestigium Association.',
       tech: 'Building sustainable communities since 2011 • Over 1000 annual activities',
       visitors: {
-        label: 'Visitors:',
-        count: 'visits'
+        label: 'Visitors:'
       }
     },
-      // Language Switcher
     lang: {
       current: 'Current language',
       select: 'Select language'
     },
-    
-    // News Page
-    news: {
-      meta: {
-        title: 'News - Vestigium Ecological-Creative Association',
-        description: 'Stay updated with the latest news and activities from Vestigium ecological-creative association in Zagreb.'
-      },
-      hero: {
-        title: 'Latest News',
-        subtitle: 'Stay updated with our latest activities, events, and community initiatives'
-      },
-      facebook: {
-        title: 'From our Facebook',
-        subtitle: 'Connect with our community through our latest social media updates',
-        loading: 'Loading latest posts...',
-        'view-post': 'View on Facebook',
-        'error-title': 'Unable to load Facebook posts',
-        'error-text': 'Please check your internet connection or try again later.',
-        'error-help': 'Please check the configuration and try again.'
-      },
-      gallery: {
-        title: 'Recent Activities',
-        subtitle: 'Browse through our recent community activities and events',
-        loading: 'Loading gallery...'
-      },
-      cta: {
-        title: 'Stay Connected',
-        text: 'Follow us on social media to stay updated with our latest activities and join our community events',
-        facebook: 'Follow on Facebook',
-        join: 'Join Us'
-      }
+    carousel: {
+      previous: 'Previous image',
+      next: 'Next image',
+      goto: 'Go to slide {n}',
+      photo1: 'Group lying head to head on colourful blankets in the grass',
+      photo2: 'Group in long skirts, arms around each other, looking over a green valley',
+      photo3: 'Smiling person holding an embroidery hoop in the community space',
+      photo4: 'Two people standing among crops in a polytunnel',
+      photo5: 'Circle of joined hands seen from below against the sky',
+      photo6: 'Person smiling and holding up a single blueberry',
+      photo7: 'Person sitting cross-legged in a sunlit meadow',
+      photo8: 'Person holding a round green sign at an outdoor market',
+      photo9: 'Hand picking seed packets from a wooden box'
     }
   },
   hr: {
-    // Meta tags
     meta: {
       title: 'Vestigium - Ekolosko-Kreativna Udruga za Održive Zajednice',
       description: 'Vestigium je udruga u Zagrebu koja poboljšava kvalitetu života zajednice promovira zdrav i održiv način života kroz edukacijske i ekološke aktivnosti.'
     },
-      // Navigation
     nav: {
-      'community-center': 'Društveni Centar',
       'who-are-we': 'Tko smo mi?',
-      'what-we-have-done': 'Što smo napravili',
-      'join-us': 'Pridružite nam se / Postanite član',
-      news: 'Vijesti',
+      'join-us': 'Pridružite se',
       calendar: 'Kalendar',
       'zadruga-zelenica': 'Zadruga Zelenica',
-      'find-us': 'Pronađite nas',
       'get-engaged': 'Uključite se',
       'be-volunteer': 'Budite volonter',
       esc: 'ESK (Europski Solidarni Korpus)',
       gallery: 'Galerija',
-      projects: 'Projekti',
       erasmus: 'Erasmus+',
-      'erasmus-youth': 'Razmjene Mladih',
-      'erasmus-training': 'Tečajevi Obuke',
-      'erasmus-strategic': 'Strateška Partnerstva',
-      'erasmus-capacity': 'Jačanje Kapaciteta',
-      national: 'Nacionalni',
       'previous-projects': 'Prethodni projekti',
       activities: 'Aktivnosti',
       'frequent-activities': 'Česte aktivnosti',
       'see-more': 'Pogledaj više'
     },
-    
-    // Hero Section
     hero: {
       title: 'Izgradnja Održivih Zajednica',
       subtitle: 'Vestigium je ekološko-kreativna udruga posvećena poboljšanju kvalitete života naše zajednice, promovira zdrav i održiv način života za našu budućnost.',
@@ -324,8 +350,6 @@ const TRANSLATIONS = {
       'next-what': 'EKO PLAC',
       'next-where': 'Rudeška 142, Vrbani'
     },
-    
-    // Activities Section
     activities: {
       title: 'Naše Aktivnosti',
       subtitle: 'Provodimo preko 1000 aktivnosti godišnje za obrazovanje, osnaživanje i stvaranje otporne zajednice.',
@@ -346,21 +370,24 @@ const TRANSLATIONS = {
         description: 'Podrška osnaživanju žena, prevencija ovisnosti, sociokracija i Kazalište potlačenih za društvene promjene.'
       }
     },
-    
-    // About Section  
     about: {
       title: 'O Vestigiumu',
       text1: '<strong>Vestigium (lat. trag)</strong> nastao je 2011. godine inicijativom šest žena koje su slušale potrebe svojih susjeda u području Vrbane u Zagrebu. Stvorili smo multifunkcionalni prostor gdje se inicijative mogu razvijati i cvjetati.',
       text2: 'Kao dio <strong>Globalnog Tranzicijskog Pokreta za Održive Zajednice</strong>, radimo na rješavanju problema poput rastućeg distanciranja između ljudi, nedostajanja mjesta za druženje i socijalizaciju te isključivanja obitelji i starijih stanovnika.',
       text3: 'Od 2017. godine korisnici smo institucionalne podrške Nacionalne zaklade za razvoj civilnoga društva. 2017. godine predstavljeni smo kao inspirativan primjer "Changemakers" iz Hrvatske, a 2018. nominirani među 30 najboljih projekata za "Social Marie Award" među 250 europskih socijalno inovativnih projekata.'
-    },    
-    // Community & Projects (added)
+    },
     community: {
       title: 'Društveni centar',
       text: 'Vestigium je društveni centar u rukama građana. Organiziramo slobodnu knjižnicu, kreativne radionice, kuhanje, recikliranje i brigu o okolišu, predavanja i predstavljanja raznih kultura. Podržavamo kratke lance opskrbe kroz EKO PLAC svake subote 9-11h, mjesečnu razmjenu odjeće te večernje satove yoge/fitnesa/plesa. Prostori su dostupni za coworking, proslave i promocije.',
       locations: 'Djelujemo na dvije lokacije: <strong>Društveni centar Vrbani</strong>, Rudeška 142, i <strong>Zadružni društveni centar Zelenica</strong>, Grančarska 2a, Brezovica.',
-      vrbani: { title: 'Društveni centar Vrbani', desc: 'Rudeška 142, Zagreb. Slobodna knjižnica, radionice, tržnica, razmjena odjeće i kulturna događanja.' },
-      brezovica: { title: 'Zadružni centar Zelenica', desc: 'Grančarska 2a, Brezovica. Zadružno središte za lokalnu hranu, kulturu i inicijative zajednice.' }
+      vrbani: {
+        title: 'Društveni centar Vrbani',
+        desc: 'Rudeška 142, Zagreb. Slobodna knjižnica, radionice, tržnica, razmjena odjeće i kulturna događanja.'
+      },
+      brezovica: {
+        title: 'Zadružni centar Zelenica',
+        desc: 'Grančarska 2a, Brezovica. Zadružno središte za lokalnu hranu, kulturu i inicijative zajednice.'
+      }
     },
     zadruga: {
       title: 'Zadruga Zelenica',
@@ -371,30 +398,87 @@ const TRANSLATIONS = {
     engaged: {
       title: 'Uključi se',
       subtitle: 'Bilo da živiš iza ugla ili dolaziš iz inozemstva, postoji način da sudjeluješ. Odaberi što ti odgovara i javi nam se.',
-      local: { title: 'Ovdje u kvartu', text: 'Za one koji žive u Zagrebu i žele pomoći ili postati dio zajednice.' },
-      europe: { title: 'Iz inozemstva: europski programi', text: 'Kroz EU programe Erasmus+ i Europske snage solidarnosti ljudi iz drugih zemalja mogu volontirati, učiti i raditi s nama.' },
-      volunteer: { title: 'Volontiraj', who: 'Za sve, bez obzira na dob', desc: 'Pomozi na EKO PLACU, radionicama, događanjima, u vrtu ili iza kulisa. Dođi koliko često želiš.', cta: 'Javi nam se' },
-      member: { title: 'Postani član', who: 'Za susjede koji žele pripadati', desc: 'Članovi oblikuju program, predlažu i vode vlastite aktivnosti i održavaju udrugu živom.', cta: 'Javi nam se' },
-      esc: { title: 'Europske snage solidarnosti', who: 'Za mlade od 18 do 30 godina', desc: 'Volontiraj s nama u Zagrebu na projektima zajednice, ekologije i kulture, uz putne troškove i smještaj koje pokriva program.', cta: 'Javi nam se' },
-      exchange: { title: 'Erasmus+ razmjene mladih i tečajevi', who: 'Za mlade i osobe koje rade s mladima', desc: 'Kratki međunarodni projekti u kojima se grupe iz različitih zemalja susreću, uče i stvaraju zajedno, u Hrvatskoj ili kod naših partnera u inozemstvu.', cta: 'Javi nam se' },
-      partners: { title: 'Surađuj s nama', who: 'Za organizacije i škole', desc: 'Isplanirajmo zajednički Erasmus+ projekt ili dugoročno partnerstvo za razmjenu metoda i jačanje naših zajednica.', cta: 'Javi nam se' },
+      local: {
+        title: 'Ovdje u kvartu',
+        text: 'Za one koji žive u Zagrebu i žele pomoći ili postati dio zajednice.'
+      },
+      europe: {
+        title: 'Iz inozemstva: europski programi',
+        text: 'Kroz EU programe Erasmus+ i Europske snage solidarnosti ljudi iz drugih zemalja mogu volontirati, učiti i raditi s nama.'
+      },
+      volunteer: {
+        title: 'Volontiraj',
+        who: 'Za sve, bez obzira na dob',
+        desc: 'Pomozi na EKO PLACU, radionicama, događanjima, u vrtu ili iza kulisa. Dođi koliko često želiš.',
+        cta: 'Javi nam se'
+      },
+      member: {
+        title: 'Postani član',
+        who: 'Za susjede koji žele pripadati',
+        desc: 'Članovi oblikuju program, predlažu i vode vlastite aktivnosti i održavaju udrugu živom.',
+        cta: 'Javi nam se'
+      },
+      esc: {
+        title: 'Europske snage solidarnosti',
+        who: 'Za mlade od 18 do 30 godina',
+        desc: 'Volontiraj s nama u Zagrebu na projektima zajednice, ekologije i kulture, uz putne troškove i smještaj koje pokriva program.',
+        cta: 'Javi nam se'
+      },
+      exchange: {
+        title: 'Erasmus+ razmjene mladih i tečajevi',
+        who: 'Za mlade i osobe koje rade s mladima',
+        desc: 'Kratki međunarodni projekti u kojima se grupe iz različitih zemalja susreću, uče i stvaraju zajedno, u Hrvatskoj ili kod naših partnera u inozemstvu.',
+        cta: 'Javi nam se'
+      },
+      partners: {
+        title: 'Surađuj s nama',
+        who: 'Za organizacije i škole',
+        desc: 'Isplanirajmo zajednički Erasmus+ projekt ili dugoročno partnerstvo za razmjenu metoda i jačanje naših zajednica.',
+        cta: 'Javi nam se'
+      },
       note: 'Niste sigurni što vam odgovara? Napišite nam nešto o sebi:'
     },
     gallery: {
       metaTitle: 'Galerija - Vestigium',
       title: 'Galerija',
-      text: 'Trenuci iz naših aktivnosti, radionica i događanja.',
       lead: 'Život Vestigiuma u slikama: subotnji plac, radionice, razmjene, večeri u knjižnici i dani u vrtu Zelenice. Sve ovo stvaraju susjedi za susjede.',
       stories: {
         title: 'Što se događa u Vestigiumu',
         see: 'Pogledaj fotografije',
-        market: { title: 'EKO PLAC', meta: 'Svake subote 9–11 h · Rudeška 142', text: 'Mali lokalni i ekološki proizvođači prodaju izravno kvartu: kruh, sir, med, sezonsko povrće i cvijeće.' },
-        workshops: { title: 'Radionice', meta: 'Šivanje, pletenje, kuhanje, umjetnost', text: 'Susjedi uče susjede: od male škole šivanja i prenamjene tekstila do zdravog kuhanja i slikanja.' },
-        community: { title: 'Život zajednice', meta: 'Slobodna knjižnica · razmjene · večeri igara', text: 'Dnevni boravak kvarta: razmjena knjiga, mjesečne razmjene odjeće, društvene igre, koncerti i razgovori.' },
-        outdoors: { title: 'Zelenica i priroda', meta: 'Brezovica · vrtovi · šetnje', text: 'Zadružni vrt u Brezovici, večeri uz vatru, cvjetnjaci, murali i šetnje prirodom.' }
+        market: {
+          title: 'EKO PLAC',
+          meta: 'Svake subote 9–11 h · Rudeška 142',
+          text: 'Mali lokalni i ekološki proizvođači prodaju izravno kvartu: kruh, sir, med, sezonsko povrće i cvijeće.'
+        },
+        workshops: {
+          title: 'Radionice',
+          meta: 'Šivanje, pletenje, kuhanje, umjetnost',
+          text: 'Susjedi uče susjede: od male škole šivanja i prenamjene tekstila do zdravog kuhanja i slikanja.'
+        },
+        community: {
+          title: 'Život zajednice',
+          meta: 'Slobodna knjižnica · razmjene · večeri igara',
+          text: 'Dnevni boravak kvarta: razmjena knjiga, mjesečne razmjene odjeće, društvene igre, koncerti i razgovori.'
+        },
+        outdoors: {
+          title: 'Zelenica i priroda',
+          meta: 'Brezovica · vrtovi · šetnje',
+          text: 'Zadružni vrt u Brezovici, večeri uz vatru, cvjetnjaci, murali i šetnje prirodom.'
+        }
       },
-      photos: { title: 'Fotografije', count: 'fotografija', more: 'Prikaži još fotografija' },
-      filter: { all: 'Sve', market: 'Plac', workshops: 'Radionice', community: 'Zajednica', outdoors: 'Priroda', people: 'Voditelji radionica' },
+      photos: {
+        title: 'Fotografije',
+        count: 'fotografija',
+        more: 'Prikaži još fotografija'
+      },
+      filter: {
+        all: 'Sve',
+        market: 'Plac',
+        workshops: 'Radionice',
+        community: 'Zajednica',
+        outdoors: 'Priroda',
+        people: 'Voditelji radionica'
+      },
       facebook: {
         title: 'Najnovije na Facebooku',
         text: 'Naše najnovije objave, s reakcijama, komentarima i dijeljenjima, izravno sa stranice Udruge Vestigium. Pratite nas i prvi saznajte za radionice i događanja.',
@@ -404,25 +488,52 @@ const TRANSLATIONS = {
     projects: {
       title: 'Projekti',
       subtitle: 'Naši aktualni i nedavni projekti uz podršku Grada Zagreba, EU i zaklada.',
-      sustainable: { title: 'Održiva budućnost - put do zdrave hrane', desc: 'Regenerativna poljoprivreda, kratki lanci opskrbe i školski vrtovi. Edukacija o zdravom tlu i bioraznolikosti.', tag: 'Hrana i tlo' },
-      culture: { title: 'Kultura u Brezovici', desc: 'Predstave, koncerti, kreativne radionice i kulturne večeri koje povezuju stanovnike, umjetnike i škole.', tag: 'Kultura' },
-      kreaktivno: { title: 'KreAktivno 2026', desc: 'Erasmus+ mobilnost za odrasle za jačanje kapaciteta u ufaFabrik (Berlin) i Center Rog (Ljubljana).', tag: 'Erasmus+ · Berlin i Ljubljana' },
-      livinglab: { title: 'Living Lab - pravedna i regenerativna zajednica', desc: 'Aktivnosti zajednice, vrtlarski klub, razmjena odjeće i upcycling tekstila u Vrbanima i Brezovici.', tag: 'Zajednica · Vrbani i Brezovica' },
-      institutional: { title: 'Institucionalna podrška civilnom društvu', desc: 'Jačanje kapaciteta, razvoj programa i digitalizacija uz podršku Nacionalne zaklade.', tag: 'Organizacija' },
-      regenerative: { title: 'Fond regenerativnih zajednica', desc: 'Regeneracija vođena zajednicom uz podršku ECOLISE i Funding Fairer Futures.', tag: 'Regeneracija' }
-    },
-    national: {
-      title: 'Nacionalno',
-      subtitle: 'Projekti uz podršku Grada Zagreba i nacionalnih institucija.',
-      kultura: { title: 'Kultura u Brezovici', desc: 'Kulturna događanja na rubovima grada.' },
-      zelenica: { title: 'Zelenica', desc: 'Platforma zelene razmjene i razvoj zadruge.' }
+      sustainable: {
+        title: 'Održiva budućnost - put do zdrave hrane',
+        desc: 'Regenerativna poljoprivreda, kratki lanci opskrbe i školski vrtovi. Edukacija o zdravom tlu i bioraznolikosti.',
+        tag: 'Hrana i tlo'
+      },
+      culture: {
+        title: 'Kultura u Brezovici',
+        desc: 'Predstave, koncerti, kreativne radionice i kulturne večeri koje povezuju stanovnike, umjetnike i škole.',
+        tag: 'Kultura'
+      },
+      kreaktivno: {
+        title: 'KreAktivno 2026',
+        desc: 'Erasmus+ mobilnost za odrasle za jačanje kapaciteta u ufaFabrik (Berlin) i Center Rog (Ljubljana).',
+        tag: 'Erasmus+ · Berlin i Ljubljana'
+      },
+      livinglab: {
+        title: 'Living Lab - pravedna i regenerativna zajednica',
+        desc: 'Aktivnosti zajednice, vrtlarski klub, razmjena odjeće i upcycling tekstila u Vrbanima i Brezovici.',
+        tag: 'Zajednica · Vrbani i Brezovica'
+      },
+      institutional: {
+        title: 'Institucionalna podrška civilnom društvu',
+        desc: 'Jačanje kapaciteta, razvoj programa i digitalizacija uz podršku Nacionalne zaklade.',
+        tag: 'Organizacija'
+      },
+      regenerative: {
+        title: 'Fond regenerativnih zajednica',
+        desc: 'Regeneracija vođena zajednicom uz podršku ECOLISE i Funding Fairer Futures.',
+        tag: 'Regeneracija'
+      }
     },
     previous: {
       title: 'Prethodni projekti',
       subtitle: 'Odabir prošlih inicijativa i suradnji.',
-      emotional: { title: 'Emocionalna i umjetna inteligencija', desc: 'Erasmus+ tečaj o medijskoj pismenosti i emocionalnoj inteligenciji.' },
-      grassy: { title: 'Travnate perspektive', desc: 'Urbana bioraznolikost i participativne klimatske prakse u Osijeku.' },
-      value: { title: 'Vrijednost otpada', desc: 'Smanjenje tekstilnog otpada kroz upcycling inicijative.' }
+      emotional: {
+        title: 'Emocionalna i umjetna inteligencija',
+        desc: 'Erasmus+ tečaj o medijskoj pismenosti i emocionalnoj inteligenciji.'
+      },
+      grassy: {
+        title: 'Travnate perspektive',
+        desc: 'Urbana bioraznolikost i participativne klimatske prakse u Osijeku.'
+      },
+      value: {
+        title: 'Vrijednost otpada',
+        desc: 'Smanjenje tekstilnog otpada kroz upcycling inicijative.'
+      }
     },
     calendar: {
       title: 'Kalendar',
@@ -436,25 +547,14 @@ const TRANSLATIONS = {
       all: 'Cijeli kalendar',
       allDay: 'Cijeli dan'
     },
-    findus: {
-      title: 'Pronađite nas',
-      text: 'Kontaktirajte nas i posjetite naše centre.'
-    },
-    // CTA Section
-    cta: {
-      title: 'Spremni ste biti dio promjene?',
-      text: 'Pridružite se našoj zajednici volontera i članova koji zajedno rade na stvaranju održivije i povezanije budućnosti.',
-      btn: 'Uključite Se'
-    },    // Footer
     footer: {
       title: 'Vestigium',
-      description: 'Ekolosko-kreativna udruga koja poboljšava kvalitetu života zajednice kroz održive inicijative i edukaciju u Zagrebu.',
       achievement1: '🏆 Changemakers Hrvatska 2017',
-      achievement2: '🌟 Social Marie Award Finalist 2018',      links: 'Linkovi',
+      achievement2: '🌟 Social Marie Award Finalist 2018',
+      links: 'Linkovi',
       home: 'Početna',
       activities: 'Aktivnosti',
       about: 'O nama',
-      news: 'Vijesti',
       'get-involved': 'Uključite se',
       involvement: {
         title: 'Uključite Se',
@@ -463,56 +563,37 @@ const TRANSLATIONS = {
         item2: 'Radionice i edukacija',
         item3: 'Poljoprivreda zajednice',
         item4: 'Organizacijska podrška'
-      },      contact: {
+      },
+      contact: {
         title: 'Kontakt'
-      },      location: {
-        label: 'Lokacija:',
+      },
+      location: {
         address: 'Grančarska 2a, Brezovica',
         country: 'Hrvatska'
-      },movement: 'Globalni Tranzicijski Pokret',
+      },
       copyright: '&copy; {year} Udruga Vestigium.',
       tech: 'Izgradnja održivih zajednica od 2011. • Preko 1000 godišnjih aktivnosti',
       visitors: {
-        label: 'Posjetitelji:',
-        count: 'posjeta'
+        label: 'Posjetitelji:'
       }
     },
-      // Language Switcher
     lang: {
       current: 'Trenutni jezik',
       select: 'Odaberite jezik'
     },
-    
-    // News Page
-    news: {
-      meta: {
-        title: 'Vijesti - Vestigium Ekolosko-Kreativna Udruga',
-        description: 'Budite u tijeku s najnovijim vijestima i aktivnostima Vestigium ekološko-kreativne udruge u Zagrebu.'
-      },
-      hero: {
-        title: 'Najnovije Vijesti',
-        subtitle: 'Budite u tijeku s našim najnovijim aktivnostima, događajima i inicijativama zajednice'
-      },
-      facebook: {
-        title: 'S našeg Facebooka',
-        subtitle: 'Povežite se s našom zajednicom kroz naše najnovije objave na društvenim mrežama',
-        loading: 'Učitavanje najnovijih objava...',
-        'view-post': 'Pogledaj na Facebooku',
-        'error-title': 'Nije moguće učitati Facebook objave',
-        'error-text': 'Molimo provjerite internetsku vezu ili pokušajte kasnije.',
-        'error-help': 'Molimo provjerite konfiguraciju i pokušajte ponovno.'
-      },
-      gallery: {
-        title: 'Nedavne Aktivnosti',
-        subtitle: 'Pregledajte naše nedavne aktivnosti i događaje zajednice',
-        loading: 'Učitavanje galerije...'
-      },
-      cta: {
-        title: 'Ostanite Povezani',
-        text: 'Pratite nas na društvenim mrežama kako biste ostali u tijeku s našim najnovijim aktivnostima i pridružili se događajima zajednice',
-        facebook: 'Pratite na Facebooku',
-        join: 'Pridružite Nam Se'
-      }
+    carousel: {
+      previous: 'Prethodna slika',
+      next: 'Sljedeća slika',
+      goto: 'Idi na sliku {n}',
+      photo1: 'Skupina ljudi leži glavom uz glavu na šarenim dekama u travi',
+      photo2: 'Skupina u dugim suknjama, zagrljena, gleda preko zelene doline',
+      photo3: 'Nasmiješena osoba drži okvir za vez u prostoru zajednice',
+      photo4: 'Dvije osobe stoje među usjevima u plasteniku',
+      photo5: 'Krug spojenih ruku gledan odozdo prema nebu',
+      photo6: 'Nasmiješena osoba drži jednu borovnicu',
+      photo7: 'Osoba sjedi prekriženih nogu na sunčanoj livadi',
+      photo8: 'Osoba drži okrugli zeleni znak na tržnici na otvorenom',
+      photo9: 'Ruka vadi vrećice sjemena iz drvene kutije'
     }
   }
 };
@@ -541,8 +622,8 @@ class LanguageSwitcher {
       this.translatePage();
       this.bindEvents();
       this.isInitialized = true;
-      
     } catch (error) {
+      console.error('Language switcher failed to start:', error);
     }
   }
 
@@ -552,8 +633,8 @@ class LanguageSwitcher {
   getStoredLanguage() {
     try {
       return localStorage.getItem(LANGUAGE_CONFIG.storageKey);
-    } catch (error) {
-      return null;
+    } catch {
+      return null; // Private browsing can block storage
     }
   }
 
@@ -563,7 +644,8 @@ class LanguageSwitcher {
   setStoredLanguage(language) {
     try {
       localStorage.setItem(LANGUAGE_CONFIG.storageKey, language);
-    } catch (error) {
+    } catch {
+      // Private browsing can block storage; the language just won't be remembered
     }
   }
 
@@ -613,10 +695,6 @@ class LanguageSwitcher {
                 aria-expanded="false"
                 aria-haspopup="true">
           <span class="language-selector__flag">${currentLang.flag}</span>
-          <span class="language-selector__current">${currentLang.name}</span>
-          <svg class="language-selector__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M8 11L3 6h10l-5 5z"/>
-          </svg>
         </button>
         <div class="language-selector__menu" role="menu">
           ${otherLanguages.map(([code, lang]) => `
@@ -671,17 +749,7 @@ class LanguageSwitcher {
         const selectedLang = option.dataset.lang;
         
         if (selectedLang && selectedLang !== this.currentLanguage) {
-          
-          // Cambio de idioma inmediato (sin async/await para simplificar)
-          this.changeLanguageSmooth(selectedLang)
-            .then(success => {
-              if (success) {
-              } else {
-              }
-            })
-            .catch(error => {
-            });
-        } else {
+          this.changeLanguageSmooth(selectedLang);
         }
         
         this.closeLanguageMenu();
@@ -836,6 +904,7 @@ class LanguageSwitcher {
       return true;
       
     } catch (error) {
+      console.error('Language change failed:', error);
       // Revertir el idioma en caso de error
       this.currentLanguage = previousLanguage;
       return false;
@@ -896,23 +965,18 @@ class LanguageSwitcher {
     // Traducir elementos con data-i18n
     const elements = document.querySelectorAll('[data-i18n]');
     
-    let translatedCount = 0;
-    elements.forEach((element, index) => {
+    elements.forEach((element) => {
       const key = element.getAttribute('data-i18n');
       const translation = this.t(key);
-      
-      
+
       if (translation && translation !== key) {
         if (element.hasAttribute('data-i18n-html')) {
           element.innerHTML = translation;
         } else {
           element.textContent = translation;
         }
-        translatedCount++;
-      } else {
       }
     });
-    
 
     // Traducir atributos específicos
     const attributeElements = document.querySelectorAll('[data-i18n-attr]');
@@ -1031,82 +1095,15 @@ class LanguageSwitcher {
     document.dispatchEvent(event);
   }
 
-  /**
-   * Obtener idioma actual
-   */
-  getCurrentLanguage() {
-    return this.currentLanguage;
-  }
-
-  /**
-   * Obtener configuración de idiomas
-   */
-  getLanguageConfig() {
-    return LANGUAGE_CONFIG;
-  }
-
-  /**
-   * Verificar si un idioma está soportado
-   */
-  isLanguageSupported(language) {
-    return !!this.translations[language];
-  }
-  /**
-   * Destruir el Language Switcher
-   */
-  destroy() {
-    // Limpiar eventos
-    this.unbindEvents();
-    
-    // Remover selector del DOM
-    const selector = document.querySelector('.language-selector');
-    if (selector) {
-      selector.remove();
-    }
-    
-    this.isInitialized = false;
-    this.animationInProgress = false;
-  }
 }
 
-/* =============================================================================
-   INICIALIZACIÓN Y EXPORTACIÓN
-   ============================================================================= */
+function initLanguageSwitcher() {
+  window.vestigiumLanguageSwitcher = new LanguageSwitcher();
+  window.vestigiumLanguageSwitcher.init();
+}
 
-// Exportar para uso global
-if (typeof window !== 'undefined') {
-  window.LanguageSwitcher = LanguageSwitcher;
-  
-  // Auto-inicialización mejorada
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
-  } else {
-    // DOM ya está cargado
-    setTimeout(initLanguageSwitcher, 100);
-  }
-  
-  function initLanguageSwitcher() {
-    if (!window.vestigiumLanguageSwitcher) {
-      try {
-        window.vestigiumLanguageSwitcher = new LanguageSwitcher();
-        window.vestigiumLanguageSwitcher.init();
-      } catch (error) {
-        
-        // Fallback: intentar de nuevo después de un breve delay
-        setTimeout(() => {
-          if (!window.vestigiumLanguageSwitcher) {
-            try {
-              window.vestigiumLanguageSwitcher = new LanguageSwitcher();
-              window.vestigiumLanguageSwitcher.init();
-            } catch (retryError) {
-            }
-          }
-        }, 1000);
-      }
-    }
-  }
-  
-  // Listener para cambios de idioma
-  document.addEventListener('languageChanged', function(e) {
-  });
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
+} else {
+  initLanguageSwitcher();
 }

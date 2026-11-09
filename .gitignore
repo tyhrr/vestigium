@@ -1,4 +1,3 @@
-archive/
 node_modules/
 .DS_Store
 # Impeccable runtime (keep config.json, design.json committed)

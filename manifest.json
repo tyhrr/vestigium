@@ -33,7 +33,7 @@
       "name": "Activities",
       "short_name": "Activities",
       "description": "View our community activities",
-      "url": "./#activities",
+      "url": "./#actividades",
       "icons": [
         {
           "src": "./src/assets/images/favicon/favicon-96x96.png",
@@ -45,7 +45,7 @@
       "name": "Get Involved",
       "short_name": "Get Involved",
       "description": "Join as volunteer or member",
-      "url": "./#get-involved",
+      "url": "./#get-engaged",
       "icons": [
         {
           "src": "./src/assets/images/favicon/favicon-96x96.png",

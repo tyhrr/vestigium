@@ -1,279 +1,61 @@
 /**
- * VESTIGIUM 2.0 - VISITOR COUNTER
- * Contador de visitas simple con localStorage
- * Autor: Vestigium Team
- * Versión: 1.0
+ * Footer visitor counter.
+ * GitHub Pages has no server, so the shared count lives in Abacus
+ * (abacus.jasoncameron.dev), a free counter API that needs no account.
+ * Each browser counts once every 24 hours. The counter stays hidden if the
+ * service does not answer.
  */
 
 'use strict';
 
-/* =============================================================================
-   CONFIGURACIÓN DEL CONTADOR DE VISITAS
-   ============================================================================= */
+(function () {
+  const COUNTER_URL = 'https://abacus.jasoncameron.dev';
+  const COUNTER_PATH = 'tyhrr-vestigium/visits';
+  const PREVIOUS_VISITS = 9302; // Total shown before this shared counter existed
+  const LAST_COUNTED_KEY = 'vestigium-last-counted';
+  const ONE_DAY = 24 * 60 * 60 * 1000;
 
-const VISITOR_CONFIG = {
-  // Clave para localStorage  
-  storageKey: 'vestigium-visitor-count',
-  
-  // Clave para la última visita
-  lastVisitKey: 'vestigium-last-visit',
-  
-  // Tiempo mínimo entre visitas para contar (en milisegundos)
-  // 24 horas = 24 * 60 * 60 * 1000
-  minTimeBetweenVisits: 24 * 60 * 60 * 1000,
-  
-  // Selector del elemento donde mostrar el contador
-  counterSelector: '.visitor-counter__count',
-    // Animación del contador
-  animationDuration: 1000,
-  
-  // Visitas acumuladas antes de este contador (punto de partida)
-  initialCount: 9302
-};
+  // Opening the site locally must not add visits
+  const isLocal = ['localhost', '127.0.0.1', ''].includes(location.hostname);
 
-/* =============================================================================
-   CLASE PRINCIPAL - VISITOR COUNTER
-   ============================================================================= */
-
-class VisitorCounter {
-  constructor() {
-    this.currentCount = 0;
-    this.isInitialized = false;
-  }
-
-  /**
-   * Inicializar el contador de visitas
-   */
-  init() {
-    if (this.isInitialized) return;
-
-    console.log('👥 Inicializando Contador de Visitas...');
-    
+  function countedToday() {
     try {
-      this.updateVisitCount();
-      this.displayCounter();
-      this.isInitialized = true;
-      
-      console.log(`✅ Contador de Visitas inicializado - Total: ${this.currentCount}`);
-    } catch (error) {
-      console.error('❌ Error inicializando Contador de Visitas:', error);
+      return Date.now() - Number(localStorage.getItem(LAST_COUNTED_KEY)) < ONE_DAY;
+    } catch {
+      return false;
     }
   }
 
-  /**
-   * Actualizar el conteo de visitas
-   */
-  updateVisitCount() {
-    const now = Date.now();
-    const lastVisit = this.getLastVisit();
-    const shouldCountVisit = this.shouldCountVisit(now, lastVisit);
-
-    // Obtener conteo actual
-    this.currentCount = this.getStoredCount();
-
-    if (shouldCountVisit) {
-      // Incrementar contador
-      this.currentCount++;
-      
-      // Guardar nuevo conteo y timestamp
-      this.setStoredCount(this.currentCount);
-      this.setLastVisit(now);
-      
-      console.log(`🆕 Nueva visita registrada! Total: ${this.currentCount}`);
-    } else {
-      console.log(`👀 Visita existente detectada. Total: ${this.currentCount}`);
-    }
-  }
-
-  /**
-   * Determinar si se debe contar esta visita
-   */
-  shouldCountVisit(currentTime, lastVisitTime) {
-    // Si es la primera visita
-    if (!lastVisitTime) {
-      return true;
-    }
-
-    // Si ha pasado suficiente tiempo desde la última visita
-    const timeDifference = currentTime - lastVisitTime;
-    return timeDifference >= VISITOR_CONFIG.minTimeBetweenVisits;
-  }
-
-  /**
-   * Obtener conteo guardado en localStorage
-   */
-  getStoredCount() {
+  function rememberCounted() {
     try {
-      const stored = parseInt(localStorage.getItem(VISITOR_CONFIG.storageKey), 10);
-      // Never show less than the starting point (older visits stored a lower count)
-      return Number.isFinite(stored) ? Math.max(stored, VISITOR_CONFIG.initialCount) : VISITOR_CONFIG.initialCount;
-    } catch (error) {
-      console.warn('No se pudo acceder al conteo en localStorage:', error);
-      return VISITOR_CONFIG.initialCount;
+      localStorage.setItem(LAST_COUNTED_KEY, String(Date.now()));
+    } catch {
+      // Private browsing can block storage; the visit is still counted
     }
   }
 
-  /**
-   * Guardar conteo en localStorage
-   */
-  setStoredCount(count) {
+  async function showVisits() {
+    const counter = document.querySelector('.visitor-counter');
+    if (!counter) return;
+
+    const addVisit = !isLocal && !countedToday();
+
     try {
-      localStorage.setItem(VISITOR_CONFIG.storageKey, count.toString());
+      const response = await fetch(`${COUNTER_URL}/${addVisit ? 'hit' : 'get'}/${COUNTER_PATH}`, {
+        signal: AbortSignal.timeout(5000)
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+      const { value } = await response.json();
+      if (!Number.isFinite(value)) throw new Error('Unexpected response');
+
+      if (addVisit) rememberCounted();
+      counter.querySelector('.visitor-counter__count').textContent = (PREVIOUS_VISITS + value).toLocaleString();
+      counter.hidden = false;
     } catch (error) {
-      console.warn('No se pudo guardar el conteo en localStorage:', error);
+      console.warn('Visitor counter unavailable:', error);
     }
   }
 
-  /**
-   * Obtener timestamp de la última visita
-   */
-  getLastVisit() {
-    try {
-      const stored = localStorage.getItem(VISITOR_CONFIG.lastVisitKey);
-      return stored ? parseInt(stored, 10) : null;
-    } catch (error) {
-      console.warn('No se pudo acceder al timestamp en localStorage:', error);
-      return null;
-    }
-  }
-
-  /**
-   * Guardar timestamp de la visita actual
-   */
-  setLastVisit(timestamp) {
-    try {
-      localStorage.setItem(VISITOR_CONFIG.lastVisitKey, timestamp.toString());
-    } catch (error) {
-      console.warn('No se pudo guardar el timestamp en localStorage:', error);
-    }
-  }
-
-  /**
-   * Mostrar el contador en la página
-   */
-  displayCounter() {
-    const counterElement = document.querySelector(VISITOR_CONFIG.counterSelector);
-    
-    if (!counterElement) {
-      console.warn('❌ Elemento del contador no encontrado:', VISITOR_CONFIG.counterSelector);
-      return;
-    }
-
-    // Animar el contador desde 0 hasta el valor actual
-    this.animateCounter(counterElement, 0, this.currentCount);
-  }
-
-  /**
-   * Animar el contador con efecto de incremento
-   */
-  animateCounter(element, startValue, endValue) {
-    const duration = VISITOR_CONFIG.animationDuration;
-    const startTime = performance.now();
-    const difference = endValue - startValue;
-
-    const updateCounter = (currentTime) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      
-      // Usar easing para suavizar la animación
-      const easedProgress = this.easeOutCubic(progress);
-      const currentValue = Math.floor(startValue + (difference * easedProgress));
-      
-      element.textContent = this.formatNumber(currentValue);
-      
-      if (progress < 1) {
-        requestAnimationFrame(updateCounter);
-      } else {
-        // Asegurar que muestre el valor final exacto
-        element.textContent = this.formatNumber(endValue);
-      }
-    };
-
-    requestAnimationFrame(updateCounter);
-  }
-
-  /**
-   * Función de easing para suavizar la animación
-   */
-  easeOutCubic(t) {
-    return 1 - Math.pow(1 - t, 3);
-  }
-
-  /**
-   * Formatear número con separadores de miles
-   */
-  formatNumber(num) {
-    return num.toLocaleString();
-  }
-
-  /**
-   * Obtener conteo actual
-   */
-  getCurrentCount() {
-    return this.currentCount;
-  }
-
-  /**
-   * Resetear contador (para desarrollo/testing)
-   */
-  resetCounter() {
-    try {
-      localStorage.removeItem(VISITOR_CONFIG.storageKey);
-      localStorage.removeItem(VISITOR_CONFIG.lastVisitKey);
-      console.log('🔄 Contador de visitas reseteado');
-      
-      // Reinicializar
-      this.currentCount = VISITOR_CONFIG.initialCount;
-      this.displayCounter();
-    } catch (error) {
-      console.error('❌ Error reseteando contador:', error);
-    }
-  }
-
-  /**
-   * Obtener estadísticas del contador
-   */
-  getStats() {
-    const lastVisit = this.getLastVisit();
-    return {
-      totalVisits: this.currentCount,
-      lastVisit: lastVisit ? new Date(lastVisit) : null,
-      nextCountEligible: lastVisit ? new Date(lastVisit + VISITOR_CONFIG.minTimeBetweenVisits) : null
-    };
-  }
-}
-
-/* =============================================================================
-   INICIALIZACIÓN Y EXPORTACIÓN
-   ============================================================================= */
-
-// Exportar para uso global
-if (typeof window !== 'undefined') {
-  window.VisitorCounter = VisitorCounter;
-  
-  // Auto-inicialización
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initVisitorCounter);
-  } else {
-    // DOM ya está cargado
-    setTimeout(initVisitorCounter, 200);
-  }
-  
-  function initVisitorCounter() {
-    if (!window.vestigiumVisitorCounter) {
-      try {
-        console.log('🚀 Inicializando Contador de Visitas...');
-        window.vestigiumVisitorCounter = new VisitorCounter();
-        window.vestigiumVisitorCounter.init();
-        console.log('✅ Contador de Visitas inicializado exitosamente');
-      } catch (error) {
-        console.error('❌ Error inicializando Contador de Visitas:', error);
-      }
-    }
-  }
-}
-
-// Exportar configuración para uso externo
-if (typeof window !== 'undefined') {
-  window.VISITOR_CONFIG = VISITOR_CONFIG;
-}
+  showVisits();
+})();

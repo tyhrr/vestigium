@@ -25,7 +25,7 @@ jobs:
           node-version: 22
 
       - name: Install calendar parser
-        run: npm install --no-save --no-package-lock node-ical@0.20.1
+        run: npm ci --ignore-scripts --prefix tools
 
       - name: Fetch events
         run: node tools/fetch-events.mjs

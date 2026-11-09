@@ -29,18 +29,18 @@ A grassroots, neighbour-founded community space that is also part of the Global 
 ## Operating Context
 
 - Bilingual: **English (default) and Croatian**, switched client-side and persisted per visitor; every user-facing string has an `en` and `hr` entry.
-- Main sections: Activities, About / Who we are, Projects (Erasmus+, national, previous), Calendar, Community Center, News, Gallery, Get engaged (volunteer, ESC), Join us / Become a member, Zadruga Zelenica (cooperative).
+- Main sections: Activities, About / Who we are, Projects (Erasmus+, national, previous), Calendar, Community Center, Gallery, Get engaged (volunteer, ESC), Join us / Become a member, Zadruga Zelenica (cooperative).
 - Activity areas: education & workshops, community life, sustainability, empowerment.
 - The site is maintained by an external developer, not by association staff.
 
 ## Capabilities and Constraints
 
 - Static site: plain HTML, CSS and vanilla JavaScript, no framework and no build step; hosted on GitHub Pages; the canonical domain is `https://tyhrr.github.io/vestigium/` (owner decision: no custom domain for now). Must keep working by opening `index.html` directly.
-- Existing features: EN/HR language switcher (`data-i18n` keys), About carousel, multi-level responsive navigation with hamburger menu, footer visitor counter (localStorage), PWA manifest, robots.txt, sitemap.xml.
+- Existing features: EN/HR language switcher (`data-i18n` keys), About carousel, responsive navigation with hamburger menu, footer visitor counter (Abacus), PWA manifest.
 - Any new copy must be added in both languages.
 - Two locations (confirmed on the association's previous site): **Community Center Vrbani**, Rudeška 142, Zagreb, and **Cooperative Community Center Zelenica**, Grančarska 2a, Brezovica (opened 2022). The office is at Grančarska 2a. Vrbani is where the association was founded.
 - Events are published in two Google Calendars (Vrbani: udruga.vestigium@gmail.com, Brezovica: zadruga.zelenica@gmail.com), embedded on the site. Keep the embeds; a future "next 3 activities" list should be derived from them.
-- Header navigation: at small widths only Gallery and Projects stay visible; everything else lives in the hamburger menu (owner decision).
+- Header navigation: at small widths only Gallery stays visible; everything else lives in the hamburger menu (owner decision).
 
 ## Brand Commitments
 

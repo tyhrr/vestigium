@@ -6,45 +6,12 @@
 class VestigiumCarousel {
     constructor() {
         // Configuration - Add more images here easily
-        this.images = [
-            {
-                src: 'src/assets/images/activities/about-us1.jpg',
-                alt: 'Group lying head to head on colourful blankets in the grass'
-            },
-            {
-                src: 'src/assets/images/activities/about-us2.jpg',
-                alt: 'Group in long skirts, arms around each other, looking over a green valley'
-            },
-            {
-                src: 'src/assets/images/activities/about-us3.jpg',
-                alt: 'Smiling person holding an embroidery hoop in the community space'
-            },
-            {
-                src: 'src/assets/images/activities/about-us4.jpg',
-                alt: 'Two people standing among crops in a polytunnel'
-            },
-            {
-                src: 'src/assets/images/activities/about-us5.jpg',
-                alt: 'Circle of joined hands seen from below against the sky'
-            },
-            {
-                src: 'src/assets/images/activities/about-us6.jpg',
-                alt: 'Person smiling and holding up a single blueberry'
-            },
-            {
-                src: 'src/assets/images/activities/about-us7.jpg',
-                alt: 'Person sitting cross-legged in a sunlit meadow'
-            },
-            {
-                src: 'src/assets/images/activities/about-us8.jpg',
-                alt: 'Person holding a round green sign at an outdoor market'
-            },
-            {
-                src: 'src/assets/images/activities/about-us9.jpg',
-                alt: 'Hand picking seed packets from a wooden box'
-            },
-        ];
-        
+        // about-us1.jpg to about-us9.jpg; alt texts are carousel.photo1-9 in TRANSLATIONS
+        this.images = Array.from({ length: 9 }, (_, i) => ({
+            src: `src/assets/images/activities/about-us${i + 1}.jpg`,
+            altKey: `carousel.photo${i + 1}`
+        }));
+
         this.currentIndex = 0;
         this.autoSlideInterval = null;
         this.autoSlideDelay = 4000; // 4 seconds
@@ -68,6 +35,8 @@ class VestigiumCarousel {
         
         this.createImages();
         this.createDots();
+        this.translateLabels();
+        document.addEventListener('languageChanged', () => this.translateLabels());
         this.bindEvents();
         this.startAutoSlide();
         this.showSlide(0);
@@ -85,7 +54,6 @@ class VestigiumCarousel {
                 <div class="carousel__image-container">
                     <img 
                         src="${image.src}" 
-                        alt="${image.alt}"
                         class="carousel__image"
                         loading="lazy"
                         onerror="this.onerror=null; this.src='src/assets/images/logo/logo-png.png'; this.alt='Vestigium placeholder image';"
@@ -104,12 +72,24 @@ class VestigiumCarousel {
         this.images.forEach((_, index) => {
             const dot = document.createElement('button');
             dot.className = 'carousel__dot';
-            dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
             dot.addEventListener('click', () => this.goToSlide(index));
             this.dotsContainer.appendChild(dot);
         });
     }
     
+    /**
+     * Put the image and dot labels in the current language
+     */
+    translateLabels() {
+        const t = (key) => window.vestigiumLanguageSwitcher?.t(key) ?? '';
+        this.track.querySelectorAll('.carousel__image').forEach((image, index) => {
+            image.alt = t(this.images[index].altKey);
+        });
+        this.dotsContainer.querySelectorAll('.carousel__dot').forEach((dot, index) => {
+            dot.setAttribute('aria-label', t('carousel.goto').replace('{n}', index + 1));
+        });
+    }
+
     /**
      * Bind event listeners
      */
@@ -251,7 +231,7 @@ class VestigiumCarousel {
      */
     goToSlide(index) {
         this.showSlide(index);
-        this.restartAutoSlide();
+        this.startAutoSlide();
     }
     
     /**
@@ -275,124 +255,11 @@ class VestigiumCarousel {
         }
     }
     
-    /**
-     * Restart auto-slide functionality
-     */
-    restartAutoSlide() {
-        this.startAutoSlide();
-    }
-    
-    /**
-     * Add a new image to the carousel
-     * @param {Object} imageData - Image data object with src and alt properties
-     */
-    addImage(imageData) {
-        this.images.push(imageData);
-        this.createImages();
-        this.createDots();
-        this.showSlide(this.currentIndex);
-    }
-    
-    /**
-     * Remove an image from the carousel
-     * @param {number} index - The index of the image to remove
-     */
-    removeImage(index) {
-        if (index >= 0 && index < this.images.length) {
-            this.images.splice(index, 1);
-            this.createImages();
-            this.createDots();
-            if (this.currentIndex >= this.images.length) {
-                this.currentIndex = 0;
-            }
-            this.showSlide(this.currentIndex);
-        }
-    }
-    
-    /**
-     * Update carousel settings
-     * @param {Object} settings - Settings object
-     */
-    updateSettings(settings) {
-        if (settings.autoSlideDelay) {
-            this.autoSlideDelay = settings.autoSlideDelay;
-            this.restartAutoSlide();
-        }
-    }
-    
-    /**
-     * Destroy the carousel and clean up event listeners
-     */
-    destroy() {
-        this.pauseAutoSlide();
-        
-        // Remove event listeners
-        if (this.prevBtn) {
-            this.prevBtn.removeEventListener('click', () => this.prevSlide());
-        }
-        if (this.nextBtn) {
-            this.nextBtn.removeEventListener('click', () => this.nextSlide());
-        }
-        
-        const carousel = document.querySelector('.about__carousel');
-        if (carousel) {
-            carousel.removeEventListener('mouseenter', () => this.pauseAutoSlide());
-            carousel.removeEventListener('mouseleave', () => this.startAutoSlide());
-        }
-        
-        // Clear DOM
-        if (this.track) {
-            this.track.innerHTML = '';
-        }
-        if (this.dotsContainer) {
-            this.dotsContainer.innerHTML = '';
-        }
-    }
-}
-
-/**
- * Initialize the carousel when DOM is ready
- */
-function initVestigiumCarousel() {
-    if (window.vestigiumCarousel) {
-        window.vestigiumCarousel.destroy();
-    }
-    window.vestigiumCarousel = new VestigiumCarousel();
 }
 
 // Auto-initialize when DOM is ready
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initVestigiumCarousel);
+    document.addEventListener('DOMContentLoaded', () => new VestigiumCarousel());
 } else {
-    initVestigiumCarousel();
+    new VestigiumCarousel();
 }
-
-// Export for module systems (if needed)
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = VestigiumCarousel;
-}
-
-/* =============================================================================
-   USAGE EXAMPLES
-   ============================================================================= */
-
-/*
-// Example: Add a new image dynamically
-window.vestigiumCarousel.addImage({
-    src: 'src/assets/images/activities/new-activity.jpg',
-    alt: 'Description of new activity'
-});
-
-// Example: Remove an image
-window.vestigiumCarousel.removeImage(2); // Remove the third image (index 2)
-
-// Example: Change auto-slide delay to 6 seconds
-window.vestigiumCarousel.updateSettings({
-    autoSlideDelay: 6000
-});
-
-// Example: Manually control the carousel
-window.vestigiumCarousel.nextSlide();
-window.vestigiumCarousel.prevSlide();
-window.vestigiumCarousel.goToSlide(3); // Go to the fourth slide
-*/

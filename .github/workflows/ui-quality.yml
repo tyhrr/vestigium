@@ -21,6 +21,9 @@ jobs:
       - name: JavaScript syntax
         run: for f in src/assets/js/*.js; do node --check "$f"; done
 
+      - name: Calendar date logic
+        run: node --test tools/occurrences.test.mjs
+
       - name: HTML validity and accessibility markup
         run: npx --yes html-validate@9.4.0 index.html "src/pages/*.html"
 

@@ -4,7 +4,6 @@
       "staticDistDir": ".",
       "url": [
         "http://localhost/index.html",
-        "http://localhost/src/pages/news.html",
         "http://localhost/src/pages/gallery.html"
       ],
       "numberOfRuns": 1

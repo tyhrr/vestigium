@@ -5,12 +5,17 @@
 // Action, see .github/workflows/update-events.yml), not in the browser.
 //
 // Usage: node tools/fetch-events.mjs [--out path] [--days 60] [--limit 30]
-// Needs: npm install node-ical@0.20.1 (the workflow installs it).
+// Needs: npm ci --prefix tools (the workflow does this).
 
 import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import ical from 'node-ical';
+import { occurrences } from './occurrences.mjs';
+
+// Repeating events with no time zone expand from the machine's zone. The feeds
+// are read as UTC, so a run on any machine must match the one on GitHub.
+process.env.TZ = 'UTC';
 
 const CALENDARS = [
   { id: 'udruga.vestigium@gmail.com', place: 'Vrbani', address: 'Rudeška 142' },
@@ -36,29 +41,6 @@ const localDate = (d) =>
 
 const clean = (s) => (typeof s === 'string' ? s : s?.val ?? '').replace(/\s+/g, ' ').trim();
 
-function occurrences(ev) {
-  const start = ev.start;
-  const end = ev.end ?? start;
-  const duration = end - start;
-  const allDay = ev.datetype === 'date';
-
-  if (!ev.rrule) return [{ start, end, allDay, ev }];
-
-  const exdates = new Set(Object.values(ev.exdate ?? {}).map((d) => new Date(d).toISOString()));
-  // Look back one duration so an occurrence already in progress is included
-  const from = new Date(now.getTime() - Math.max(duration, 0));
-  return ev.rrule.between(from, horizon, true).flatMap((date) => {
-    const iso = date.toISOString();
-    if (exdates.has(iso)) return [];
-    const override = ev.recurrences?.[iso.slice(0, 10)] ?? ev.recurrences?.[iso];
-    if (override) {
-      if (override.status === 'CANCELLED') return [];
-      return [{ start: override.start, end: override.end ?? override.start, allDay, ev: override }];
-    }
-    return [{ start: date, end: new Date(date.getTime() + duration), allDay, ev }];
-  });
-}
-
 async function readCalendar(cal) {
   const url = `https://calendar.google.com/calendar/ical/${encodeURIComponent(cal.id)}/public/basic.ics`;
   const res = await fetch(url);
@@ -67,7 +49,7 @@ async function readCalendar(cal) {
 
   return Object.values(data)
     .filter((ev) => ev.type === 'VEVENT' && ev.status !== 'CANCELLED')
-    .flatMap(occurrences)
+    .flatMap((ev) => occurrences(ev, now, horizon))
     .filter(({ start, end }) => end > now && start < horizon)
     .map(({ start, end, allDay, ev }) => ({
       title: clean(ev.summary) || 'Event',
@@ -84,8 +66,9 @@ async function readCalendar(cal) {
 const results = await Promise.allSettled(CALENDARS.map(readCalendar));
 const failed = results.filter((r) => r.status === 'rejected');
 failed.forEach((r) => console.error('warning:', r.reason.message));
-if (failed.length === results.length) {
-  console.error('All calendars failed; keeping the existing file.');
+// Writing a partial result would remove that calendar's events from the site
+if (failed.length) {
+  console.error('A calendar failed; keeping the existing file.');
   process.exit(1);
 }
 
@@ -94,7 +77,7 @@ const toUtc = (e) => (e.allDay ? new Date(`${e.start}T00:00:00+01:00`).toISOStri
 
 const seen = new Set();
 const events = results
-  .flatMap((r) => (r.status === 'fulfilled' ? r.value : []))
+  .flatMap((r) => r.value)
   .sort((a, b) => toUtc(a).localeCompare(toUtc(b)))
   .filter((e) => {
     const key = `${e.start}|${e.title}|${e.place}`;

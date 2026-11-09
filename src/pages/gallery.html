@@ -13,7 +13,7 @@
     <meta property="og:description" content="Improving community quality of life in Zagreb through sustainable initiatives, ecological education and community support.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tyhrr.github.io/vestigium/src/pages/gallery.html">
-    <meta property="og:image" content="https://tyhrr.github.io/vestigium/src/assets/images/content/vestigium-community.jpg">
+    <meta property="og:image" content="https://tyhrr.github.io/vestigium/src/assets/images/index/banner-hero.jpg">
     <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card -->
@@ -31,19 +31,17 @@
     <meta name="theme-color" content="#2E7D32">      <!-- Preload Critical Resources -->
     <link rel="preload" href="../assets/css/main.css" as="style">
     <link rel="preload" href="../assets/js/main.js" as="script">
-    <link rel="preload" href="../assets/js/visitor-counter.js" as="script">
       <!-- Stylesheets -->
-    <link rel="preload" href="../fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/navigation-advanced.css">
 </head>
 <body>
     <header role="banner" class="header">
         <div class="header__container">
-            <!-- Primera fila para tablet (770px-1024px) -->
-            <div class="header__top-row" onclick="event.stopPropagation()">
-                <div class="header__brand" itemscope itemtype="https://schema.org/Organization" onclick="event.stopPropagation()">
+            <div class="header__top-row">
+                <div class="header__brand" itemscope itemtype="https://schema.org/Organization">
                     <a class="header__logo" href="../../index.html" itemprop="url" aria-label="Vestigium – home">
                         <img class="header__logo-mark" src="../assets/images/logo/logo-mark.png" alt="" width="126" height="192">
                         <span class="header__logo-text" itemprop="name">Vestigium</span>
@@ -54,103 +52,80 @@
 
                 <nav class="navigation__quick" aria-label="Quick links">
                     <a href="gallery.html" aria-current="page" class="navigation__link" data-i18n="nav.gallery">Gallery</a>
-                    <a href="../../index.html#projects" class="navigation__link" data-i18n="nav.projects">Projects</a>
                 </nav>
 
-                <button type="button" class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false" onclick="(function(b){var m=document.querySelector('.navigation__menu');var o=m.getAttribute('aria-expanded')==='true';m.setAttribute('aria-expanded',o?'false':'true');b.setAttribute('aria-expanded',o?'false':'true');})(this)">
+                <button type="button" class="navigation__toggle" aria-label="Open navigation menu" aria-expanded="false">
                     <span class="navigation__hamburger"></span>
                 </button>
 
-                <ul class="navigation__menu" role="menubar">
+                <nav class="navigation" aria-label="Main">
+                <ul class="navigation__menu">
                     <!-- Calendar -->
-                    <li class="navigation__item" role="none">
-                        <a href="../../index.html#calendar" class="navigation__link" role="menuitem" data-i18n="nav.calendar">Calendar</a>
+                    <li class="navigation__item">
+                        <a href="../../index.html#calendar" class="navigation__link" data-i18n="nav.calendar">Calendar</a>
                     </li>
                     
-                    <!-- Community Center with Dropdown -->
-                    <li class="navigation__item" role="none">                        <a href="../../index.html#community-center" 
-                           class="navigation__link navigation__link--has-submenu" 
-                           role="menuitem" 
-                           aria-expanded="false"
-                           data-i18n="nav.community-center">Community Center</a>
-                        <ul class="navigation__submenu" role="menu">
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#nosotros" class="navigation__link" role="menuitem" data-i18n="nav.who-are-we">Who are we?</a>
-                            </li>
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#projects" class="navigation__link" role="menuitem" data-i18n="nav.what-we-have-done">What we have done</a>
-                            </li>
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#membership" class="navigation__link" role="menuitem" data-i18n="nav.join-us">Join us / Become a member</a>
-                            </li>                            <li class="navigation__item" role="none">
-                                <a href="news.html" class="navigation__link" role="menuitem" data-i18n="nav.news">News</a>
-                            </li>
-                        </ul>
+                    <!-- About and membership -->
+                    <li class="navigation__item">
+                        <a href="../../index.html#nosotros" class="navigation__link" data-i18n="nav.who-are-we">Who are we?</a>
                     </li>
-                    
-                    <!-- Calendar duplicate removed -->
+                    <li class="navigation__item">
+                        <a href="../../index.html#membership" class="navigation__link" data-i18n="nav.join-us">Join us</a>
+                    </li>
                     
                     <!-- Zadruga Zelenica -->
-                    <li class="navigation__item" role="none">
-                        <a href="../../index.html#zadruga-zelenica" class="navigation__link" role="menuitem" data-i18n="nav.zadruga-zelenica">Zadruga Zelenica</a>
+                    <li class="navigation__item">
+                        <a href="../../index.html#zadruga-zelenica" class="navigation__link" data-i18n="nav.zadruga-zelenica">Zadruga Zelenica</a>
                     </li>
                     
                     <!-- Get engaged with Dropdown -->
-                    <li class="navigation__item" role="none">
+                    <li class="navigation__item">
                         <a href="../../index.html#get-engaged" 
                            class="navigation__link navigation__link--has-submenu" 
-                           role="menuitem" 
+                           
                            aria-expanded="false"
                            data-i18n="nav.get-engaged">Get engaged</a>
-                        <ul class="navigation__submenu" role="menu">
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#be-volunteer" class="navigation__link" role="menuitem" data-i18n="nav.be-volunteer">Be a Volunteer</a>
+                        <ul class="navigation__submenu">
+                            <li class="navigation__item">
+                                <a href="../../index.html#be-volunteer" class="navigation__link" data-i18n="nav.be-volunteer">Be a Volunteer</a>
                             </li>
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#esc" class="navigation__link" role="menuitem" data-i18n="nav.esc">ESC (European Solidarity Corp)</a>
+                            <li class="navigation__item">
+                                <a href="../../index.html#esc" class="navigation__link" data-i18n="nav.esc">ESC (European Solidarity Corp)</a>
                             </li>
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#erasmus" class="navigation__link" role="menuitem" data-i18n="nav.erasmus">Erasmus+</a>
+                            <li class="navigation__item">
+                                <a href="../../index.html#erasmus" class="navigation__link" data-i18n="nav.erasmus">Erasmus+</a>
                             </li>
                         </ul>
                     </li>
                     
                     <!-- Gallery -->
-                    <li class="navigation__item navigation__item--core" role="none">
-                        <a href="gallery.html" aria-current="page" class="navigation__link" role="menuitem" data-i18n="nav.gallery">Gallery</a>
+                    <li class="navigation__item navigation__item--core">
+                        <a href="gallery.html" aria-current="page" class="navigation__link" data-i18n="nav.gallery">Gallery</a>
                     </li>
                     
-                    <!-- Projects with Complex Dropdown -->
-                    <li class="navigation__item navigation__item--core" role="none">
-                        <a href="../../index.html#projects" 
-                           class="navigation__link navigation__link--has-submenu" 
-                           role="menuitem" 
-                           aria-expanded="false"
-                           data-i18n="nav.projects">Projects</a>
-                        <ul class="navigation__submenu" role="menu">
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#previous-projects" class="navigation__link" role="menuitem" data-i18n="nav.previous-projects">Previous projects</a>
-                            </li>
-                        </ul>
+                    <!-- Previous projects -->
+                    <li class="navigation__item">
+                        <a href="../../index.html#previous-projects" class="navigation__link" data-i18n="nav.previous-projects">Previous projects</a>
                     </li>
                     
                     <!-- Activities with Dropdown -->
-                    <li class="navigation__item" role="none">
+                    <li class="navigation__item">
                         <a href="../../index.html#actividades" 
                            class="navigation__link navigation__link--has-submenu" 
-                           role="menuitem" 
+                           
                            aria-expanded="false"
                            data-i18n="nav.activities">Activities</a>
-                        <ul class="navigation__submenu" role="menu">
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#actividades" class="navigation__link" role="menuitem" data-i18n="nav.frequent-activities">Frequent activities</a>
+                        <ul class="navigation__submenu">
+                            <li class="navigation__item">
+                                <a href="../../index.html#actividades" class="navigation__link" data-i18n="nav.frequent-activities">Frequent activities</a>
                             </li>
-                            <li class="navigation__item" role="none">
-                                <a href="../../index.html#calendar" class="navigation__link" role="menuitem" data-i18n="nav.see-more">See more</a>
+                            <li class="navigation__item">
+                                <a href="../../index.html#calendar" class="navigation__link" data-i18n="nav.see-more">See more</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
+                </nav>
             </div>
 
         </div>
@@ -300,9 +275,9 @@
                 <p class="footer__tech" data-i18n="footer.tech">
                     Building sustainable communities since 2011 • Over 1000 annual activities
                 </p>
-                <div class="visitor-counter">
+                <div class="visitor-counter" hidden>
                     <span class="visitor-counter__label" data-i18n="footer.visitors.label">Visitors:</span>
-                    <span class="visitor-counter__count">9302</span>
+                    <span class="visitor-counter__count"></span>
                 </div>
             </div>
         </div>
