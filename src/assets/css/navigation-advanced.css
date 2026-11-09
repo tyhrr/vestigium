@@ -986,59 +986,20 @@
 }
 
 /* =============================================================================
-   COLLAPSE ALL EXCEPT CALENDAR & PROJECTS INTO HAMBURGER
+   BELOW 1024px: COLLAPSE ALL EXCEPT GALLERY & PROJECTS INTO HAMBURGER
    ============================================================================= */
-.navigation__toggle {
-  display: flex !important;
-}
-
-.navigation__quick {
-  display: flex !important;
-}
-
-/* Full menu becomes dropdown always */
-.navigation__menu {
-  position: absolute;
-  top: calc(100% - 5px);
-  right: 120px;
-  left: auto;
-  display: block;
-  background-color: var(--white);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  min-width: 220px;
-  max-width: 90vw;
-  opacity: 0;
-  visibility: hidden;
-  transform: none;
-  transition: opacity var(--transition-normal), visibility var(--transition-normal);
-  margin-top: var(--space-xs);
-  z-index: 1000;
-  max-height: 0;
-  overflow: visible;
-}
-
-.navigation__menu[aria-expanded="true"] {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  max-height: 80vh;
-  overflow: visible;
-}
-
-/* Hide core items in dropdown (shown in quick bar) */
-.navigation__menu .navigation__item--core {
-  display: none !important;
-}
-
-/* Desktop: keep quick links + hamburger, no full horizontal bar */
-@media (min-width: 1024px) {
-  .header__container {
-    flex-wrap: nowrap;
+@media (max-width: 1023px) {
+  .navigation__toggle {
+    display: flex !important;
   }
-  .navigation__menu {
-    position: absolute;
+
+  .navigation__quick {
+    display: flex !important;
+  }
+
+  /* Hide core items in dropdown (shown in quick bar) */
+  .navigation__menu .navigation__item--core {
+    display: none !important;
   }
 }
 
@@ -1108,42 +1069,49 @@
 }
 
 /* =============================================================================
-   HAMBURGER MENU FINAL FIX
+   HAMBURGER DROPDOWN (below 1024px), hanging from the bottom of the header
    ============================================================================= */
-.navigation__menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  left: auto;
-  display: block;
-  background-color: var(--white);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  min-width: 220px;
-  max-width: 90vw;
-  opacity: 0;
-  visibility: hidden;
-  transform: none;
-  transition: opacity var(--transition-normal), visibility var(--transition-normal);
-  margin-top: var(--space-xs);
-  z-index: 1000;
-  overflow: visible;
-}
+@media (max-width: 1023px) {
+  .navigation__menu {
+    position: absolute !important;
+    top: 100% !important;
+    right: 1rem !important;
+    left: auto !important;
+    display: block;
+    width: auto !important;
+    min-width: 220px !important;
+    max-width: 90vw !important;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: none;
+    transition: opacity var(--transition-normal), visibility var(--transition-normal);
+    margin-top: var(--space-xs);
+    z-index: 1000;
+    max-height: 0;
+    overflow: visible;
+  }
 
-.navigation__menu[aria-expanded="true"] {
-  opacity: 1;
-  visibility: visible;
+  .navigation__menu[aria-expanded="true"] {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    max-height: 80vh;
+    overflow: visible;
+  }
 }
 
 /* Mobile: full width below header */
 @media (max-width: 767px) {
   .navigation__menu {
-    right: 0;
-    left: 0;
-    width: 100vw;
-    max-width: 100vw;
-    border-radius: 0;
+    right: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    border-radius: 0 !important;
     margin-top: 0;
   }
 }
@@ -1156,28 +1124,6 @@
   }
 }
 
-
-/* HAMBURGER MENU POSITIONING FIX */
-.navigation__menu {
-  position: fixed !important;
-  top: 72px !important;
-  right: 1rem !important;
-  left: auto !important;
-  width: auto !important;
-  min-width: 220px !important;
-  max-width: 90vw !important;
-}
-
-@media (max-width: 767px) {
-  .navigation__menu {
-    top: 72px !important;
-    right: 0 !important;
-    left: 0 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    border-radius: 0 !important;
-  }
-}
 
 /* Language toggle: a square, flag-only button centred like the hamburger.
    The fixed 40px/36px width above cannot hold flag + name + caret, which
@@ -1203,7 +1149,6 @@
    rest of the page (main.css raises it from 1440px), instead of staying
    at a fixed 40px next to the larger quick links. */
 @media (min-width: 1440px) {
-  .navigation__toggle,
   .language-selector__toggle {
     width: 2.6rem;
     height: 2.6rem;
@@ -1211,26 +1156,47 @@
     min-height: 2.6rem;
   }
 
-  .navigation__hamburger,
-  .navigation__hamburger::before,
-  .navigation__hamburger::after {
-    width: 1.25rem;
-    height: 0.125rem;
-  }
-
-  .navigation__hamburger::before {
-    top: -0.4rem;
-  }
-
-  .navigation__hamburger::after {
-    top: 0.4rem;
-  }
-
   .language-selector__toggle .language-selector__flag {
     font-size: 1.5rem;
   }
+}
+
+/* Slim header at every size */
+.header__container {
+  min-height: var(--header-height);
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+}
+
+/* 1024px and up: the whole menu sits in the bar, no hamburger */
+@media (min-width: 1024px) {
+  .navigation__toggle,
+  .navigation__quick {
+    display: none;
+  }
+
+  .header__top-row {
+    flex-wrap: nowrap;
+  }
+
+  .header__top-row .header__brand {
+    flex: 0 0 auto;
+    margin-right: 0;
+  }
 
   .navigation__menu {
-    top: calc(100% + 0.25rem) !important;
+    gap: 0;
+    margin-left: auto;
+    max-width: none;
+  }
+
+  .navigation__link {
+    padding: var(--space-xs) var(--space-sm);
+    white-space: nowrap;
+    word-break: normal;
+  }
+
+  .language-selector {
+    margin: 0 0 0 var(--space-sm);
   }
 }

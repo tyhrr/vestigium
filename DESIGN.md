@@ -18,6 +18,8 @@ colors:
   ochre: "#E7A93A"
   beetroot: "#8A3A5C"
   pine: "#1E6B64"
+  sage-tint: "#EAF2E6"
+  sand-tint: "#FBF3E2"
 typography:
   display:
     fontFamily: "Fraunces, Georgia, serif"
@@ -151,6 +153,7 @@ Taken from Vestigium's own world (the storefront mural's orange-red branches, su
 - **Ochre** (#E7A93A): always with Ink text (7.8:1); white text fails (2.1:1).
 - **Beetroot** (#8A3A5C): white text 7.4:1.
 - **Pine** (#1E6B64): white text 6.3:1.
+- **Sage Tint** (#EAF2E6) and **Sand Tint** (#FBF3E2): quiet surfaces for long reading next to solid tiles; always Ink text.
 
 **The Greens Lead Rule.** Greens stay the brand and the only colour for actions (buttons, links, focus). Accents fill surfaces that label content (project tiles, categories); they never replace a green call to action, and at most one accent surface dominates a viewport.
 **The Green Is Earned Rule.** Forest Green marks titles and actions; body copy stays Ink.
@@ -205,13 +208,15 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 - **Project bento** (`.project-bento`): 4-column grid on desktop (two 2×2 feature tiles, four single tiles), 2 columns on tablet, 1 on phones. Each tile is a solid brand colour with faint footprint contour lines, a white circular Lucide icon badge, Fraunces title (light 400 at 2.25rem on feature tiles), description and a darkened category chip. Ochre tiles use Ink text.
 - **Buttons** (`.button`, `--primary`, `--secondary`): 44px min height for touch, 2px border, medium weight. Primary is solid Forest Green → Deep Forest on hover; secondary is a green outline that fills on hover. On the green CTA band the primary inverts to white with green text. Transition 0.3s ease-in-out.
 - **Service card** (`.service-card`): white, hairline border, 8px radius, 48px padding, centred; 64px green SVG icon from an inline sprite (`<use href="#icon-…">`), Ink title, Ink Muted description. Hover lifts 4px, shadow-lg, green border.
-- **Hero** (`.hero`): full-width storefront photo with a translucent white panel (`#fefdfdbb`, 16px radius) holding the green display title and lead text. Below the lead text, `.hero__next` names the recurring next activity (EKO PLAC, Saturday 9–11, Rudeška 142) and `.hero__actions` holds a primary "See what's on" (→ calendar) and a secondary "Get involved".
+- **Header**: slim sticky bar (3.5rem). From 1024px the full menu sits in one row with no hamburger; below that, a hamburger with Gallery and Projects as quick links on tablets.
+- **Hero** (`.hero`): fills the first screen below the header, its panel always fully visible. Full-width storefront photo with a translucent white panel (`#fefdfdbb`, 16px radius) holding the green display title and lead text. Below the lead text, `.hero__next` names the recurring next activity (EKO PLAC, Saturday 9–11, Rudeška 142) and `.hero__actions` holds a primary "See what's on" (→ calendar) and a secondary "Get involved".
 - **Event card** (`.event-card`, Coming up section): Forest Green date tile (day + short month; Deep Forest for Brezovica), weekday and time in green, title in Ink, place in Ink Muted; 16px radius, hairline border, no shadow.
 - **Calendar**: one full-width Google Calendar embed combining both calendars (Vrbani `#0B8043`, Brezovica `#33B679`, matched by the legend dots); month view 16:9 from 768px, agenda view below.
 - **Gallery page**: story cards (4:3 photo, title, green meta line, text, "See photos" link that filters), pill filter chips (selected = Forest Green), masonry photo grid (2–5 columns, 8px radius) and a dark `<dialog>` lightbox with keyboard and swipe navigation.
 - **CTA band** (`.cta`): solid Forest Green, white title and lead text, inverted primary button.
 - **Navigation**: sticky header, multi-level dropdowns on desktop, hamburger drawer on mobile, flag + language dropdown.
-- **Carousel** (`.about__carousel`): auto-advancing photo slider (4s) with prev/next, dots, keyboard arrows, pause on hover.
+- **Carousel** (`.about__carousel`): auto-advancing photo slider (4s) with prev/next, dots, keyboard arrows, pause on hover. Square rounded photos on a Sand Tint tile, next to a Sage Tint text tile (Forest Green title, Ink body), sharing the Project bento shape.
+- **Activity tiles** (`#actividades`): the four cards reuse `.project-tile`, one colour per theme: Education ochre, Community Life terracotta, Sustainability forest, Empowerment beetroot.
 - **Footer**: compact Charcoal band. Four columns from 1024px (contact, links, get involved, recognition with the Erasmus+ logo on a white plate), one bottom row with copyright, tagline and visitor counter.
 - **Icons**: inline SVG sprite for activity icons; add new ones as Lucide SVGs with `tools/add-icon.sh <name>` into `src/assets/icons/`, coloured with `currentColor`.
 

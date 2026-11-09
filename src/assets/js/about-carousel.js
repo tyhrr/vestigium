@@ -9,48 +9,39 @@ class VestigiumCarousel {
         this.images = [
             {
                 src: 'src/assets/images/activities/about-us1.jpg',
-                alt: 'Community',
-                title: 'womans of Vestigium'
+                alt: 'Group lying head to head on colourful blankets in the grass'
             },
             {
                 src: 'src/assets/images/activities/about-us2.jpg',
-                alt: 'Community 2',
-                title: 'womans of Vestigium 2'
+                alt: 'Group in long skirts, arms around each other, looking over a green valley'
             },
             {
                 src: 'src/assets/images/activities/about-us3.jpg',
-                alt: 'Community 3',
-                title: 'womans of Vestigium 3'
+                alt: 'Smiling person holding an embroidery hoop in the community space'
             },
             {
                 src: 'src/assets/images/activities/about-us4.jpg',
-                alt: 'Community 4',
-                title: 'womans of Vestigium 4'
+                alt: 'Two people standing among crops in a polytunnel'
             },
             {
                 src: 'src/assets/images/activities/about-us5.jpg',
-                alt: 'Community 5',
-                title: 'womans of Vestigium 5'
+                alt: 'Circle of joined hands seen from below against the sky'
             },
             {
                 src: 'src/assets/images/activities/about-us6.jpg',
-                alt: 'Community 6',
-                title: 'womans of Vestigium 6'
+                alt: 'Person smiling and holding up a single blueberry'
             },
             {
                 src: 'src/assets/images/activities/about-us7.jpg',
-                alt: 'Community 7',
-                title: 'womans of Vestigium 7'
+                alt: 'Person sitting cross-legged in a sunlit meadow'
             },
             {
                 src: 'src/assets/images/activities/about-us8.jpg',
-                alt: 'Community 8',
-                title: 'womans of Vestigium 8'
+                alt: 'Person holding a round green sign at an outdoor market'
             },
             {
                 src: 'src/assets/images/activities/about-us9.jpg',
-                alt: 'Community 9',
-                title: 'womans of Vestigium 9'
+                alt: 'Hand picking seed packets from a wooden box'
             },
         ];
         
@@ -95,10 +86,9 @@ class VestigiumCarousel {
                     <img 
                         src="${image.src}" 
                         alt="${image.alt}"
-                        title="${image.title}"
                         class="carousel__image"
                         loading="lazy"
-                        onerror="this.src='src/assets/images/logo/logo-png.png'; this.alt='Vestigium placeholder image';"
+                        onerror="this.onerror=null; this.src='src/assets/images/logo/logo-png.png'; this.alt='Vestigium placeholder image';"
                     />
                 </div>
             `;
@@ -165,8 +155,8 @@ class VestigiumCarousel {
         
         // Touch start
         carousel.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-            startY = e.touches[0].clientY;
+            startX = endX = e.touches[0].clientX;
+            startY = endY = e.touches[0].clientY;
             isSwiping = true;
             this.pauseAutoSlide();
         }, { passive: true });
@@ -269,6 +259,7 @@ class VestigiumCarousel {
      */
     startAutoSlide() {
         this.pauseAutoSlide();
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         this.autoSlideInterval = setInterval(() => {
             this.nextSlide();
         }, this.autoSlideDelay);
@@ -293,7 +284,7 @@ class VestigiumCarousel {
     
     /**
      * Add a new image to the carousel
-     * @param {Object} imageData - Image data object with src, alt, and title properties
+     * @param {Object} imageData - Image data object with src and alt properties
      */
     addImage(imageData) {
         this.images.push(imageData);
@@ -389,8 +380,7 @@ if (typeof module !== 'undefined' && module.exports) {
 // Example: Add a new image dynamically
 window.vestigiumCarousel.addImage({
     src: 'src/assets/images/activities/new-activity.jpg',
-    alt: 'Description of new activity',
-    title: 'New Activity Title'
+    alt: 'Description of new activity'
 });
 
 // Example: Remove an image
