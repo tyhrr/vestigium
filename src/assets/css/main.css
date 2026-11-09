@@ -1172,7 +1172,7 @@ p {
   content: "→";
 }
 
-.footer__erasmus {
+.footer__funder {
   display: block;
   width: auto;
   height: 2.75rem;
@@ -1180,6 +1180,11 @@ p {
   padding: 0.35rem 0.5rem;
   background-color: var(--white); /* EU visibility rules: logo on a light ground */
   border-radius: var(--radius-md);
+}
+
+/* Taller than Erasmus so the small text in the round seal stays readable */
+.footer__funder--badge {
+  height: 5.5rem;
 }
 
 /* Icon links to the association's social pages: header from 1024px, footer below */

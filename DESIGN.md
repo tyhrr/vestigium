@@ -219,7 +219,7 @@ Soft but not rounded-pill: 4 / 6 / 8 / 16 px radii. Buttons 6px, cards 8px, the 
 - **Carousel** (`.about__carousel`): auto-advancing photo slider (4s), no frame around the photo, pause on hover or keyboard focus. A bar below it holds the count in Fraunces and outlined white prev/next buttons (44px, 6px radius).
 - **Social links** (`.social-link`): Lucide Facebook and Instagram icons in `currentColor`. In the header (Forest Green) from 1024px, below that in the footer under the Erasmus+ logo (white).
 - **Activity tiles** (`#actividades`): the four cards reuse `.project-tile`, one colour per theme: Education ochre, Community Life terracotta, Sustainability forest, Empowerment beetroot.
-- **Footer**: compact Charcoal band. Four columns from 1024px (contact, links, get involved, recognition with the Erasmus+ logo on a white plate, followed by the social links below 1024px), one bottom row with copyright, tagline and visitor counter.
+- **Footer**: compact Charcoal band. Four columns from 1024px (contact, links, get involved, recognition with the Erasmus+ logo and the National Foundation seal on white plates, followed by the social links below 1024px), one bottom row with copyright, tagline and visitor counter.
 - **Icons**: inline SVG sprite for activity icons; add new ones as Lucide SVGs with `tools/add-icon.sh <name>` into `src/assets/icons/`, coloured with `currentColor`.
 
 ## Do's and Don'ts
