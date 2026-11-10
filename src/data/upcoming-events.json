@@ -1,43 +1,7 @@
 {
-  "generatedAt": "2026-11-10T17:03:28.271Z",
+  "generatedAt": "2026-11-10T23:22:54.530Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Zelene košarice",
-      "start": "2026-11-10T17:00:00.000Z",
-      "end": "2026-11-10T18:00:00.000Z",
-      "allDay": false,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "Podsvjesno crtanje",
-      "start": "2026-11-10T17:30:00.000Z",
-      "end": "2026-11-10T19:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Gitara",
-      "start": "2026-11-10T18:00:00.000Z",
-      "end": "2026-11-10T19:00:00.000Z",
-      "allDay": false,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "Zbor SingInBreza",
-      "start": "2026-11-10T19:00:00.000Z",
-      "end": "2026-11-10T21:00:00.000Z",
-      "allDay": false,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": null
-    },
     {
       "title": "Coworking space Marilia",
       "start": "2026-11-11T08:30:00.000Z",
@@ -267,6 +231,42 @@
       "title": "Hubs and Territories Meeting",
       "start": "2026-11-16T18:00:00.000Z",
       "end": "2026-11-16T20:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Yoga Ivana",
+      "start": "2026-11-16T19:00:00.000Z",
+      "end": "2026-11-16T20:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Klub za osobe starije životne dobi",
+      "start": "2026-11-17T09:00:00.000Z",
+      "end": "2026-11-17T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Zelene košarice",
+      "start": "2026-11-17T17:00:00.000Z",
+      "end": "2026-11-17T18:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Podsvjesno crtanje",
+      "start": "2026-11-17T17:30:00.000Z",
+      "end": "2026-11-17T19:30:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
