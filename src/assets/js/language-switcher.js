@@ -101,6 +101,10 @@ const TRANSLATIONS = {
       text3: 'Since 2017 we are beneficiaries of institutional support from the National Foundation for Civil Society Development. In 2017 we were presented as an inspiring example "Changemakers" from Croatia, and in 2018 nominated among the top 30 projects for the "Social Marie Award" among 250 European socially innovative projects.'
     },
     community: {
+      button: 'Community Center',
+      metaTitle: 'Community Center - Vestigium',
+      photosTitle: 'Inside the space',
+      placesLabel: 'Locations',
       title: 'Community Center',
       text: 'Vestigium is a community center in the hands of citizens. We organize a free library, creative workshops, healthy cooking, recycling and environmental care, lectures and presentations of different cultures. We support short supply chains through EKO PLAC every Saturday 9-11h, swap clothes monthly, and evening yoga/fitness/dance classes. Spaces are available for coworking, celebrations and promotions.',
       locations: 'We operate in two locations: <strong>Community Center Vrbani</strong>, Rudeška 142, and <strong>Cooperative Community Center Zelenica</strong>, Grančarska 2a, Brezovica.',
@@ -281,14 +285,6 @@ const TRANSLATIONS = {
       activities: 'Activities',
       about: 'About us',
       'get-involved': 'Get involved',
-      involvement: {
-        title: 'Get Involved',
-        text: 'Join as a volunteer or member and help build a more resilient community.',
-        item1: 'Event volunteering',
-        item2: 'Workshops and education',
-        item3: 'Community agriculture',
-        item4: 'Organizational support'
-      },
       contact: {
         title: 'Contact'
       },
@@ -381,6 +377,10 @@ const TRANSLATIONS = {
       text3: 'Od 2017. godine korisnici smo institucionalne podrške Nacionalne zaklade za razvoj civilnoga društva. 2017. godine predstavljeni smo kao inspirativan primjer "Changemakers" iz Hrvatske, a 2018. nominirani među 30 najboljih projekata za "Social Marie Award" među 250 europskih socijalno inovativnih projekata.'
     },
     community: {
+      button: 'Društveni centar',
+      metaTitle: 'Društveni centar - Vestigium',
+      photosTitle: 'Prostor iznutra',
+      placesLabel: 'Lokacije',
       title: 'Društveni centar',
       text: 'Vestigium je društveni centar u rukama građana. Organiziramo slobodnu knjižnicu, kreativne radionice, kuhanje, recikliranje i brigu o okolišu, predavanja i predstavljanja raznih kultura. Podržavamo kratke lance opskrbe kroz EKO PLAC svake subote 9-11h, mjesečnu razmjenu odjeće te večernje satove yoge/fitnesa/plesa. Prostori su dostupni za coworking, proslave i promocije.',
       locations: 'Djelujemo na dvije lokacije: <strong>Društveni centar Vrbani</strong>, Rudeška 142, i <strong>Zadružni društveni centar Zelenica</strong>, Grančarska 2a, Brezovica.',
@@ -561,14 +561,6 @@ const TRANSLATIONS = {
       activities: 'Aktivnosti',
       about: 'O nama',
       'get-involved': 'Uključite se',
-      involvement: {
-        title: 'Uključite Se',
-        text: 'Pridružite se kao volonter ili član i pomognite izgraditi otporniju zajednicu.',
-        item1: 'Volontiranje na događajima',
-        item2: 'Radionice i edukacija',
-        item3: 'Poljoprivreda zajednice',
-        item4: 'Organizacijska podrška'
-      },
       contact: {
         title: 'Kontakt'
       },

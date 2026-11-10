@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="./src/assets/css/navigation-advanced.css">
 </head>
 <body>
-    <header role="banner" class="header">
+    <header role="banner" class="header header--transparent">
         <div class="header__container">
             <div class="header__top-row">
                 <div class="header__brand" itemscope itemtype="https://schema.org/Organization">
@@ -263,6 +263,7 @@
                             "Changemakers" from Croatia, and in 2018 nominated among the top 30 projects for the 
                             "Social Marie Award" among 250 European socially innovative projects.
                         </p>
+                        <a href="./src/pages/community-center.html" class="button button--primary" data-i18n="community.button">Community Center</a>
                     </div>
                     
                     <div class="about__carousel">
@@ -286,33 +287,6 @@
                 </div>
             </div>
         </section>        <!-- About Detail -->
-
-        <!-- Community Center -->
-        <section id="community-center" class="about" aria-labelledby="community-center-heading">
-            <div class="about__container">
-                <div class="about__content">
-                    <div class="about__text-content">
-                        <h2 id="community-center-heading" class="about__title" data-i18n="community.title">Community Center</h2>
-                        <p class="about__text" data-i18n="community.text" data-i18n-html>
-                            Vestigium is a community center in the hands of citizens. We organize a free library, creative workshops, healthy cooking, recycling and environmental care, lectures and presentations of different cultures. We support short supply chains through EKO PLAC every Saturday 9-11h, swap clothes monthly, and evening yoga/fitness/dance classes. Spaces are available for coworking, celebrations and promotions.
-                        </p>
-                        <p class="about__text" data-i18n="community.locations" data-i18n-html>
-                            We operate in two locations: <strong>Community Center Vrbani</strong>, Rudeška 142, and <strong>Cooperative Community Center Zelenica</strong>, Grančarska 2a, Brezovica.
-                        </p>
-                    </div>
-                </div>
-                <div class="services__grid">
-                    <article class="service-card">
-                        <h3 class="service-card__title" data-i18n="community.vrbani.title">Community Center Vrbani</h3>
-                        <p class="service-card__description" data-i18n="community.vrbani.desc">Rudeška 142, Zagreb. Free library, workshops, farmers market, swap shops and cultural events.</p>
-                    </article>
-                    <article class="service-card">
-                        <h3 class="service-card__title" data-i18n="community.brezovica.title">Cooperative Center Zelenica</h3>
-                        <p class="service-card__description" data-i18n="community.brezovica.desc">Grančarska 2a, Brezovica. Cooperative hub for local food, culture and community initiatives.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
 
         <!-- Zadruga Zelenica -->
         <section id="zadruga-zelenica" class="about" aria-labelledby="zadruga-heading">
@@ -520,24 +494,13 @@
                     </ul>
                 </nav>
 
-                <div id="involucrate" class="footer__involvement">
-                    <h2 class="footer__involvement-title" data-i18n="footer.involvement.title">Get Involved</h2>
-                    <p class="footer__involvement-text" data-i18n="footer.involvement.text">
-                        Join as a volunteer or member and help build a more resilient community.
-                    </p>
-                    <ul class="footer__involvement-list">
-                        <li data-i18n="footer.involvement.item1">Event volunteering</li>
-                        <li data-i18n="footer.involvement.item2">Workshops and education</li>
-                        <li data-i18n="footer.involvement.item3">Community agriculture</li>
-                        <li data-i18n="footer.involvement.item4">Organizational support</li>
-                    </ul>
-                </div>
-
                 <div class="footer__recognition">
                     <p class="footer__achievement" data-i18n="footer.achievement1">🏆 Changemakers Croatia 2017</p>
                     <p class="footer__achievement" data-i18n="footer.achievement2">🌟 Social Marie Award Finalist 2018</p>
-                    <img class="footer__funder" src="./src/assets/images/erasmus/erasmus-prueba.png" alt="Erasmus+" loading="lazy">
-                    <img class="footer__funder footer__funder--badge" src="./src/assets/images/funders/nacionalna-zaklada.webp" alt="Financially supported by the National Foundation for Civil Society Development" data-i18n-attr="alt:footer.funder" width="420" height="392" loading="lazy">
+                    <div class="footer__funders">
+                        <img class="footer__funder" src="./src/assets/images/erasmus/erasmus-prueba.png" alt="Erasmus+" loading="lazy">
+                        <img class="footer__funder" src="./src/assets/images/funders/nacionalna-zaklada.webp" alt="Financially supported by the National Foundation for Civil Society Development" data-i18n-attr="alt:footer.funder" width="420" height="392" loading="lazy">
+                    </div>
                     <div class="footer__social">
                         <a class="social-link" href="https://www.facebook.com/udrugavestigium" target="_blank" rel="noopener" aria-label="Vestigium on Facebook" data-i18n-attr="aria-label:social.facebook"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
                         <a class="social-link" href="https://www.instagram.com/vestigiumudruga/" target="_blank" rel="noopener" aria-label="Vestigium on Instagram" data-i18n-attr="aria-label:social.instagram"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>

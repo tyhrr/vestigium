@@ -100,5 +100,16 @@ function initActiveLink() {
   update();
 }
 
+// Home only: the header floats over the hero and turns solid once the page scrolls
+function initHeaderScroll() {
+  const header = document.querySelector('.header--transparent');
+  if (!header) return;
+
+  const update = () => header.classList.toggle('header--scrolled', window.scrollY > 0);
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}
+
 initNavigation();
 initActiveLink();
+initHeaderScroll();
