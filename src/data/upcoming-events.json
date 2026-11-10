@@ -1,16 +1,7 @@
 {
-  "generatedAt": "2026-11-09T22:22:16.993Z",
+  "generatedAt": "2026-11-10T17:03:28.271Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Klub za osobe starije životne dobi",
-      "start": "2026-11-10T09:00:00.000Z",
-      "end": "2026-11-10T11:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Zelene košarice",
       "start": "2026-11-10T17:00:00.000Z",
@@ -255,18 +246,27 @@
       "location": null
     },
     {
-      "title": "Obuka AT Ana dvorana",
-      "start": "2026-11-16T15:45:00.000Z",
-      "end": "2026-11-16T18:15:00.000Z",
+      "title": "Zelene košarice - ispred Vestigiuma",
+      "start": "2026-11-16T17:00:00.000Z",
+      "end": "2026-11-16T17:30:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Zelene košarice - ispred Vestigiuma",
+      "title": "MALA ŠKOLA ŠIVANJA",
       "start": "2026-11-16T17:00:00.000Z",
-      "end": "2026-11-16T17:30:00.000Z",
+      "end": "2026-11-16T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Hubs and Territories Meeting",
+      "start": "2026-11-16T18:00:00.000Z",
+      "end": "2026-11-16T20:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
