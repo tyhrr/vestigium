@@ -1797,16 +1797,6 @@ h3 {
   content: " →";
 }
 
-.involve__note {
-  margin: var(--space-2xl) 0 0;
-  color: var(--text-secondary);
-}
-
-.involve__note a {
-  color: var(--primary-green);
-  font-weight: var(--font-weight-semibold);
-}
-
 .involve-group:target .involve-group__title,
 .involve-card:target {
   border-color: var(--primary-green);
@@ -2123,4 +2113,11 @@ h3 {
   .space-photos__link img {
     transition: none;
   }
+}
+
+/* Home About: Community Center and Zadruga Zelenica buttons side by side */
+.about__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
 }

@@ -121,7 +121,11 @@ const TRANSLATIONS = {
       title: 'Zadruga Zelenica',
       text1: 'The Zelenica platform was launched in 2016 to guide society from unsustainable to sustainable practices that support people, nature and fair distribution. It connects organic and ecological food producers with citizens.',
       text2: 'In 2021 Zelenica became a social cooperative, and in 2022 the Cooperative Community Center Brezovica opened. We continue gathering members and developing the audience.',
-      watch: 'Watch video'
+      watch: 'Watch video',
+      button: 'Zadruga Zelenica',
+      metaTitle: 'Zadruga Zelenica - Vestigium',
+      photosTitle: 'Life at Zelenica',
+      address: '<strong>Cooperative Community Center Zelenica</strong>, Grančarska 2a, Brezovica.'
     },
     engaged: {
       title: 'Get involved',
@@ -163,8 +167,7 @@ const TRANSLATIONS = {
         who: 'For organisations and schools',
         desc: 'Plan a joint Erasmus+ project or a long-term partnership to share methods and strengthen our communities.',
         cta: 'Write to us'
-      },
-      note: 'Not sure which one fits? Tell us a little about yourself:'
+      }
     },
     gallery: {
       metaTitle: 'Gallery - Vestigium',
@@ -397,7 +400,11 @@ const TRANSLATIONS = {
       title: 'Zadruga Zelenica',
       text1: 'Platforma Zelenica pokrenuta je 2016. kako bi usmjerila društvo od neodrživih prema održivim praksama koje podupiru ljude, prirodu i pravednu raspodjelu. Povezuje ekološke proizvođače hrane s građanima.',
       text2: '2021. Zelenica je postala društvena zadruga, a 2022. otvoren je Zadružni društveni centar Brezovica. Nastavljamo okupljati članove i razvijati publiku.',
-      watch: 'Pogledaj video'
+      watch: 'Pogledaj video',
+      button: 'Zadruga Zelenica',
+      metaTitle: 'Zadruga Zelenica - Vestigium',
+      photosTitle: 'Život u Zelenici',
+      address: '<strong>Zadružni društveni centar Zelenica</strong>, Grančarska 2a, Brezovica.'
     },
     engaged: {
       title: 'Uključi se',
@@ -439,8 +446,7 @@ const TRANSLATIONS = {
         who: 'Za organizacije i škole',
         desc: 'Isplanirajmo zajednički Erasmus+ projekt ili dugoročno partnerstvo za razmjenu metoda i jačanje naših zajednica.',
         cta: 'Javi nam se'
-      },
-      note: 'Niste sigurni što vam odgovara? Napišite nam nešto o sebi:'
+      }
     },
     gallery: {
       metaTitle: 'Galerija - Vestigium',
