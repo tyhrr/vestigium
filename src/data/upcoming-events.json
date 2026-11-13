@@ -1,16 +1,7 @@
 {
-  "generatedAt": "2026-11-12T19:54:38.225Z",
+  "generatedAt": "2026-11-13T01:50:33.666Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Joga Tatjana",
-      "start": "2026-11-12T19:30:00.000Z",
-      "end": "2026-11-12T20:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Dramazona",
       "start": "2026-11-13T17:00:00.000Z",
@@ -267,6 +258,15 @@
       "title": "Textile design, Sol",
       "start": "2026-11-19T16:00:00.000Z",
       "end": "2026-11-19T18:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Kikulu kids—radionica za djecu 6-12god.",
+      "start": "2026-11-19T16:30:00.000Z",
+      "end": "2026-11-19T19:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
