@@ -1,25 +1,7 @@
 {
-  "generatedAt": "2026-11-13T19:42:29.478Z",
+  "generatedAt": "2026-11-14T01:27:01.428Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Dramazona",
-      "start": "2026-11-13T17:00:00.000Z",
-      "end": "2026-11-13T21:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "🎲 Boardgames night",
-      "start": "2026-11-13T18:00:00.000Z",
-      "end": "2026-11-13T21:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Eko plac",
       "start": "2026-11-14T08:00:00.000Z",
@@ -210,18 +192,18 @@
       "location": null
     },
     {
-      "title": "The world is my Canvas (Nadja/Llew)",
+      "title": "Uvodno predavanje AT Ana dvorana",
       "start": "2026-11-18T17:30:00.000Z",
-      "end": "2026-11-18T20:00:00.000Z",
+      "end": "2026-11-18T18:45:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Uvodno predavanje AT Ana dvorana",
+      "title": "The world is my Canvas (Nadja/Llew)",
       "start": "2026-11-18T17:30:00.000Z",
-      "end": "2026-11-18T18:45:00.000Z",
+      "end": "2026-11-18T20:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -270,6 +252,24 @@
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Joga Tatjana",
+      "start": "2026-11-19T19:30:00.000Z",
+      "end": "2026-11-19T20:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Individualni sat, Sandra dvorana",
+      "start": "2026-11-20T12:00:00.000Z",
+      "end": "2026-11-20T15:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
       "location": null
     }
   ]
