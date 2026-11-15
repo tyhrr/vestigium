@@ -1,25 +1,7 @@
 {
-  "generatedAt": "2026-11-15T16:22:26.895Z",
+  "generatedAt": "2026-11-15T22:49:29.877Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Meditativno slikanje",
-      "start": "2026-11-15T16:00:00.000Z",
-      "end": "2026-11-15T17:00:00.000Z",
-      "allDay": false,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": "Brezovica, Croatia"
-    },
-    {
-      "title": "Ana dvorana",
-      "start": "2026-11-15T17:00:00.000Z",
-      "end": "2026-11-15T19:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Obuka AT Ana dvorana",
       "start": "2026-11-16T09:15:00.000Z",
@@ -219,15 +201,6 @@
       "location": null
     },
     {
-      "title": "Obuka AT Ana dvorana",
-      "start": "2026-11-21T10:00:00.000Z",
-      "end": "2026-11-21T12:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
       "title": "Youth club cijeli prostor",
       "start": "2026-11-21T13:00:00.000Z",
       "end": "2026-11-21T16:00:00.000Z",
@@ -267,6 +240,33 @@
       "title": "Obuka AT Ana dvorana",
       "start": "2026-11-23T15:45:00.000Z",
       "end": "2026-11-23T18:15:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Zelene košarice - ispred Vestigiuma",
+      "start": "2026-11-23T17:00:00.000Z",
+      "end": "2026-11-23T17:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "MALA ŠKOLA ŠIVANJA",
+      "start": "2026-11-23T17:00:00.000Z",
+      "end": "2026-11-23T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Yoga Ivana",
+      "start": "2026-11-23T19:00:00.000Z",
+      "end": "2026-11-23T20:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
