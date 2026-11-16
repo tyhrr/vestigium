@@ -1,34 +1,7 @@
 {
-  "generatedAt": "2026-11-15T22:49:29.877Z",
+  "generatedAt": "2026-11-16T19:37:13.082Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Obuka AT Ana dvorana",
-      "start": "2026-11-16T09:15:00.000Z",
-      "end": "2026-11-16T11:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Zelene košarice - ispred Vestigiuma",
-      "start": "2026-11-16T17:00:00.000Z",
-      "end": "2026-11-16T17:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "MALA ŠKOLA ŠIVANJA",
-      "start": "2026-11-16T17:00:00.000Z",
-      "end": "2026-11-16T19:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Hubs and Territories Meeting",
       "start": "2026-11-16T18:00:00.000Z",
@@ -67,8 +40,8 @@
     },
     {
       "title": "Gitara",
-      "start": "2026-11-17T18:00:00.000Z",
-      "end": "2026-11-17T19:00:00.000Z",
+      "start": "2026-11-17T18:30:00.000Z",
+      "end": "2026-11-17T19:15:00.000Z",
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
@@ -76,8 +49,8 @@
     },
     {
       "title": "Zbor SingInBreza",
-      "start": "2026-11-17T19:00:00.000Z",
-      "end": "2026-11-17T21:00:00.000Z",
+      "start": "2026-11-17T19:15:00.000Z",
+      "end": "2026-11-17T21:15:00.000Z",
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
@@ -156,6 +129,15 @@
       "location": null
     },
     {
+      "title": "Obuka AT Ana",
+      "start": "2026-11-20T17:00:00.000Z",
+      "end": "2026-11-20T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
       "title": "Dramazona",
       "start": "2026-11-20T17:00:00.000Z",
       "end": "2026-11-20T21:00:00.000Z",
@@ -204,6 +186,15 @@
       "title": "Youth club cijeli prostor",
       "start": "2026-11-21T13:00:00.000Z",
       "end": "2026-11-21T16:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Makrame Mateja",
+      "start": "2026-11-21T17:00:00.000Z",
+      "end": "2026-11-21T19:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -267,6 +258,15 @@
       "title": "Yoga Ivana",
       "start": "2026-11-23T19:00:00.000Z",
       "end": "2026-11-23T20:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Klub za osobe starije životne dobi",
+      "start": "2026-11-24T09:00:00.000Z",
+      "end": "2026-11-24T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
