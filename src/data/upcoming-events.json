@@ -1,16 +1,7 @@
 {
-  "generatedAt": "2026-11-17T03:54:28.667Z",
+  "generatedAt": "2026-11-17T16:00:06.360Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Klub za osobe starije životne dobi",
-      "start": "2026-11-17T09:00:00.000Z",
-      "end": "2026-11-17T11:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Podsvjesno crtanje",
       "start": "2026-11-17T17:30:00.000Z",
@@ -111,18 +102,18 @@
       "location": null
     },
     {
-      "title": "Obuka AT Ana",
+      "title": "Dramazona",
       "start": "2026-11-20T17:00:00.000Z",
-      "end": "2026-11-20T19:00:00.000Z",
+      "end": "2026-11-20T21:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Dramazona",
+      "title": "Obuka AT Ana",
       "start": "2026-11-20T17:00:00.000Z",
-      "end": "2026-11-20T21:00:00.000Z",
+      "end": "2026-11-20T19:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -261,6 +252,15 @@
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Zelene košarice",
+      "start": "2026-11-24T17:00:00.000Z",
+      "end": "2026-11-24T18:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
       "location": null
     },
     {
