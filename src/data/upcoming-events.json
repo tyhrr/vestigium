@@ -1,25 +1,7 @@
 {
-  "generatedAt": "2026-11-16T19:37:13.082Z",
+  "generatedAt": "2026-11-17T03:54:28.667Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Hubs and Territories Meeting",
-      "start": "2026-11-16T18:00:00.000Z",
-      "end": "2026-11-16T20:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Yoga Ivana",
-      "start": "2026-11-16T19:00:00.000Z",
-      "end": "2026-11-16T20:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Klub za osobe starije životne dobi",
       "start": "2026-11-17T09:00:00.000Z",
@@ -270,6 +252,24 @@
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Tanja dvorana",
+      "start": "2026-11-24T16:00:00.000Z",
+      "end": "2026-11-24T17:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "RAZMJENA ODJEĆE",
+      "start": "2026-11-24T17:00:00.000Z",
+      "end": "2026-11-24T19:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
       "location": null
     }
   ]
