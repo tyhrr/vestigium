@@ -1,34 +1,7 @@
 {
-  "generatedAt": "2026-11-17T16:00:06.360Z",
+  "generatedAt": "2026-11-18T00:57:43.509Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Podsvjesno crtanje",
-      "start": "2026-11-17T17:30:00.000Z",
-      "end": "2026-11-17T19:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Gitara",
-      "start": "2026-11-17T18:30:00.000Z",
-      "end": "2026-11-17T19:15:00.000Z",
-      "allDay": false,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "Zbor SingInBreza",
-      "start": "2026-11-17T19:15:00.000Z",
-      "end": "2026-11-17T21:15:00.000Z",
-      "allDay": false,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": null
-    },
     {
       "title": "Coworking space Marilia",
       "start": "2026-11-18T08:30:00.000Z",
@@ -102,18 +75,18 @@
       "location": null
     },
     {
-      "title": "Dramazona",
+      "title": "Obuka AT Ana",
       "start": "2026-11-20T17:00:00.000Z",
-      "end": "2026-11-20T21:00:00.000Z",
+      "end": "2026-11-20T19:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Obuka AT Ana",
+      "title": "Dramazona",
       "start": "2026-11-20T17:00:00.000Z",
-      "end": "2026-11-20T19:00:00.000Z",
+      "end": "2026-11-20T21:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -267,6 +240,33 @@
       "title": "RAZMJENA ODJEĆE",
       "start": "2026-11-24T17:00:00.000Z",
       "end": "2026-11-24T19:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Podsvjesno crtanje",
+      "start": "2026-11-24T17:30:00.000Z",
+      "end": "2026-11-24T19:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Gitara",
+      "start": "2026-11-24T18:30:00.000Z",
+      "end": "2026-11-24T19:15:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Zbor SingInBreza",
+      "start": "2026-11-24T19:15:00.000Z",
+      "end": "2026-11-24T21:15:00.000Z",
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
