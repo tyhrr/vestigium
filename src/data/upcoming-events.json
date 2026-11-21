@@ -1,16 +1,7 @@
 {
-  "generatedAt": "2026-11-20T20:21:04.384Z",
+  "generatedAt": "2026-11-21T02:15:43.135Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Dramazona",
-      "start": "2026-11-20T17:00:00.000Z",
-      "end": "2026-11-20T21:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Nik rođendan",
       "start": "2026-11-21",
@@ -268,6 +259,15 @@
       "start": "2026-11-27",
       "end": "2026-11-28",
       "allDay": true,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Obuka AT Ana",
+      "start": "2026-11-27T16:30:00.000Z",
+      "end": "2026-11-27T18:30:00.000Z",
+      "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
