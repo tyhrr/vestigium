@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T02:15:43.135Z",
+  "generatedAt": "2026-11-21T11:01:46.238Z",
   "timeZone": "Europe/Zagreb",
   "events": [
     {
@@ -9,24 +9,6 @@
       "allDay": true,
       "place": "Brezovica",
       "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "Eko plac",
-      "start": "2026-11-21T08:00:00.000Z",
-      "end": "2026-11-21T10:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Učimo hrvatski - za strance",
-      "start": "2026-11-21T09:00:00.000Z",
-      "end": "2026-11-21T10:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
       "location": null
     },
     {
@@ -270,6 +252,24 @@
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Dramazona",
+      "start": "2026-11-27T17:00:00.000Z",
+      "end": "2026-11-27T21:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Nik i Tom rođendan",
+      "start": "2026-11-28",
+      "end": "2026-11-29",
+      "allDay": true,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
       "location": null
     }
   ]
