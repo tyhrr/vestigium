@@ -1,16 +1,7 @@
 {
-  "generatedAt": "2026-11-21T19:16:02.855Z",
+  "generatedAt": "2026-11-22T01:19:44.172Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Nik rođendan",
-      "start": "2026-11-21",
-      "end": "2026-11-22",
-      "allDay": true,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": null
-    },
     {
       "title": "Artivna cijeli prostor",
       "start": "2026-11-22T17:00:00.000Z",
@@ -93,18 +84,18 @@
       "location": null
     },
     {
-      "title": "RAZMJENA ODJEĆE",
+      "title": "Zelene košarice",
       "start": "2026-11-24T17:00:00.000Z",
-      "end": "2026-11-24T19:00:00.000Z",
+      "end": "2026-11-24T18:00:00.000Z",
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
       "location": null
     },
     {
-      "title": "Zelene košarice",
+      "title": "RAZMJENA ODJEĆE",
       "start": "2026-11-24T17:00:00.000Z",
-      "end": "2026-11-24T18:00:00.000Z",
+      "end": "2026-11-24T19:00:00.000Z",
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
@@ -266,6 +257,15 @@
     {
       "title": "Eko plac",
       "start": "2026-11-28T08:00:00.000Z",
+      "end": "2026-11-28T10:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Učimo hrvatski - za strance",
+      "start": "2026-11-28T09:00:00.000Z",
       "end": "2026-11-28T10:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
