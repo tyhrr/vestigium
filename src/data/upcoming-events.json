@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T01:19:44.172Z",
+  "generatedAt": "2026-11-22T11:25:14.614Z",
   "timeZone": "Europe/Zagreb",
   "events": [
     {
@@ -246,18 +246,18 @@
       "location": null
     },
     {
-      "title": "ADVENT U VESTIGIUMU",
+      "title": "Eko plac",
       "start": "2026-11-28T08:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
+      "end": "2026-11-28T10:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Eko plac",
+      "title": "ADVENT U VESTIGIUMU",
       "start": "2026-11-28T08:00:00.000Z",
-      "end": "2026-11-28T10:00:00.000Z",
+      "end": "2026-11-28T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
