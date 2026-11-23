@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T19:41:06.540Z",
+  "generatedAt": "2026-11-23T01:43:29.228Z",
   "timeZone": "Europe/Zagreb",
   "events": [
     {
@@ -75,18 +75,18 @@
       "location": null
     },
     {
-      "title": "RAZMJENA ODJEĆE",
+      "title": "Zelene košarice",
       "start": "2026-11-24T17:00:00.000Z",
-      "end": "2026-11-24T19:00:00.000Z",
+      "end": "2026-11-24T18:00:00.000Z",
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
       "location": null
     },
     {
-      "title": "Zelene košarice",
+      "title": "RAZMJENA ODJEĆE",
       "start": "2026-11-24T17:00:00.000Z",
-      "end": "2026-11-24T18:00:00.000Z",
+      "end": "2026-11-24T19:00:00.000Z",
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
@@ -255,16 +255,16 @@
       "location": null
     },
     {
-      "title": "RAZMJENA ODJEĆE",
+      "title": "Učimo hrvatski - za strance",
       "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
+      "end": "2026-11-28T10:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Sanja radionica",
+      "title": "RAZMJENA ODJEĆE",
       "start": "2026-11-28T09:00:00.000Z",
       "end": "2026-11-28T11:00:00.000Z",
       "allDay": false,
