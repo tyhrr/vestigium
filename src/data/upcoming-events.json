@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T01:43:29.228Z",
+  "generatedAt": "2026-11-23T12:41:51.330Z",
   "timeZone": "Europe/Zagreb",
   "events": [
     {
@@ -7,15 +7,6 @@
       "start": "2026-11-23",
       "end": "2026-11-24",
       "allDay": true,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Coworking space Marilia",
-      "start": "2026-11-23T08:00:00.000Z",
-      "end": "2026-11-23T10:00:00.000Z",
-      "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
@@ -78,15 +69,6 @@
       "title": "Zelene košarice",
       "start": "2026-11-24T17:00:00.000Z",
       "end": "2026-11-24T18:00:00.000Z",
-      "allDay": false,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "RAZMJENA ODJEĆE",
-      "start": "2026-11-24T17:00:00.000Z",
-      "end": "2026-11-24T19:00:00.000Z",
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
@@ -255,9 +237,9 @@
       "location": null
     },
     {
-      "title": "Učimo hrvatski - za strance",
+      "title": "Sanja radionica",
       "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T10:00:00.000Z",
+      "end": "2026-11-28T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -267,6 +249,24 @@
       "title": "RAZMJENA ODJEĆE",
       "start": "2026-11-28T09:00:00.000Z",
       "end": "2026-11-28T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Učimo hrvatski - za strance",
+      "start": "2026-11-28T09:00:00.000Z",
+      "end": "2026-11-28T10:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Youth club cijeli prostor",
+      "start": "2026-11-28T13:00:00.000Z",
+      "end": "2026-11-28T16:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
