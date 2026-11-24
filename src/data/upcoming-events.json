@@ -1,52 +1,7 @@
 {
-  "generatedAt": "2026-11-23T12:41:51.330Z",
+  "generatedAt": "2026-11-24T02:12:50.784Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Zoom Earth Keepers 17",
-      "start": "2026-11-23",
-      "end": "2026-11-24",
-      "allDay": true,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Obuka AT Ana dvorana",
-      "start": "2026-11-23T15:45:00.000Z",
-      "end": "2026-11-23T18:15:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Zelene košarice - ispred Vestigiuma",
-      "start": "2026-11-23T17:00:00.000Z",
-      "end": "2026-11-23T17:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "MALA ŠKOLA ŠIVANJA",
-      "start": "2026-11-23T17:00:00.000Z",
-      "end": "2026-11-23T19:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Yoga Ivana",
-      "start": "2026-11-23T19:00:00.000Z",
-      "end": "2026-11-23T20:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Klub za osobe starije životne dobi",
       "start": "2026-11-24T09:00:00.000Z",
@@ -219,15 +174,6 @@
       "location": null
     },
     {
-      "title": "ADVENT U VESTIGIUMU",
-      "start": "2026-11-28T08:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
       "title": "Eko plac",
       "start": "2026-11-28T08:00:00.000Z",
       "end": "2026-11-28T10:00:00.000Z",
@@ -237,17 +183,8 @@
       "location": null
     },
     {
-      "title": "Sanja radionica",
-      "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "RAZMJENA ODJEĆE",
-      "start": "2026-11-28T09:00:00.000Z",
+      "title": "ADVENT U VESTIGIUMU",
+      "start": "2026-11-28T08:00:00.000Z",
       "end": "2026-11-28T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
@@ -264,9 +201,72 @@
       "location": null
     },
     {
+      "title": "RAZMJENA ODJEĆE",
+      "start": "2026-11-28T09:00:00.000Z",
+      "end": "2026-11-28T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Sanja radionica",
+      "start": "2026-11-28T09:00:00.000Z",
+      "end": "2026-11-28T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
       "title": "Youth club cijeli prostor",
       "start": "2026-11-28T13:00:00.000Z",
       "end": "2026-11-28T16:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Nives_Qi-Lightening (cijeli prostor)",
+      "start": "2026-11-28T17:00:00.000Z",
+      "end": "2026-11-28T18:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Karmen kreativna radionica",
+      "start": "2026-11-29T09:00:00.000Z",
+      "end": "2026-11-29T10:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Climate Cafe",
+      "start": "2026-11-29T12:00:00.000Z",
+      "end": "2026-11-29T14:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Obuka AT Ana dvorana",
+      "start": "2026-11-29T13:00:00.000Z",
+      "end": "2026-11-29T15:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Artivna cijeli prostor",
+      "start": "2026-11-29T17:00:00.000Z",
+      "end": "2026-11-29T19:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
