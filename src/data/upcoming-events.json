@@ -1,34 +1,7 @@
 {
-  "generatedAt": "2026-11-25T08:35:07.107Z",
+  "generatedAt": "2026-11-25T19:16:40.052Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Coworking space Marilia",
-      "start": "2026-11-25T08:30:00.000Z",
-      "end": "2026-11-25T11:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Terapijska Yoga Iva",
-      "start": "2026-11-25T09:45:00.000Z",
-      "end": "2026-11-25T10:45:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Klub knjige",
-      "start": "2026-11-25T17:00:00.000Z",
-      "end": "2026-11-25T19:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Klub za osobe starije životne dobi",
       "start": "2026-11-26T09:00:00.000Z",
@@ -111,18 +84,18 @@
       "location": null
     },
     {
-      "title": "ADVENT U VESTIGIUMU",
+      "title": "Eko plac",
       "start": "2026-11-28T08:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
+      "end": "2026-11-28T10:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Eko plac",
+      "title": "ADVENT U VESTIGIUMU",
       "start": "2026-11-28T08:00:00.000Z",
-      "end": "2026-11-28T10:00:00.000Z",
+      "end": "2026-11-28T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -138,18 +111,18 @@
       "location": null
     },
     {
-      "title": "Učimo hrvatski - za strance",
+      "title": "Sanja radionica",
       "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T10:00:00.000Z",
+      "end": "2026-11-28T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Sanja radionica",
+      "title": "Učimo hrvatski - za strance",
       "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
+      "end": "2026-11-28T10:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -267,6 +240,33 @@
       "title": "Klub za osobe starije životne dobi",
       "start": "2026-12-01T09:00:00.000Z",
       "end": "2026-12-01T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "RCF Support Session - Results Tracker for Reporting",
+      "start": "2026-12-01T14:00:00.000Z",
+      "end": "2026-12-01T15:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": "https://us06web.zoom.us/j/85975155432?pwd=wxa1WEE1gxjp9m2cKqmKyBbTsvkgZF.1"
+    },
+    {
+      "title": "Zelene košarice",
+      "start": "2026-12-01T17:00:00.000Z",
+      "end": "2026-12-01T18:00:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Podsvjesno crtanje",
+      "start": "2026-12-01T17:30:00.000Z",
+      "end": "2026-12-01T19:30:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
