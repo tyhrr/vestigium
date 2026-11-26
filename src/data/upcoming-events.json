@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T19:16:40.052Z",
+  "generatedAt": "2026-11-26T03:34:41.055Z",
   "timeZone": "Europe/Zagreb",
   "events": [
     {
@@ -210,18 +210,18 @@
       "location": null
     },
     {
-      "title": "Uvodno predavanje AT Ana dvorana",
+      "title": "MALA ŠKOLA ŠIVANJA",
       "start": "2026-11-30T17:00:00.000Z",
-      "end": "2026-11-30T18:15:00.000Z",
+      "end": "2026-11-30T19:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "MALA ŠKOLA ŠIVANJA",
+      "title": "Uvodno predavanje AT Ana dvorana",
       "start": "2026-11-30T17:00:00.000Z",
-      "end": "2026-11-30T19:00:00.000Z",
+      "end": "2026-11-30T18:15:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
