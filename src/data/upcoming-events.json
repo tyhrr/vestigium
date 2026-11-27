@@ -1,43 +1,7 @@
 {
-  "generatedAt": "2026-11-26T16:54:20.039Z",
+  "generatedAt": "2026-11-27T01:44:18.729Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "Textile design, Sol",
-      "start": "2026-11-26T16:00:00.000Z",
-      "end": "2026-11-26T18:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Kikulu kids—radionica za djecu 6-12god.",
-      "start": "2026-11-26T16:30:00.000Z",
-      "end": "2026-11-26T19:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Kreativne radionice za djecu",
-      "start": "2026-11-26T17:00:00.000Z",
-      "end": "2026-11-26T18:30:00.000Z",
-      "allDay": false,
-      "place": "Brezovica",
-      "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "Joga Tatjana",
-      "start": "2026-11-26T19:30:00.000Z",
-      "end": "2026-11-26T20:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "MO DUGAVE GREEN FRIDAY",
       "start": "2026-11-27",
@@ -93,18 +57,18 @@
       "location": null
     },
     {
-      "title": "Učimo hrvatski - za strance",
+      "title": "Sanja radionica",
       "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T10:00:00.000Z",
+      "end": "2026-11-28T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
       "location": null
     },
     {
-      "title": "Sanja radionica",
+      "title": "Učimo hrvatski - za strance",
       "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
+      "end": "2026-11-28T10:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -270,6 +234,42 @@
       "allDay": false,
       "place": "Brezovica",
       "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Coworking space Marilia",
+      "start": "2026-12-02T08:30:00.000Z",
+      "end": "2026-12-02T11:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Terapijska Yoga Iva",
+      "start": "2026-12-02T09:45:00.000Z",
+      "end": "2026-12-02T10:45:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Obuka AT Ana",
+      "start": "2026-12-02T15:40:00.000Z",
+      "end": "2026-12-02T18:10:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Klub za osobe starije životne dobi",
+      "start": "2026-12-03T09:00:00.000Z",
+      "end": "2026-12-03T11:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
       "location": null
     }
   ]
