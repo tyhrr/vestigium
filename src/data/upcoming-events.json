@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T07:49:42.748Z",
+  "generatedAt": "2026-11-28T17:33:16.129Z",
   "timeZone": "Europe/Zagreb",
   "events": [
     {
@@ -9,60 +9,6 @@
       "allDay": true,
       "place": "Brezovica",
       "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "ADVENT U VESTIGIUMU",
-      "start": "2026-11-28T08:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Eko plac",
-      "start": "2026-11-28T08:00:00.000Z",
-      "end": "2026-11-28T10:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Učimo hrvatski - za strance",
-      "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T10:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "RAZMJENA ODJEĆE",
-      "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Sanja radionica",
-      "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Youth club cijeli prostor",
-      "start": "2026-11-28T13:00:00.000Z",
-      "end": "2026-11-28T16:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
       "location": null
     },
     {
@@ -267,6 +213,60 @@
       "title": "Joga Tatjana",
       "start": "2026-12-03T19:30:00.000Z",
       "end": "2026-12-03T20:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "FINCI ZOOM ANA",
+      "start": "2026-12-04",
+      "end": "2026-12-05",
+      "allDay": true,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "EARTH KEEPERS, Zaježova",
+      "start": "2026-12-04",
+      "end": "2026-12-11",
+      "allDay": true,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Obuka AT Ana",
+      "start": "2026-12-04T16:30:00.000Z",
+      "end": "2026-12-04T18:30:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Dramazona",
+      "start": "2026-12-04T17:00:00.000Z",
+      "end": "2026-12-04T21:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Eko plac",
+      "start": "2026-12-05T08:00:00.000Z",
+      "end": "2026-12-05T10:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "ADVENT U VESTIGIUMU",
+      "start": "2026-12-05T08:00:00.000Z",
+      "end": "2026-12-05T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
