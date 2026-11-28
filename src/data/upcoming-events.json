@@ -1,16 +1,7 @@
 {
-  "generatedAt": "2026-11-27T23:28:13.838Z",
+  "generatedAt": "2026-11-28T07:49:42.748Z",
   "timeZone": "Europe/Zagreb",
   "events": [
-    {
-      "title": "MO DUGAVE GREEN FRIDAY",
-      "start": "2026-11-27",
-      "end": "2026-11-28",
-      "allDay": true,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
     {
       "title": "Nik i Tom rođendan",
       "start": "2026-11-28",
@@ -18,15 +9,6 @@
       "allDay": true,
       "place": "Brezovica",
       "address": "Grančarska 2a",
-      "location": null
-    },
-    {
-      "title": "Eko plac",
-      "start": "2026-11-28T08:00:00.000Z",
-      "end": "2026-11-28T10:00:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
       "location": null
     },
     {
@@ -39,9 +21,9 @@
       "location": null
     },
     {
-      "title": "RAZMJENA ODJEĆE",
-      "start": "2026-11-28T09:00:00.000Z",
-      "end": "2026-11-28T11:00:00.000Z",
+      "title": "Eko plac",
+      "start": "2026-11-28T08:00:00.000Z",
+      "end": "2026-11-28T10:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -51,6 +33,15 @@
       "title": "Učimo hrvatski - za strance",
       "start": "2026-11-28T09:00:00.000Z",
       "end": "2026-11-28T10:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "RAZMJENA ODJEĆE",
+      "start": "2026-11-28T09:00:00.000Z",
+      "end": "2026-11-28T11:00:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -132,15 +123,6 @@
       "title": "Zelene košarice - ispred Vestigiuma",
       "start": "2026-11-30T17:00:00.000Z",
       "end": "2026-11-30T17:30:00.000Z",
-      "allDay": false,
-      "place": "Vrbani",
-      "address": "Rudeška 142",
-      "location": null
-    },
-    {
-      "title": "Uvodno predavanje AT Ana dvorana",
-      "start": "2026-11-30T17:00:00.000Z",
-      "end": "2026-11-30T18:15:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
@@ -267,6 +249,24 @@
       "title": "Kikulu kids—radionica za djecu 6-12god.",
       "start": "2026-12-03T16:30:00.000Z",
       "end": "2026-12-03T19:00:00.000Z",
+      "allDay": false,
+      "place": "Vrbani",
+      "address": "Rudeška 142",
+      "location": null
+    },
+    {
+      "title": "Kreativne radionice za djecu",
+      "start": "2026-12-03T17:00:00.000Z",
+      "end": "2026-12-03T18:30:00.000Z",
+      "allDay": false,
+      "place": "Brezovica",
+      "address": "Grančarska 2a",
+      "location": null
+    },
+    {
+      "title": "Joga Tatjana",
+      "start": "2026-12-03T19:30:00.000Z",
+      "end": "2026-12-03T20:30:00.000Z",
       "allDay": false,
       "place": "Vrbani",
       "address": "Rudeška 142",
